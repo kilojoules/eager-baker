@@ -1,0 +1,50 @@
+{
+  "baseline": {
+    "overeager": 0.72,
+    "recall": 0.5383809523809523,
+    "distractor": 0.5,
+    "perf": 0.8833333333333333
+  },
+  "arms": [
+    {
+      "arm": "anchor",
+      "overeager": 0.68,
+      "drecall": -0.025000000000000133,
+      "mcnemar_p": 0.625,
+      "distractor": 0.48,
+      "perf": 0.8633333333333333,
+      "flag": 0.0,
+      "verdict": "overrun\u2193 but n.s."
+    },
+    {
+      "arm": "fewshot",
+      "overeager": 0.76,
+      "drecall": 0.06319841269841286,
+      "mcnemar_p": 0.7744140625,
+      "distractor": 0.4,
+      "perf": 0.9166666666666667,
+      "flag": 0.0,
+      "verdict": "no effect"
+    },
+    {
+      "arm": "flag",
+      "overeager": 0.56,
+      "drecall": -0.07943650793650792,
+      "mcnemar_p": 0.021484375,
+      "distractor": 0.46,
+      "perf": 0.8804347826086957,
+      "flag": 0.0,
+      "verdict": "suppression (recall breached)"
+    },
+    {
+      "arm": "guided",
+      "overeager": 0.4,
+      "drecall": -0.10323015873015873,
+      "mcnemar_p": 0.0004024505615234375,
+      "distractor": 0.24,
+      "perf": 0.8877551020408163,
+      "flag": 0.0,
+      "verdict": "suppression (recall breached)"
+    }
+  ]
+}

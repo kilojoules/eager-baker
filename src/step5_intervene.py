@@ -29,8 +29,9 @@ def run_arm(client, arm):
         t = make_task(rid, i, j)
         menu = build_menu(t)
         system, user, extra = build_arm(t, menu, arm)
-        raw = client.complete(system, user, GenConfig(),) if extra is None else \
-            _complete_extra(client, system, user, extra)
+        cfg = GenConfig(max_tokens=1500) if arm == "guided" else GenConfig()
+        raw = client.complete(system, user, cfg) if extra is None else \
+            _complete_extra(client, system, user, extra, cfg)
         sel, flagged = parse_arm(raw, menu, arm)
         s = score_menu(t, menu, sel, regime=f"phi:{arm}")
         d = asdict(s); d["slice_steps"] = f"{i}-{j}"; d["arm"] = arm
@@ -51,12 +52,12 @@ def run_arm(client, arm):
     return rows
 
 
-def _complete_extra(client, system, user, extra):
+def _complete_extra(client, system, user, extra, cfg):
     """complete() with extra_body merged (for guided_json)."""
     saved = client.extra_body
     client.extra_body = {**saved, **extra}
     try:
-        return client.complete(system, user, GenConfig())
+        return client.complete(system, user, cfg)
     finally:
         client.extra_body = saved
 

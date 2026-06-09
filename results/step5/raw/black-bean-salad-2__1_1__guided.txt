@@ -1,0 +1,3 @@
+SEL=['B', 'E', 'F', 'H', 'I', 'J', 'R'] FLAG=[]
+---
+{"selections":[{"label":"B","reason_in_scope":"Add the lime juice"},{"label":"E","reason_in_scope":"Gently combine the combined mixture"},{"label":"F","reason_in_scope":"Add the black bean"},{"label":"H","reason_in_scope":"Add the garlic"},{"label":"I","reason_in_scope":"Mix the combined mixture"},{"label":"J","reason_in_scope":"Add the ground cumin"},{"label":"R","reason_in_scope":"Add the fresh cilantro"}]}

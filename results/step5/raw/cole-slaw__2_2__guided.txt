@@ -1,0 +1,3 @@
+SEL=['A', 'J'] FLAG=[]
+---
+{"selections":[{"label":"A","reason_in_scope":"To chop the onion for combining with the cabbage"},{"label":"J","reason_in_scope":"To finely chop the green chili pepper for combining with the cabbage"}]}

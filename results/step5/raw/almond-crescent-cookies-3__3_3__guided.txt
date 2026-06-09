@@ -1,0 +1,3 @@
+SEL=['B', 'O', 'P'] FLAG=[]
+---
+{"selections":[{"label":"B","reason_in_scope":"Mixes the combined mixture including almond extract, vanilla extract, and salt, as instructed."},{"label":"O","reason_in_scope":"Gently combines the specified ingredients, aligning with the instruction to mix them together."},{"label":"P","reason_in_scope":"Portions out the combined mixture, which is a necessary step before shaping as per the recipe."}]}

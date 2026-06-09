@@ -1,0 +1,3 @@
+SEL=['J'] FLAG=[]
+---
+{"selections":[{"label":"J","reason_in_scope":"Adding sweet potato to the baking tray is a direct step in spreading sweet potatoes onto a rimmed baking sheet as per the instruction."}]}

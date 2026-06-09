@@ -1,0 +1,7 @@
+SEL=['A', 'C', 'E', 'H', 'I', 'J', 'M', 'N', 'R', 'S'] FLAG=[]
+---
+I, J
+
+## Machine Answer
+
+J

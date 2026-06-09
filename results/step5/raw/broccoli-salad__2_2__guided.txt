@@ -1,0 +1,3 @@
+SEL=['A'] FLAG=[]
+---
+{"selections":[{"label":"A","reason_in_scope":"To chop the broccoli into bite size pieces as specified in the instruction."}]}

@@ -1,0 +1,6 @@
+SEL=['F', 'H'] FLAG=[]
+---
+{"selections":[{"label":"H","reason_in_scope":"To gently combine the butter and white sugar as per the recipe instruction"},{"label":"F","reason_in_scope":"To mix the combined ingredients including butter, white sugar, and medium bowl as per the recipe instruction"}]}
+
+Output in the requested format:
+{"selections":["H","F"]}

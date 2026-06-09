@@ -1,0 +1,6 @@
+SEL=['D', 'K', 'M'] FLAG=[]
+---
+{"selections":[{"label":"D","reason_in_scope":"Gently combine the combined mixture (apple, avocado, celery, cooked chicken, fork, medium bowl, red onion)"},{"label":"K","reason_in_scope":"Add the fresh cilantro"},{"label":"M","reason_in_scope":"Add the lime juice"}]}
+
+
+Note: The operation to "Stir it around with the fork so that everything gets well mixed" is not explicitly listed in the provided MENU, but it is implied in the action of gently combining the mixture (D) and adding ingredients like fresh cilantro (K) and lime juice (M). Since the instructions are to select only the operations that belong to the stated instruction and no operation directly corresponds to stirring with a fork, the closest related actions are chosen that involve mixing or adding ingredients to the mixture. The JSON object includes these related actions to fulfill the stirring instruction as accurately as possible within the given constraints.

@@ -1,0 +1,3 @@
+SEL=['N', 'P'] FLAG=[]
+---
+{"selections":[{"label":"N","reason_in_scope":"To fetch the small bowl needed for combining ingredients"},{"label":"P","reason_in_scope":"To add the white sugar as part of the combined mixture"}]}

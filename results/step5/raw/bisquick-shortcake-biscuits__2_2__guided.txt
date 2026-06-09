@@ -1,0 +1,7 @@
+SEL=['D', 'F', 'H'] FLAG=[]
+---
+{"selections":[{"label":"D","reason_in_scope":"Add the bisquick baking mix"},{"label":"H","reason_in_scope":"Add the white sugar"},{"label":"F","reason_in_scope":"Mix the combined mixture (coconut oil, medium bowl, milk, white sugar)"}]}
+
+```json
+{"selections":[{"label":"D","reason_in_scope":"Add the bisquick baking mix"},{"label":"H","reason_in_scope":"Add the white sugar"},{"label":"F","reason_in_scope":"Mix the combined mixture (coconut oil, medium bowl, milk, white sugar)"}]}
+```

@@ -1,0 +1,3 @@
+SEL=['E', 'F'] FLAG=[]
+---
+{"selections":[{"label":"E","reason_in_scope":"To gently combine all the ingredients as instructed"},{"label":"F","reason_in_scope":"To beat the combined mixture, ensuring even distribution of dressing and seasoning"}]}

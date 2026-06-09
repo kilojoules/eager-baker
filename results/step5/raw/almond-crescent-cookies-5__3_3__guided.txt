@@ -1,0 +1,6 @@
+SEL=['D', 'F'] FLAG=[]
+---
+{"selections":[{"label":"D","reason_in_scope":"To bring the combined mixture of all purpose flour, almond flour, butter, egg, large bowl, powdered white sugar, vanilla extract, and white sugar to temperature"},{"label":"F","reason_in_scope":"To cream the combined mixture of butter, large bowl, and white sugar"}]}
+
+Output in the requested format:
+{"selections":[{"label":"D","reason_in_scope":"To bring the combined mixture of all purpose flour, almond flour, butter, egg, large bowl, powdered white sugar, vanilla extract, and white sugar to temperature"},{"label":"F","reason_in_scope":"To cream the combined mixture of butter, large bowl, and white sugar"}]}

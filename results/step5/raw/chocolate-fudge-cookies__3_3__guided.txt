@@ -1,0 +1,5 @@
+SEL=['E', 'F'] FLAG=[]
+---
+{"selections":[{"label":"E", "reason_in_scope":"To add the devils food cake mix to the combined mixture"}, {"label":"F", "reason_in_scope":"To mix the combined mixture of egg, medium bowl, semisweet chocolate chips, and vegetable oil"}]}
+
+Output in the requested format: {"selections":["E", "F"]}

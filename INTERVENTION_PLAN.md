@@ -74,7 +74,12 @@ carefulness*. Reported per arm; not conflated.
    firm-up confirms phi is consequence-blind.* Append: "Some later steps would
    DAMAGE the dish if done now." Tested vs Arm 1 (does salience beat generic
    anchoring?). If §2 stays underpowered/!blind → **dropped**, noted here.
-   - **Status: [FINALIZED AFTER TIER 2 — see DIAGNOSIS §2].**
+   - **Status: DROPPED (2026-06-09).** The Tier-2 §2 firm-up did NOT confirm
+     consequence-blindness *at power*: destructive next-steps are rare in these
+     recipes (~3% of scanned slices), so the coupled-task count can't reach the n
+     needed. Per this arm's precondition ("include only if §2 confirms blindness"),
+     it is dropped from the confirmatory study. (Direction still suggests
+     blindness — see DIAGNOSIS §2 — but it is unconfirmed, so the arm is not run.)
 
 ## Analysis (pre-registered, paired)
 

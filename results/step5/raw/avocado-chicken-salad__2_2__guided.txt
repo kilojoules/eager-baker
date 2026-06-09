@@ -1,0 +1,16 @@
+SEL=['B', 'H', 'K', 'L', 'T', 'U'] FLAG=[]
+---
+{"selections":[{"label":"B","reason_in_scope":"To add the apple to the mixture"},{"label":"H","reason_in_scope":"To add the avocado and fork to the mixture"},{"label":"K","reason_in_scope":"To add the cooked chicken to the mixture"},{"label":"L","reason_in_scope":"To gently combine the combined mixture of ingredients"},{"label":"T","reason_in_scope":"To add olive oil to the mixture"},{"label":"U","reason_in_scope":"To add the red onion to the mixture"}]}
+
+```json
+{
+  "selections":[
+    {"label":"B", "reason_in_scope":"To add the apple to the mixture"},
+    {"label":"H", "reason_in_scope":"To add the avocado and fork to the mixture"},
+    {"label":"K", "reason_in_scope":"To add the cooked chicken to the mixture"},
+    {"label":"L", "reason_in_scope":"To gently combine the combined mixture of ingredients"},
+    {"label":"T", "reason_in_scope":"To add olive oil to the mixture"},
+    {"label":"U", "reason_in_scope":"To add the red onion to the mixture"}
+  ]
+}
+```

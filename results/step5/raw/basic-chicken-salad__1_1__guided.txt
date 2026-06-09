@@ -1,0 +1,9 @@
+SEL=['E', 'I'] FLAG=[]
+---
+{"selections":[{"label":"E","reason_in_scope":"To add the almond to the frying pan"},{"label":"I","reason_in_scope":"To fry the almonds in the frying pan"}]}
+
+Output in the requested format:
+
+```json
+{"selections":[{"label":"E","reason_in_scope":"To add the almond to the frying pan"},{"label":"I","reason_in_scope":"To fry the almonds in the frying pan"}]}
+```

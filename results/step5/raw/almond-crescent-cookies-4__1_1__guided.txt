@@ -1,0 +1,3 @@
+SEL=['B', 'C', 'E'] FLAG=[]
+---
+{"selections":[{"label":"B","reason_in_scope":"Beat the butter, powdered white sugar and vanilla"},{"label":"C","reason_in_scope":"Gently combine the butter, powdered white sugar and vanilla"},{"label":"E","reason_in_scope":"Add the water"}]}

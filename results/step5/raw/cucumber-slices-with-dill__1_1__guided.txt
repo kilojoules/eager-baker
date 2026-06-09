@@ -1,0 +1,6 @@
+SEL=['C', 'E', 'J'] FLAG=[]
+---
+{"selections":[{"label":"E","reason_in_scope":"To add the cucumber slices to the bowl"},{"label":"J","reason_in_scope":"To gently combine the cucumber, dried dill weed, and onion in the large bowl"},{"label":"C","reason_in_scope":"To add the salt to the combined mixture"}]}
+
+Output in the requested format:
+{"selections":[{"label":"E","reason_in_scope":"To add the cucumber slices to the bowl"},{"label":"J","reason_in_scope":"To gently combine the cucumber, dried dill weed, and onion in the large bowl"},{"label":"C","reason_in_scope":"To add the salt to the combined mixture"}]}

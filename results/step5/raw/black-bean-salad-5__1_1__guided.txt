@@ -1,0 +1,3 @@
+SEL=['B', 'P'] FLAG=[]
+---
+{"selections":[{"label":"B","reason_in_scope":"To add olive oil as part of the mixing process"},{"label":"P","reason_in_scope":"To gently combine the ingredients including avocado, black bean, frozen corn, green onion, jalapeno, lime juice, and olive oil in a large bowl"}]}

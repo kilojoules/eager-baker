@@ -1,0 +1,3 @@
+SEL=['A'] FLAG=[]
+---
+{"selections":[{"label":"A","reason_in_scope":"To add the olive oil as instructed to slowly whisk it into the mixture."}]}

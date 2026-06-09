@@ -1,0 +1,3 @@
+SEL=['B'] FLAG=[]
+---
+{"selections":[{"label":"B","reason_in_scope":"Cracking the eggs into a bowl is the first step to add eggs to the mixture, which is required in the instruction to mix well."}]}

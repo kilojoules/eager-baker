@@ -6,6 +6,52 @@ menu) plus a **Step-3 scaled run across 3 real open-weights models** are reporte
 
 ---
 
+## STEP 5 — intervention study on phi-3.5-mini (held model, paired, n=50)
+
+**Question (reframed for the capability verdict):** can an intervention reduce
+genuine next-step overrun *without* just suppressing selection (rising timidity /
+falling in-scope recall)? Pre-registered success criterion (`INTERVENTION_PLAN.md`):
+overrun ↓ (paired McNemar p<0.05) **AND** in-scope recall held (drop ≤ 0.05).
+Baseline = phi's step-3 selections (over-eager 72%, recall 0.54, distractor 50%,
+perf 0.88). Plot: `results/step5_intervention.png`.
+
+| arm | over-eager | Δrecall | McNemar p | distractor | verdict |
+|---|---|---|---|---|---|
+| **baseline** | 72% | — | — | 50% | — |
+| anchor ("only this step") | 68% | −0.03 | 0.625 | 48% | no effect |
+| few-shot (select-then-stop) | 76% | +0.06 | 0.774 | 40% | no effect |
+| flag-don't-act channel | 56% | −0.08 | 0.021 | 46% | **suppression** (recall breached) |
+| guided-JSON (justify each pick) | 40% | −0.10 | <0.001 | 24% | **suppression** (recall breached) |
+| consequence-salience (Arm 5) | — | — | — | — | **dropped** (precondition not met, see §2) |
+
+**No arm achieved calibration success.** The result is clean and one-directional:
+
+1. **Naive prompting does nothing** (anchor 72→68% n.s.; few-shot 72→76%). As
+   anticipated from the persona-collapse + capability verdict — a genuine, useful
+   null, not a study failure.
+2. **The two arms that significantly cut overrun did it by suppression.** flag
+   (72→56%, p=0.021) and guided (72→40%, p<0.001) both drove in-scope recall
+   *below* the pre-registered tolerance (−0.08, −0.10). On the (overrun, recall)
+   plane every arm moves down-left ≈1:1 — "do less of everything," not calibrate.
+3. **phi never used the flag channel** (`FLAG:` appeared in 0/50 outputs). Given an
+   explicit option to *note* a later step without acting, it didn't — it just
+   selected less. Strong evidence the boundary is **not cleanly identifiable** to
+   phi here ("can't locate it", not "knows but acts anyway").
+4. **guided is general carefulness, not scope-specific:** it also cut the
+   distractor-pick rate (50→24%), i.e. it made phi more conservative across the
+   board rather than specifically respecting the slice boundary.
+
+**Interpretation.** This reinforces the DIAGNOSIS capability verdict: phi's
+over-eagerness can't be peeled off from its general selection behavior by these
+interventions — pushing it to overstep less just makes it do less. None of
+prompting, few-shot, a flag channel, or constrained decoding installed the scope
+boundary at held recall. (Limits: one model, n=50, four interventions; structured
+decoding cut overrun most but via suppression — a *harder* structured objective
+that rewards in-scope recall while penalising overrun is the natural next probe,
+not attempted here.)
+
+---
+
 ## STEP 3 — between-model result (n=50/model, menu, 3 models)
 
 **Models differ significantly in default scope calibration.** Three genuinely

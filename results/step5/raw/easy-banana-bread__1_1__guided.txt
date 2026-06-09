@@ -1,0 +1,12 @@
+SEL=['B', 'E'] FLAG=[]
+---
+{"selections":[{"label":"B","reason_in_scope":"Beat (cream) the butter, egg and sugar"},{"label":"E","reason_in_scope":"Beat (cream) the combined mixture (banana, butter, egg, sugar, vanilla extract)"}]}
+
+```json
+{
+  "selections":[
+    {"label":"B", "reason_in_scope":"Beat (cream) the butter, egg and sugar"},
+    {"label":"E", "reason_in_scope":"Beat (cream) the combined mixture (banana, butter, egg, sugar, vanilla extract)"}
+  ]
+}
+```

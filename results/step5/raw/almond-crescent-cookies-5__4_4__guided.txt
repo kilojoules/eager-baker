@@ -1,0 +1,3 @@
+SEL=['E', 'H'] FLAG=[]
+---
+{"selections":[{"label":"H","reason_in_scope":"Add the egg to the combined mixture"},{"label":"E","reason_in_scope":"Add the vanilla extract to the combined mixture"}]}

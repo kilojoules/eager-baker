@@ -1,0 +1,13 @@
+SEL=['A', 'R', 'T', 'U', 'V'] FLAG=[]
+---
+{"selections":[{"label":"T","reason_in_scope":"Fetch cooking pot for boiling potatoes"},{"label":"U","reason_in_scope":"Peel the potato before boiling"},{"label":"V","reason_in_scope":"Add the potato to the cooking pot"},{"label":"R","reason_in_scope":"Add water to the cooking pot"},{"label":"A","reason_in_scope":"Boil the peeled potatoes in the cooking pot with salted water"}]}
+Output in requested format:
+{
+  "selections":[
+    {"label":"T","reason_in_scope":"Fetch cooking pot for boiling potatoes"},
+    {"label":"U","reason_in_scope":"Peel the potato before boiling"},
+    {"label":"V","reason_in_scope":"Add the potato to the cooking pot"},
+    {"label":"R","reason_in_scope":"Add water to the cooking pot"},
+    {"label":"A","reason_in_scope":"Boil the peeled potatoes in the cooking pot with salted water"}
+  ]
+}

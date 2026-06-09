@@ -1,0 +1,3 @@
+SEL=['D'] FLAG=[]
+---
+{"selections":[{"label":"D","reason_in_scope":"To transfer the combined mixture containing all purpose flour, almond, almond extract, mixer, powdered white sugar, salt, salted butter, and vanilla extract for further processing"}]}

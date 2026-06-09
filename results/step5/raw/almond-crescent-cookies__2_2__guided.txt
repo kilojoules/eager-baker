@@ -1,0 +1,9 @@
+SEL=['D', 'E', 'P'] FLAG=[]
+---
+{"selections":[{"label":"D","reason_in_scope":"To add the vanilla extract to the mixture"},{"label":"E","reason_in_scope":"To shape the combined mixture into a ball shape"},{"label":"P","reason_in_scope":"To shape the combined mixture into a crescent shape"}]}
+
+Output in the requested format:
+
+```json
+{"selections":[{"label":"D","reason_in_scope":"To add the vanilla extract to the mixture"},{"label":"E","reason_in_scope":"To shape the combined mixture into a ball shape"},{"label":"P","reason_in_scope":"To shape the combined mixture into a crescent shape"}]}
+```

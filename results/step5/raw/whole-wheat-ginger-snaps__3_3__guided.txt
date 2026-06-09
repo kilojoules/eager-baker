@@ -1,0 +1,3 @@
+SEL=['C', 'M'] FLAG=[]
+---
+{"selections":[{"label":"C","reason_in_scope":"Fetching the large bowl is necessary to cream together the butter and sugar as stated in the instruction."},{"label":"M","reason_in_scope":"Creaming together the butter and sugar is the action described, which requires the large bowl."}]}

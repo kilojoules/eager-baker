@@ -1,0 +1,3 @@
+SEL=['G', 'M', 'N', 'O', 'P', 'Q'] FLAG=[]
+---
+{"selections":[{"label":"G","reason_in_scope":"Fetch large bowl for combining ingredients"},{"label":"M","reason_in_scope":"Add black bean to the mixture"},{"label":"N","reason_in_scope":"Add green onion to the mixture"},{"label":"O","reason_in_scope":"Gently combine the combined mixture with black bean, fresh cilantro, green onion, jalapeno, large bowl, red bell pepper, lime juice, olive oil, small bowl"},{"label":"P","reason_in_scope":"Add lime juice and olive oil to the small bowl"},{"label":"Q","reason_in_scope":"Gently combine the combined mixture with black bean, fresh cilantro, green onion, jalapeno, large bowl, red bell pepper"}]}

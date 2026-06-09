@@ -1,0 +1,5 @@
+SEL=['G', 'K'] FLAG=[]
+---
+{"selections":[{"label":"G","reason_in_scope":"Fetch milk, which is part of the step to stir in the milk and coconut oil into the combined mixture"},{"label":"K","reason_in_scope":"Fetch coconut oil, which is part of the step to gently combine the combined mixture with milk and coconut oil"}]}
+
+Here, operations G and K are selected because they directly involve the ingredients (milk and coconut oil) that need to be stirred into the combined mixture as per the recipe instruction. Operations G and K are necessary prerequisites to the mixing step (N), which is the next logical step after stirring in the ingredients. The other operations listed are either not directly related to the specific action of stirring in the milk and coconut oil (A, B, D, E, F, I, L, M) or are part of subsequent steps (such as baking or cutting, which come after mixing).

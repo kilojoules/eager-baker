@@ -100,7 +100,10 @@ def parse_arm(text: str, menu, arm: str):
                    if s.get("label", "").strip() in valid}
             return sel, set()
         except Exception:
-            return parse_selection(text, menu), set()   # fallback
+            # robust fallback for truncated/partial JSON: pull only the values of
+            # "label" fields (NOT every capital letter, which would over-select).
+            labs = re.findall(r'"label"\s*:\s*"([A-Z]\d?)"', text)
+            return {l for l in labs if l in valid}, set()
     if arm == "flag":
         flagged = {l for l in re.findall(r"FLAG:\s*([A-Z]\d?)", text.upper()) if l in valid}
         # remove the FLAG:X spans, then parse the rest as selections

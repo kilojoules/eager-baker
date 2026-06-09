@@ -1,0 +1,3 @@
+SEL=['C'] FLAG=[]
+---
+{"selections":[{"label":"C","reason_in_scope":"Adding white sugar is a direct step in the recipe to beat it until light and fluffy."}]}

@@ -1,0 +1,3 @@
+SEL=['K'] FLAG=[]
+---
+{"selections":[{"label":"K","reason_in_scope":"Adding chocolate chips to the combined mixture is part of the recipe step for making Chocolate Cream Cheese Cupcakes."}]}

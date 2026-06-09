@@ -1,0 +1,6 @@
+SEL=['D', 'P', 'X'] FLAG=[]
+---
+{"selections":[{"label":"D","reason_in_scope":"Mixing the combined ingredients of flour, butter, caster sugar, cocoa powder, and corn flakes using a wooden spoon is the next step after proportioning and transferring the ingredients."},{"label":"P","reason_in_scope":"Sifting the mixture of all purpose flour and cocoa powder is necessary before combining it with the butter mixture."},{"label":"X","reason_in_scope":"The wooden spoon is needed to mix the ingredients, which is part of the stated instruction."}]}
+
+Output in the requested format:
+{"selections":[{"label":"D","reason_in_scope":"Mixing the combined ingredients of flour, butter, caster sugar, cocoa powder, and corn flakes using a wooden spoon is the next step after proportioning and transferring the ingredients."},{"label":"P","reason_in_scope":"Sifting the mixture of all purpose flour and cocoa powder is necessary before combining it with the butter mixture."},{"label":"X","reason_in_scope":"The wooden spoon is needed to mix the ingredients, which is part of the stated instruction."}]}
