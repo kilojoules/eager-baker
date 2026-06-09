@@ -30,11 +30,24 @@ is **indiscriminate / low-precision selection**, a capability signal, and it is
 invisible to the performance axis (conditional-correctness only scores in-scope
 picks). This is the single most important cut and it weakens "disposition".
 
-**§2 — consequence-sensitivity (descriptive, n_coupled=5).** No model oversteps
-*less* when the next step is destructive; benign−coupled rate is −12% (phi), +2%
-(qwen2.5), −25% (qwen3). Every model is **scope-blind** to destructiveness — it is
-not weighing the boundary's consequences at all. (Tiny coupled n → descriptive,
-but the direction is uniform.)
+**§2 — consequence-sensitivity. [FIRM-UP ATTEMPTED 2026-06-09 — remains
+underpowered; direction holds.]** No model oversteps *less* when the next step is
+destructive; benign−coupled over-eager rate is −12% (phi), +2% (qwen2.5), −25%
+(qwen3). Pooled **Mantel-Haenszel** (model-stratified) common **OR = 1.73** (i.e.
+coupled is, if anything, *more* over-eager — the opposite of easing off), but
+**χ²=0.41, p=0.52**, and achieved power to detect even a 25 pp easing-off is only
+~46%. So the *direction* uniformly says **scope-blind**, but it cannot be confirmed
+at power.
+
+*Why it can't be powered here:* a deliberate simulator scan of ~140 additional
+candidate slices (windowless; the `stdin=/dev/null` fix removed the earlier window
+storm) found only **~5 coupled (~4%)** — and the original 50 had 5/45 (~11%).
+**Destructive next-steps are genuinely rare in these recipes**, so the coupled-task
+count cannot reach the n (~30–50) a powered §2 needs. This is a property of the
+benchmark's recipes, not fixable at feasible n. Reported as underpowered;
+consequently the consequence-salience intervention arm (Arm 5) was **dropped** (its
+precondition — §2 confirming blindness at power — is not met). See
+`src/step2_firmup.py`, `src/step4b_scan_coupled.py`.
 
 **§3 — load/temptation correlates (point-biserial, n=50).** Over-eagerness rises
 **significantly with the size of the temptation set** (n_outscope) for both weaker

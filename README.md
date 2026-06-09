@@ -49,6 +49,22 @@ recipe.) Full numbers, CIs, power, and the coupled/benign split in
 
 (Primary metric with significance: [`step3_overeager_rate.png`](results/step3_overeager_rate.png) — over-eager rate per model with 95% CIs.)
 
+## Follow-ups
+
+- **Diagnosis** ([DIAGNOSIS.md](DIAGNOSIS.md)): re-analysis says the over-eagerness
+  is **scope-adherence capability**, not a free disposition — weaker models also
+  pick more wrong distractors, are scope-blind to destructive steps, and overstep
+  more under load. §2 (consequence-blindness) direction holds but is **underpowered**
+  (destructive next-steps are rare, ~4–11% of slices).
+- **Intervention study** ([INTERVENTION_PLAN.md](INTERVENTION_PLAN.md), FINDINGS
+  §STEP 5): holding phi-3.5-mini fixed and varying only the intervention,
+  **no arm reduced over-eagerness at held in-scope recall** — naive prompting did
+  nothing; a flag-channel and guided-JSON cut overrun only by *suppressing*
+  selection (recall breached); phi never used the flag channel. Reinforces the
+  capability verdict.
+
+![interventions](results/step5_intervention.png)
+
 > An earlier pilot drove Claude Sonnet via two prompt *personas* (cautious/eager);
 > under the menu harness the persona effect collapsed, which is why the scaled run
 > compares genuinely distinct *models* instead. See FINDINGS for that pilot and the
@@ -65,6 +81,7 @@ recipe.) Full numbers, CIs, power, and the coupled/benign split in
 | [STEP3_ANALYSIS_PLAN.md](STEP3_ANALYSIS_PLAN.md) | pre-registered analysis (committed before runs) |
 | [FINDINGS.md](FINDINGS.md) | the 3-model result, the pilots, noise sources, assumptions |
 | [DIAGNOSIS.md](DIAGNOSIS.md) | re-analysis: is over-eagerness a disposition or a capability? (capability) |
+| [INTERVENTION_PLAN.md](INTERVENTION_PLAN.md) | pre-registered phi intervention study (no arm succeeded) |
 | [STATUS.md](STATUS.md) | checkpoint / what's next |
 
 ## Code (`src/`)

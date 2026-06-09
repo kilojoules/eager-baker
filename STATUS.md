@@ -30,9 +30,21 @@ Checkpoint after the Phase-1 hard gate. Read this first.
   signed-scope magnitude (all net-timid). §4 simulator tagging done (5 coupled).
   All RunPod pods terminated. See `FINDINGS.md` (STEP 3), `STEP3_POWER.md`,
   `STEP3_ANALYSIS_PLAN.md`, `results/step3_*`.
-- **Still open:** Phase 5 (fold DAS penalty into scoring for coupled tasks — the
-  §4 tags now exist); more model families (Mistral failed to serve); larger n for
-  the ~24–28 pp pairwise gaps that sit at the MDE.
+- **Diagnosis (re-analysis): ✅ DONE.** Over-eagerness is **scope-adherence
+  capability**, not a free disposition (`DIAGNOSIS.md`).
+- **§2 firm-up (Handoff 1): ✅ ATTEMPTED → underpowered.** Windowless re-tag
+  (`stdin=/dev/null` fixed the simulator window storm) + Mantel-Haenszel
+  (OR=1.73, p=0.52) + a 140-slice scan finding only ~4% coupled → destructive
+  next-steps are too rare to power §2. Direction = scope-blind, unconfirmed.
+- **Intervention study (Handoff 2): ✅ DONE.** phi held fixed, 4 arms paired vs
+  baseline; **no arm cut over-eagerness at held recall** (naive = no effect;
+  flag/guided = suppression; phi never used the flag channel). Arm 5 dropped
+  (§2 underpowered). `INTERVENTION_PLAN.md`, FINDINGS §STEP 5,
+  `results/step5_intervention.png`.
+- **Still open:** more model families (Mistral failed on vLLM); a harder
+  structured-decoding objective that rewards in-scope recall while penalising
+  overrun (the natural next intervention probe).
+- **Ops note:** all RunPod pods terminated (nothing billing).
 
 ## What's the load-bearing result
 
