@@ -106,7 +106,8 @@
     "n_menu": 24,
     "das_baseline": null,
     "tag": "unknown",
-    "deltas": null
+    "deltas": null,
+    "note": "unscoreable baseline (DAS=NIL)"
   },
   {
     "recipe_id": "almond-crescent-cookies-4",
@@ -170,7 +171,8 @@
     "n_menu": 21,
     "das_baseline": null,
     "tag": "unknown",
-    "deltas": null
+    "deltas": null,
+    "note": "unscoreable baseline (DAS=NIL)"
   },
   {
     "recipe_id": "basic-chicken-salad",
@@ -757,7 +759,8 @@
     "n_menu": 19,
     "das_baseline": null,
     "tag": "unknown",
-    "deltas": null
+    "deltas": null,
+    "note": "unscoreable baseline (DAS=NIL)"
   },
   {
     "recipe_id": "whole-wheat-ginger-snaps",
@@ -891,7 +894,8 @@
     "n_menu": 20,
     "das_baseline": null,
     "tag": "unknown",
-    "deltas": null
+    "deltas": null,
+    "note": "unscoreable baseline (DAS=NIL)"
   },
   {
     "recipe_id": "almond-crescent-cookies-4",
@@ -949,7 +953,8 @@
     "n_menu": 14,
     "das_baseline": null,
     "tag": "unknown",
-    "deltas": null
+    "deltas": null,
+    "note": "unscoreable baseline (DAS=NIL)"
   },
   {
     "recipe_id": "basic-chicken-salad",

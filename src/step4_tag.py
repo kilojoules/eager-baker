@@ -43,9 +43,12 @@ def run_eval_single(text, timeout=120):
         with open(inp, "w") as f:
             f.write(text + "\n")
         try:
+            # stdin=DEVNULL is CRITICAL: an erroring network otherwise drops into
+            # the interactive LispWorks listener, which opens a Terminal window
+            # (the "window storm") and hangs. EOF on stdin makes it exit cleanly.
             subprocess.run([BIN, "-input", inp, "-output", out], cwd=d,
-                           timeout=timeout, stdout=subprocess.DEVNULL,
-                           stderr=subprocess.DEVNULL)
+                           timeout=timeout, stdin=subprocess.DEVNULL,
+                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         except subprocess.TimeoutExpired:
             return None
         if not os.path.exists(out):
