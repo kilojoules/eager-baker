@@ -1,0 +1,452 @@
+[
+  {
+    "recipe_id": "afghan-biscuits",
+    "i": 3,
+    "j": 3,
+    "n_in": 3,
+    "n_out": 23,
+    "n_distractor": 2,
+    "n_menu": 28
+  },
+  {
+    "recipe_id": "almond-crescent-cookies",
+    "i": 1,
+    "j": 1,
+    "n_in": 3,
+    "n_out": 15,
+    "n_distractor": 2,
+    "n_menu": 19
+  },
+  {
+    "recipe_id": "almond-crescent-cookies-2",
+    "i": 3,
+    "j": 3,
+    "n_in": 4,
+    "n_out": 17,
+    "n_distractor": 2,
+    "n_menu": 22
+  },
+  {
+    "recipe_id": "almond-crescent-cookies-3",
+    "i": 2,
+    "j": 2,
+    "n_in": 4,
+    "n_out": 19,
+    "n_distractor": 2,
+    "n_menu": 24
+  },
+  {
+    "recipe_id": "almond-crescent-cookies-4",
+    "i": 1,
+    "j": 1,
+    "n_in": 6,
+    "n_out": 9,
+    "n_distractor": 3,
+    "n_menu": 16
+  },
+  {
+    "recipe_id": "almond-crescent-cookies-5",
+    "i": 3,
+    "j": 3,
+    "n_in": 4,
+    "n_out": 15,
+    "n_distractor": 2,
+    "n_menu": 19
+  },
+  {
+    "recipe_id": "avocado-chicken-salad",
+    "i": 2,
+    "j": 2,
+    "n_in": 7,
+    "n_out": 13,
+    "n_distractor": 1,
+    "n_menu": 21
+  },
+  {
+    "recipe_id": "basic-chicken-salad",
+    "i": 1,
+    "j": 1,
+    "n_in": 3,
+    "n_out": 10,
+    "n_distractor": 1,
+    "n_menu": 13
+  },
+  {
+    "recipe_id": "best-brownies",
+    "i": 3,
+    "j": 3,
+    "n_in": 4,
+    "n_out": 13,
+    "n_distractor": 2,
+    "n_menu": 18
+  },
+  {
+    "recipe_id": "bisquick-shortcake-biscuits",
+    "i": 2,
+    "j": 2,
+    "n_in": 4,
+    "n_out": 13,
+    "n_distractor": 2,
+    "n_menu": 19
+  },
+  {
+    "recipe_id": "black-bean-salad-2",
+    "i": 1,
+    "j": 1,
+    "n_in": 7,
+    "n_out": 12,
+    "n_distractor": 2,
+    "n_menu": 20
+  },
+  {
+    "recipe_id": "black-bean-salad-3",
+    "i": 1,
+    "j": 1,
+    "n_in": 9,
+    "n_out": 1,
+    "n_distractor": 2,
+    "n_menu": 12
+  },
+  {
+    "recipe_id": "black-bean-salad-4",
+    "i": 2,
+    "j": 2,
+    "n_in": 7,
+    "n_out": 9,
+    "n_distractor": 2,
+    "n_menu": 18
+  },
+  {
+    "recipe_id": "black-bean-salad-5",
+    "i": 1,
+    "j": 1,
+    "n_in": 9,
+    "n_out": 9,
+    "n_distractor": 2,
+    "n_menu": 19
+  },
+  {
+    "recipe_id": "broccoli-salad",
+    "i": 1,
+    "j": 1,
+    "n_in": 1,
+    "n_out": 14,
+    "n_distractor": 1,
+    "n_menu": 15
+  },
+  {
+    "recipe_id": "chocolate-cream-cheese-cupcakes",
+    "i": 1,
+    "j": 1,
+    "n_in": 6,
+    "n_out": 16,
+    "n_distractor": 2,
+    "n_menu": 21
+  },
+  {
+    "recipe_id": "chocolate-fudge-cookies",
+    "i": 3,
+    "j": 3,
+    "n_in": 5,
+    "n_out": 10,
+    "n_distractor": 3,
+    "n_menu": 18
+  },
+  {
+    "recipe_id": "classic-greek-salad",
+    "i": 2,
+    "j": 2,
+    "n_in": 1,
+    "n_out": 24,
+    "n_distractor": 1,
+    "n_menu": 25
+  },
+  {
+    "recipe_id": "classic-potato-salad",
+    "i": 1,
+    "j": 1,
+    "n_in": 8,
+    "n_out": 19,
+    "n_distractor": 1,
+    "n_menu": 27
+  },
+  {
+    "recipe_id": "coconut-tuiles",
+    "i": 2,
+    "j": 2,
+    "n_in": 2,
+    "n_out": 17,
+    "n_distractor": 1,
+    "n_menu": 20
+  },
+  {
+    "recipe_id": "cole-slaw",
+    "i": 1,
+    "j": 1,
+    "n_in": 6,
+    "n_out": 16,
+    "n_distractor": 6,
+    "n_menu": 26
+  },
+  {
+    "recipe_id": "cranberry-fluff-salad",
+    "i": 1,
+    "j": 1,
+    "n_in": 5,
+    "n_out": 4,
+    "n_distractor": 2,
+    "n_menu": 11
+  },
+  {
+    "recipe_id": "croutons-vinegar-salad",
+    "i": 3,
+    "j": 3,
+    "n_in": 3,
+    "n_out": 30,
+    "n_distractor": 2,
+    "n_menu": 32
+  },
+  {
+    "recipe_id": "cucumber-slices-with-dill",
+    "i": 1,
+    "j": 1,
+    "n_in": 5,
+    "n_out": 10,
+    "n_distractor": 2,
+    "n_menu": 16
+  },
+  {
+    "recipe_id": "easy-banana-bread",
+    "i": 1,
+    "j": 1,
+    "n_in": 4,
+    "n_out": 9,
+    "n_distractor": 3,
+    "n_menu": 15
+  },
+  {
+    "recipe_id": "easy-cherry-tomato-corn-salad",
+    "i": 1,
+    "j": 1,
+    "n_in": 9,
+    "n_out": 10,
+    "n_distractor": 2,
+    "n_menu": 21
+  },
+  {
+    "recipe_id": "easy-oatmeal-cookies",
+    "i": 2,
+    "j": 2,
+    "n_in": 1,
+    "n_out": 23,
+    "n_distractor": 1,
+    "n_menu": 24
+  },
+  {
+    "recipe_id": "mexican-wedding-cookies",
+    "i": 1,
+    "j": 1,
+    "n_in": 6,
+    "n_out": 6,
+    "n_distractor": 3,
+    "n_menu": 14
+  },
+  {
+    "recipe_id": "vegan-black-bean-and-sweet-potato-salad",
+    "i": 2,
+    "j": 2,
+    "n_in": 2,
+    "n_out": 17,
+    "n_distractor": 1,
+    "n_menu": 19
+  },
+  {
+    "recipe_id": "whole-wheat-ginger-snaps",
+    "i": 3,
+    "j": 3,
+    "n_in": 4,
+    "n_out": 22,
+    "n_distractor": 2,
+    "n_menu": 28
+  },
+  {
+    "recipe_id": "afghan-biscuits",
+    "i": 4,
+    "j": 4,
+    "n_in": 5,
+    "n_out": 18,
+    "n_distractor": 2,
+    "n_menu": 25
+  },
+  {
+    "recipe_id": "almond-crescent-cookies",
+    "i": 2,
+    "j": 2,
+    "n_in": 3,
+    "n_out": 12,
+    "n_distractor": 2,
+    "n_menu": 16
+  },
+  {
+    "recipe_id": "almond-crescent-cookies-2",
+    "i": 4,
+    "j": 4,
+    "n_in": 3,
+    "n_out": 14,
+    "n_distractor": 2,
+    "n_menu": 18
+  },
+  {
+    "recipe_id": "almond-crescent-cookies-3",
+    "i": 3,
+    "j": 3,
+    "n_in": 4,
+    "n_out": 15,
+    "n_distractor": 2,
+    "n_menu": 20
+  },
+  {
+    "recipe_id": "almond-crescent-cookies-4",
+    "i": 2,
+    "j": 2,
+    "n_in": 3,
+    "n_out": 6,
+    "n_distractor": 3,
+    "n_menu": 12
+  },
+  {
+    "recipe_id": "almond-crescent-cookies-5",
+    "i": 4,
+    "j": 4,
+    "n_in": 3,
+    "n_out": 12,
+    "n_distractor": 2,
+    "n_menu": 16
+  },
+  {
+    "recipe_id": "avocado-chicken-salad",
+    "i": 3,
+    "j": 3,
+    "n_in": 1,
+    "n_out": 12,
+    "n_distractor": 1,
+    "n_menu": 14
+  },
+  {
+    "recipe_id": "basic-chicken-salad",
+    "i": 4,
+    "j": 4,
+    "n_in": 5,
+    "n_out": 4,
+    "n_distractor": 2,
+    "n_menu": 11
+  },
+  {
+    "recipe_id": "best-brownies",
+    "i": 4,
+    "j": 4,
+    "n_in": 2,
+    "n_out": 11,
+    "n_distractor": 2,
+    "n_menu": 15
+  },
+  {
+    "recipe_id": "bisquick-shortcake-biscuits",
+    "i": 3,
+    "j": 3,
+    "n_in": 3,
+    "n_out": 10,
+    "n_distractor": 2,
+    "n_menu": 15
+  },
+  {
+    "recipe_id": "black-bean-salad-2",
+    "i": 2,
+    "j": 2,
+    "n_in": 2,
+    "n_out": 10,
+    "n_distractor": 2,
+    "n_menu": 13
+  },
+  {
+    "recipe_id": "black-bean-salad-4",
+    "i": 3,
+    "j": 3,
+    "n_in": 4,
+    "n_out": 5,
+    "n_distractor": 2,
+    "n_menu": 11
+  },
+  {
+    "recipe_id": "black-bean-salad-5",
+    "i": 2,
+    "j": 2,
+    "n_in": 2,
+    "n_out": 7,
+    "n_distractor": 2,
+    "n_menu": 11
+  },
+  {
+    "recipe_id": "broccoli-salad",
+    "i": 2,
+    "j": 2,
+    "n_in": 1,
+    "n_out": 13,
+    "n_distractor": 1,
+    "n_menu": 14
+  },
+  {
+    "recipe_id": "chocolate-cream-cheese-cupcakes",
+    "i": 2,
+    "j": 2,
+    "n_in": 2,
+    "n_out": 14,
+    "n_distractor": 2,
+    "n_menu": 17
+  },
+  {
+    "recipe_id": "chocolate-fudge-cookies",
+    "i": 4,
+    "j": 4,
+    "n_in": 2,
+    "n_out": 8,
+    "n_distractor": 2,
+    "n_menu": 12
+  },
+  {
+    "recipe_id": "classic-greek-salad",
+    "i": 3,
+    "j": 3,
+    "n_in": 2,
+    "n_out": 22,
+    "n_distractor": 1,
+    "n_menu": 24
+  },
+  {
+    "recipe_id": "classic-potato-salad",
+    "i": 3,
+    "j": 3,
+    "n_in": 3,
+    "n_out": 15,
+    "n_distractor": 2,
+    "n_menu": 20
+  },
+  {
+    "recipe_id": "coconut-tuiles",
+    "i": 3,
+    "j": 3,
+    "n_in": 3,
+    "n_out": 14,
+    "n_distractor": 2,
+    "n_menu": 19
+  },
+  {
+    "recipe_id": "cole-slaw",
+    "i": 2,
+    "j": 2,
+    "n_in": 5,
+    "n_out": 11,
+    "n_distractor": 4,
+    "n_menu": 20
+  }
+]
