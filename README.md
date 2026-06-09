@@ -21,8 +21,16 @@ Completing the rest of the recipe becomes a failure mode (over-eagerness).
 
 Scaled run (n=50 tasks/model, menu-selection harness, **one uniform vLLM client —
 no personas**, metric frozen, analysis pre-registered). Models differ
-significantly in how often they reach for an unrequested next step, **at roughly
-equal performance** — i.e. the difference is *calibration, not capability*.
+significantly in how often they reach for an unrequested next step.
+
+> **Caveat (see [DIAGNOSIS.md](DIAGNOSIS.md)).** An earlier framing called this
+> "calibration, not capability." A read-only re-analysis walked that back: the
+> over-eagerness **co-varies with general scope-handling ability** — the weaker
+> models also pick more wrong-variant *distractors* (50/34/22%), are scope-blind to
+> *destructive* next steps, and overstep more as the temptation set grows.
+> Conditional-correctness looks flat only because it excludes that precision
+> signal. So the honest statement is "over-eagerness tracks scope-handling
+> capability," not a free-floating disposition.
 
 | model | over-eager rate (≥1 next step taken) | 95% CI | performance |
 |---|---|---|---|
@@ -56,6 +64,7 @@ recipe.) Full numbers, CIs, power, and the coupled/benign split in
 | [STEP3_POWER.md](STEP3_POWER.md) | model-diversity gate + power calc (n choice) |
 | [STEP3_ANALYSIS_PLAN.md](STEP3_ANALYSIS_PLAN.md) | pre-registered analysis (committed before runs) |
 | [FINDINGS.md](FINDINGS.md) | the 3-model result, the pilots, noise sources, assumptions |
+| [DIAGNOSIS.md](DIAGNOSIS.md) | re-analysis: is over-eagerness a disposition or a capability? (capability) |
 | [STATUS.md](STATUS.md) | checkpoint / what's next |
 
 ## Code (`src/`)

@@ -1,0 +1,75 @@
+# DIAGNOSIS — is the over-eagerness a movable disposition or a capability?
+
+Re-analysis only, off the cached n=50 × 3-model menu run (no new model/sim calls;
+deterministic menu rebuild + cached tags). Reproduce: `python3 src/diagnose.py`.
+
+## Verdict: **scope-adherence CAPABILITY (mixed, capability axis dominant).**
+
+Over-eagerness here **co-varies with general scope-handling ability**; it is *not*
+a cleanly movable disposition sitting on top of equal competence. The plot's
+"calibration, not capability" subtitle overclaims and has been corrected. There is
+a genuine next-step-overrun component, so it is not *purely* a capability artifact
+— hence "mixed" — but three of four cuts point at capability, and the persona
+prior says it won't move with naive prompting.
+
+## The numbers that decided it
+
+**§1 — composition.** The frozen over-eager metric already counts *only* next-step
+(outscope) items, so the headline 20/44/72% rates are genuine sequence overrun
+(~60–65% of all non-in-scope picks are real next-steps, not distractors). **But**
+the *distractor*-pick rate tracks model strength in lockstep with over-eagerness:
+
+| model | over-eager rate | distractor-pick rate (≥1) | distractor uptake |
+|---|---|---|---|
+| qwen3-30b-a3b | 20% | 22% | 11/100 |
+| qwen2.5-7b | 44% | 34% | 17/100 |
+| phi-3.5-mini | 72% | 50% | 29/100 |
+
+→ the weak model selects more *wrong* items too, not just more *next* items. That
+is **indiscriminate / low-precision selection**, a capability signal, and it is
+invisible to the performance axis (conditional-correctness only scores in-scope
+picks). This is the single most important cut and it weakens "disposition".
+
+**§2 — consequence-sensitivity (descriptive, n_coupled=5).** No model oversteps
+*less* when the next step is destructive; benign−coupled rate is −12% (phi), +2%
+(qwen2.5), −25% (qwen3). Every model is **scope-blind** to destructiveness — it is
+not weighing the boundary's consequences at all. (Tiny coupled n → descriptive,
+but the direction is uniform.)
+
+**§3 — load/temptation correlates (point-biserial, n=50).** Over-eagerness rises
+**significantly with the size of the temptation set** (n_outscope) for both weaker
+models — phi +0.32\*, qwen2.5 +0.33\* — and with menu length (qwen2.5 +0.32\*);
+qwen3 is flat (+0.07, +0.13, n.s.). phi also oversteps more on earlier slices
+(position −0.34\*, ≈ more recipe left to grab). More temptation → more overstep,
+for the weak models = a **load/comprehension effect**, not a fixed disposition.
+
+**§4 — is y flat by construction?** mean performance 0.88 / 0.89 / 0.95 and
+timidity (80/80/76%) and dropped-preconditions (0.38/0.38/0.40) *are* ≈flat — so
+on the in-scope dimensions the models are similar. But distractor-pick rate
+(50/34/22%) is **not** flat. So "flat y" holds only because conditional-
+correctness excludes the precision signal on which the models clearly differ.
+"Differ in calibration **not** capability" is therefore **false as stated**.
+
+**§5 — persona prior (from the menu pilot, already on disk).** When *one* model
+(Sonnet) was prompted cautious vs. eager under this same menu harness, selections
+barely moved (mean signed-scope identical at −0.16; same picks on 6/8 tasks). So a
+naive prompt-based "be less eager" intervention is a weak prior to start from.
+
+## What this means for the next study (per spec §6 reframe)
+
+The intervention question is **not** "can we nudge a movable disposition" but:
+**"can prompting / few-shot / structured decoding *compensate for* a
+scope-adherence deficit?"** That is a different but still-interesting study. When
+it starts (not yet): hold the model fixed — **phi-3.5-mini**, most headroom at
+72% — and vary only the intervention, same harness, same frozen metric. Given §5,
+lead with the stronger levers (few-shot demonstrations of stop-at-boundary,
+guided/constrained decoding) rather than a bare "don't overstep" instruction.
+
+## Honest caveats
+
+- coupled n=5 (§2) is descriptive, not powered.
+- distractor distinctness varies by task (some slices had 0 distractors and were
+  excluded at task-build time); the precision signal is real but coarse.
+- 3 models span only 2 vendors and correlate size with recency; "capability" here
+  means "general scope-handling ability of these three models", not an isolated
+  scaling law.

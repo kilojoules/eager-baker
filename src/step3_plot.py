@@ -74,7 +74,8 @@ def main():
     ax.set_xlabel("over-eagerness  →  (rate of tasks with ≥1 unrequested next step)")
     ax.set_ylabel("performance (conditional-correctness)")
     ax.set_title("Performance vs over-eagerness — 3 models (n=50, menu)\n"
-                 "flat y, spread x ⇒ the models differ in CALIBRATION, not capability")
+                 "y≈flat on conditional-correctness, but over-eagerness co-varies "
+                 "with scope-handling ability (see DIAGNOSIS.md)")
     ax.grid(alpha=0.3)
     fig.tight_layout(); fig.savefig(os.path.join(RES, "step3_perf_vs_eager.png"), dpi=140)
     print("wrote step3_perf_vs_eager.png")
