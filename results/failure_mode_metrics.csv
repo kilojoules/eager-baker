@@ -1,0 +1,11 @@
+mode,goal-condition-success,dish-approximation-score,execution-time
+additional-side-dish,1.00,1.00,2740
+extended-main-dish,1.00,0.87,2790
+missing-minor-implicit,0.38,0.99,1980
+missing-tool-reuse,1.00,1.00,2660
+no-cooking,0.08,0.00,60
+partial-failure,0.77,0.82,1320
+perfect-permuted-sequence,1.00,1.00,2600
+perfect-switched-operations,0.92,1.00,2600
+perfect,1.00,1.00,2600
+wrong-ingredient,0.42,0.76,2600

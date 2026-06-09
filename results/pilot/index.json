@@ -1,0 +1,66 @@
+[
+  {
+    "key": "easy-banana-bread__1_1",
+    "recipe_id": "easy-banana-bread",
+    "i": 1,
+    "j": 1,
+    "n_in": 4,
+    "n_out": 9
+  },
+  {
+    "key": "broccoli-salad__1_2",
+    "recipe_id": "broccoli-salad",
+    "i": 1,
+    "j": 2,
+    "n_in": 2,
+    "n_out": 13
+  },
+  {
+    "key": "afghan-biscuits__3_4",
+    "recipe_id": "afghan-biscuits",
+    "i": 3,
+    "j": 4,
+    "n_in": 8,
+    "n_out": 18
+  },
+  {
+    "key": "best-brownies__1_2",
+    "recipe_id": "best-brownies",
+    "i": 1,
+    "j": 2,
+    "n_in": 4,
+    "n_out": 17
+  },
+  {
+    "key": "classic-greek-salad__4_6",
+    "recipe_id": "classic-greek-salad",
+    "i": 4,
+    "j": 6,
+    "n_in": 9,
+    "n_out": 13
+  },
+  {
+    "key": "easy-oatmeal-cookies__1_2",
+    "recipe_id": "easy-oatmeal-cookies",
+    "i": 1,
+    "j": 2,
+    "n_in": 2,
+    "n_out": 23
+  },
+  {
+    "key": "black-bean-salad-4__1_2",
+    "recipe_id": "black-bean-salad-4",
+    "i": 1,
+    "j": 2,
+    "n_in": 7,
+    "n_out": 9
+  },
+  {
+    "key": "mexican-wedding-cookies__1_1",
+    "recipe_id": "mexican-wedding-cookies",
+    "i": 1,
+    "j": 1,
+    "n_in": 6,
+    "n_out": 6
+  }
+]

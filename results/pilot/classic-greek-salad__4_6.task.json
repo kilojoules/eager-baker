@@ -1,0 +1,182 @@
+{
+  "recipe_id": "classic-greek-salad",
+  "recipe_title": "Greek Salad With Lettuce and Lemon Garlic Dressing",
+  "slice_steps": [
+    4,
+    6
+  ],
+  "nl_instruction": "Thinly slice the radishes and onion. Slice the bell pepper into strips. Combine the cucumber and tomato with the sliced radishes and onion in a large bowl.",
+  "kitchen_state": {
+    "summary": "You are mid-recipe. Operations for the first 3 instruction step(s) and all ingredient prep are already done. The following objects are available:",
+    "available_objects": [
+      "proportioned radish  (from: fetch and proportion radish 3 piece)",
+      "proportioned onion  (from: fetch and proportion red-onion 1 piece)",
+      "proportioned bell pepper  (from: fetch and proportion red-bell-pepper 1 piece)",
+      "cubed cheese  (from: cut cubes)",
+      "pitted olives  (from: seed)",
+      "olive pits  (from: seed)",
+      "proportioned olive oil  (from: fetch and proportion olive-oil 4 tablespoon)",
+      "proportioned lemon juice  (from: fetch and proportion lemon-juice 8 tablespoon)",
+      "minced garlic  (from: cut minced)",
+      "proportioned oregano  (from: fetch and proportion fresh-oregano 1.5 teaspoon)",
+      "chopped lettuce  (from: cut chopped)",
+      "proportioned salt  (from: fetch and proportion salt 1/2 teaspoon)",
+      "proportioned pepper  (from: fetch and proportion ground-black-pepper 1/2 teaspoon)",
+      "cucumber peels  (from: peel)",
+      "sliced cucumber  (from: cut slices)",
+      "seeded tomato  (from: seed)",
+      "tomato core  (from: seed)",
+      "chopped tomato  (from: cut chopped)"
+    ],
+    "prefix_network": [
+      "(get-kitchen ?kitchen)",
+      "(fetch-and-proportion ?proportioned-cucumber ?ks-with-cucumber ?kitchen ?target-container-1 cucumber 1 piece)",
+      "(fetch-and-proportion ?proportioned-tomato ?ks-with-tomato ?ks-with-cucumber ?target-container-2 tomato 1 piece)",
+      "(fetch-and-proportion ?proportioned-radish ?ks-with-radish ?ks-with-tomato ?target-container-3 radish 3 piece)",
+      "(fetch-and-proportion ?proportioned-onion ?ks-with-onion ?ks-with-radish ?target-container-4 red-onion 1 piece)",
+      "(fetch-and-proportion ?proportioned-bell-pepper ?ks-with-bell-pepper ?ks-with-onion ?target-container-5 red-bell-pepper 1 piece)",
+      "(fetch-and-proportion ?proportioned-cheese ?ks-with-cheese ?ks-with-bell-pepper ?target-container-6 feta-cheese 115 g)",
+      "(cut ?cubed-cheese ?ks-with-cubed-cheese ?ks-with-cheese ?proportioned-cheese cubes ?knife)",
+      "(fetch-and-proportion ?proportioned-olives ?ks-with-olives ?ks-with-cubed-cheese ?target-container-7 black-olive 90 g)",
+      "(seed ?pitted-olives ?olive-pits ?ks-with-pitted-olives ?ks-with-olives ?proportioned-olives ?knife)",
+      "(fetch-and-proportion ?proportioned-olive-oil ?ks-with-olive-oil ?ks-with-pitted-olives ?target-container-8 olive-oil 4 tablespoon)",
+      "(fetch-and-proportion ?proportioned-lemon-juice ?ks-with-lemon-juice ?ks-with-olive-oil ?target-container-9 lemon-juice 8 tablespoon)",
+      "(fetch-and-proportion ?proportioned-garlic ?ks-with-garlic ?ks-with-lemon-juice ?target-container-10 garlic 1 piece)",
+      "(cut ?minced-garlic ?ks-with-minced-garlic ?ks-with-garlic ?proportioned-garlic minced ?knife)",
+      "(fetch-and-proportion ?proportioned-oregano ?ks-with-oregano ?ks-with-minced-garlic ?target-container-11 fresh-oregano 1.5 teaspoon)",
+      "(fetch-and-proportion ?proportioned-lettuce ?ks-with-lettuce ?ks-with-oregano ?target-container-12 romaine-lettuce 1 piece)",
+      "(wash ?washed-lettuce ?ks-with-washed-lettuce ?ks-with-lettuce ?proportioned-lettuce)",
+      "(cut ?chopped-lettuce ?ks-with-chopped-lettuce ?ks-with-washed-lettuce ?washed-lettuce chopped ?knife)",
+      "(fetch-and-proportion ?proportioned-salt ?ks-with-salt ?ks-with-chopped-lettuce ?target-container-13 salt 1/2 teaspoon)",
+      "(fetch-and-proportion ?proportioned-pepper ?ks-with-pepper ?ks-with-salt ?target-container-14 ground-black-pepper 1/2 teaspoon)",
+      "(peel ?peeled-cucumber ?cucumber-peels ?ks-with-peeled-cucumber ?ks-with-pepper ?proportioned-cucumber ?knife)",
+      "(cut ?sliced-cucumber ?ks-with-sliced-cucumber ?ks-with-peeled-cucumber ?peeled-cucumber slices ?knife)",
+      "(seed ?seeded-tomato ?tomato-core ?ks-with-seeded-tomato ?ks-with-sliced-cucumber ?proportioned-tomato ?knife)",
+      "(cut ?chopped-tomato ?ks-with-chopped-tomato ?ks-with-seeded-tomato ?proportioned-tomato chopped ?knife)"
+    ],
+    "stray_preconditions": []
+  },
+  "in_scope_ops": [
+    {
+      "idx": 24,
+      "name": "cut",
+      "sexp": "(cut ?sliced-radish ?ks-with-sliced-radish ?ks-with-chopped-tomato ?proportioned-radish fine-slices ?knife)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 25,
+      "name": "cut",
+      "sexp": "(cut ?sliced-onion ?ks-with-sliced-onion ?ks-with-sliced-radish ?proportioned-onion fine-slices ?knife)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 26,
+      "name": "cut",
+      "sexp": "(cut ?sliced-bell-pepper ?ks-with-sliced-bell-pepper ?ks-with-sliced-onion ?proportioned-onion fine-slices ?knife)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 27,
+      "name": "fetch",
+      "sexp": "(fetch ?large-bowl ?ks-with-large-bowl ?ks-with-sliced-bell-pepper large-bowl 1)",
+      "implicit_precondition": true
+    },
+    {
+      "idx": 28,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-large-bowl ?large-bowl ?sliced-cucumber ?quantity-a ?unit-a)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 29,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?chopped-tomato ?quantity-b ?unit-b)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 30,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-c ?rest-c ?output-ks-c ?output-ks-b ?output-container-b ?sliced-radish ?quantity-c ?unit-c)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 31,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-d ?rest-d ?output-ks-d ?output-ks-c ?output-container-c ?sliced-onion ?quantity-d ?unit-d)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 32,
+      "name": "mingle",
+      "sexp": "(mingle ?veggies-mix ?ks-with-veggies-mix ?output-ks-d ?output-container-d ?wooden-spoon)",
+      "implicit_precondition": false
+    }
+  ],
+  "out_of_scope_ops": [
+    {
+      "idx": 33,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-e ?rest-e ?output-ks-e ?ks-with-veggies-mix ?veggies-mix ?cubed-cheese ?quantity-e ?unit-e)"
+    },
+    {
+      "idx": 34,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-f ?rest-f ?output-ks-f ?output-ks-e ?output-container-e ?pitted-olives ?quantity-f ?unit-f)"
+    },
+    {
+      "idx": 35,
+      "name": "mingle",
+      "sexp": "(mingle ?cheesy-veggies-mix ?ks-with-cheesy-veggies-mix ?output-ks-f ?output-container-f ?wooden-spoon)"
+    },
+    {
+      "idx": 36,
+      "name": "fetch",
+      "sexp": "(fetch ?small-bowl ?ks-with-small-bowl ?ks-with-cheesy-veggies-mix small-bowl 1)"
+    },
+    {
+      "idx": 37,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-g ?rest-g ?output-ks-g ?ks-with-small-bowl ?small-bowl ?proportioned-olive-oil ?quantity-g ?unit-g)"
+    },
+    {
+      "idx": 38,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-h ?rest-h ?output-ks-h ?output-ks-g ?output-container-g ?proportioned-lemon-juice ?quantity-h ?unit-h)"
+    },
+    {
+      "idx": 39,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-i ?rest-i ?output-ks-i ?output-ks-h ?output-container-h ?minced-garlic ?quantity-i ?unit-i)"
+    },
+    {
+      "idx": 40,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-j ?rest-j ?output-ks-j ?output-ks-i ?output-container-i ?proportioned-oregano ?quantity-j ?unit-j)"
+    },
+    {
+      "idx": 41,
+      "name": "mix",
+      "sexp": "(mix ?dressing ?ks-with-dressing ?output-ks-j ?output-container-j ?whisk)"
+    },
+    {
+      "idx": 42,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-k ?rest-k ?output-ks-k ?ks-with-dressing ?cheesy-veggies-mix ?dressing ?quantity-k ?unit-k)"
+    },
+    {
+      "idx": 43,
+      "name": "mingle",
+      "sexp": "(mingle ?salad ?ks-with-salad ?output-ks-k ?output-container-k ?wooden-spoon)"
+    },
+    {
+      "idx": 44,
+      "name": "sprinkle",
+      "sexp": "(sprinkle ?salt-salad ?ks-with-salt-salad ?ks-with-salad ?salad ?proportioned-salt)"
+    },
+    {
+      "idx": 45,
+      "name": "sprinkle",
+      "sexp": "(sprinkle ?greek-salad ?ks-with-greek-salad ?ks-with-salt-salad ?salt-salad ?proportioned-pepper)"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "recipe_id": "easy-oatmeal-cookies",
+  "recipe_title": "Easy Oatmeal Cookies",
+  "slice_steps": [
+    1,
+    2
+  ],
+  "nl_instruction": "Preheat the oven to 175 degrees C. Soak raisins in hot water; set aside.",
+  "kitchen_state": {
+    "summary": "You are mid-recipe. Operations for the first 0 instruction step(s) and all ingredient prep are already done. The following objects are available:",
+    "available_objects": [
+      "proportioned raisins  (from: fetch and proportion raisin 150 g)",
+      "hot water  (from: bring to temperature 60 degrees-celsius)",
+      "proportioned flour  (from: fetch and proportion all-purpose-flour 280 g)",
+      "proportioned baking soda  (from: fetch and proportion baking-soda 1 teaspoon)",
+      "proportioned salt  (from: fetch and proportion salt 1 teaspoon)",
+      "proportioned oats  (from: fetch and proportion oats 160 g)",
+      "proportioned cinnamon  (from: fetch and proportion ground-cinnamon 1 teaspoon)",
+      "proportioned nutmeg  (from: fetch and proportion ground-nutmeg 1 teaspoon)",
+      "proportioned sugar  (from: fetch and proportion brown-sugar 200 g)",
+      "chopped walnuts  (from: cut chopped)",
+      "proportioned eggs  (from: fetch and proportion egg 2 piece)",
+      "proportioned oil  (from: fetch and proportion vegetable-oil 200 ml)",
+      "proportioned vanilla  (from: fetch and proportion vanilla-extract 1 teaspoon)"
+    ],
+    "prefix_network": [
+      "(get-kitchen ?kitchen)",
+      "(fetch-and-proportion ?proportioned-raisins ?kitchen-state-with-raisins ?kitchen ?target-container-1 raisin 150 g)",
+      "(fetch-and-proportion ?proportioned-water ?kitchen-state-with-water ?kitchen-state-with-raisins ?target-container-2 water 125 ml)",
+      "(bring-to-temperature ?hot-water ?kitchen-state-with-hot-water ?kitchen-state-with-water ?proportioned-water 60 degrees-celsius)",
+      "(fetch-and-proportion ?proportioned-flour ?kitchen-state-with-flour ?kitchen-state-with-hot-water ?target-container-3 all-purpose-flour 280 g)",
+      "(fetch-and-proportion ?proportioned-baking-soda ?kitchen-state-with-baking-soda ?kitchen-state-with-flour ?target-container-4 baking-soda 1 teaspoon)",
+      "(fetch-and-proportion ?proportioned-salt ?kitchen-state-with-salt ?kitchen-state-with-baking-soda ?target-container-5 salt 1 teaspoon)",
+      "(fetch-and-proportion ?proportioned-oats ?kitchen-state-with-oats ?kitchen-state-with-salt ?target-container-6 oats 160 g)",
+      "(fetch-and-proportion ?proportioned-cinnamon ?kitchen-state-with-cinnamon ?kitchen-state-with-oats ?target-container-7 ground-cinnamon 1 teaspoon)",
+      "(fetch-and-proportion ?proportioned-nutmeg ?kitchen-state-with-nutmeg ?kitchen-state-with-cinnamon ?target-container-8 ground-nutmeg 1 teaspoon)",
+      "(fetch-and-proportion ?proportioned-sugar ?kitchen-state-with-sugar ?kitchen-state-with-nutmeg ?target-container-9 brown-sugar 200 g)",
+      "(fetch-and-proportion ?proportioned-walnuts ?kitchen-state-with-walnuts ?kitchen-state-with-sugar ?target-container-10 walnut 75 g)",
+      "(cut ?chopped-walnuts ?kitchen-state-with-chopped-walnuts ?kitchen-state-with-walnuts ?proportioned-walnuts chopped ?knife)",
+      "(fetch-and-proportion ?proportioned-eggs ?kitchen-state-with-eggs ?kitchen-state-with-chopped-walnuts ?target-container-11 egg 2 piece)",
+      "(fetch-and-proportion ?proportioned-oil ?kitchen-state-with-oil ?kitchen-state-with-eggs ?target-container-12 vegetable-oil 200 ml)",
+      "(fetch-and-proportion ?proportioned-vanilla ?kitchen-state-with-vanilla ?kitchen-state-with-oil ?target-container-13 vanilla-extract 1 teaspoon)"
+    ],
+    "stray_preconditions": []
+  },
+  "in_scope_ops": [
+    {
+      "idx": 16,
+      "name": "preheat-oven",
+      "sexp": "(preheat-oven ?preheated-oven ?kitchen-state-with-preheating-oven ?kitchen-state-with-vanilla ?oven 175 degrees-celsius)",
+      "implicit_precondition": true
+    },
+    {
+      "idx": 17,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?container-with-soaked-raisins ?empty-raisin-bowl ?kitchen-state-with-soaking-raisins ?kitchen-state-with-preheating-oven ?hot-water ?proportioned-raisins ?quantity ?unit)",
+      "implicit_precondition": false
+    }
+  ],
+  "out_of_scope_ops": [
+    {
+      "idx": 18,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?flour-with-soda ?empty-soda-bowl ?kitchen-state-with-flour-and-soda ?kitchen-state-with-soaking-raisins ?proportioned-flour ?proportioned-baking-soda ?quantity-1 ?unit-1)"
+    },
+    {
+      "idx": 19,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?flour-with-soda-and-salt ?empty-salt-bowl ?kitchen-state-with-flour-soda-and-salt ?kitchen-state-with-flour-and-soda ?flour-with-soda ?proportioned-salt ?quantity-2 ?unit-2)"
+    },
+    {
+      "idx": 20,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?flour-soda-salt-cinnamon ?empty-cinnamon-bowl ?kitchen-state-with-flour-soda-salt-cinnamon ?kitchen-state-with-flour-soda-and-salt ?flour-with-soda-and-salt ?proportioned-cinnamon ?quantity-3 ?unit-3)"
+    },
+    {
+      "idx": 21,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?flour-soda-salt-cinnamon-nutmeg ?empty-nutmeg-bowl ?kitchen-state-with-flour-soda-salt-cinnamon-nutmeg ?kitchen-state-with-flour-soda-salt-cinnamon ?flour-soda-salt-cinnamon ?proportioned-nutmeg ?quantity-4 ?unit-4)"
+    },
+    {
+      "idx": 22,
+      "name": "fetch",
+      "sexp": "(fetch ?large-bowl ?kitchen-state-with-fetched-bowl-for-sifting ?kitchen-state-with-flour-soda-salt-cinnamon-nutmeg large-bowl 1)"
+    },
+    {
+      "idx": 23,
+      "name": "sift",
+      "sexp": "(sift ?bowl-with-sifted-ingredients ?kitchen-state-after-sifting ?kitchen-state-with-fetched-bowl-for-sifting ?large-bowl ?flour-soda-salt-cinnamon-nutmeg ?sifting-tool)"
+    },
+    {
+      "idx": 24,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-x ?rest-x ?output-kitchen-state-x ?kitchen-state-after-sifting ?bowl-with-sifted-ingredients ?proportioned-oats ?quantity-x ?unit-x)"
+    },
+    {
+      "idx": 25,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-y ?rest-y ?output-kitchen-state-y ?output-kitchen-state-x ?output-container-x ?proportioned-sugar ?quantity-y ?unit-y)"
+    },
+    {
+      "idx": 26,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-z ?rest-z ?output-kitchen-state-z ?output-kitchen-state-y ?output-container-y ?chopped-walnuts ?quantity-z ?unit-z)"
+    },
+    {
+      "idx": 27,
+      "name": "mix",
+      "sexp": "(mix ?blended-in-oats-mixture ?kitchen-state-with-blended-oats-in-mixture ?output-kitchen-state-z ?output-container-z ?mixing-tool)"
+    },
+    {
+      "idx": 28,
+      "name": "fetch",
+      "sexp": "(fetch ?bowl-for-eggs ?kitchen-state-with-fetched-bowl-for-eggs ?kitchen-state-with-blended-oats-in-mixture large-bowl 1)"
+    },
+    {
+      "idx": 29,
+      "name": "crack",
+      "sexp": "(crack ?container-w-cracked-eggs ?kitchen-state-with-cracked-eggs ?kitchen-state-with-fetched-bowl-for-eggs ?proportioned-eggs ?bowl-for-eggs)"
+    },
+    {
+      "idx": 30,
+      "name": "fetch",
+      "sexp": "(fetch ?fetched-fork ?kitchen-state-with-fetched-fork ?kitchen-state-with-cracked-eggs fork 1)"
+    },
+    {
+      "idx": 31,
+      "name": "beat",
+      "sexp": "(beat ?container-w-beaten-eggs ?kitchen-state-w-beaten-eggs ?kitchen-state-with-fetched-fork ?container-w-cracked-eggs ?fetched-fork)"
+    },
+    {
+      "idx": 32,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-a ?rest-a ?output-kitchen-state-a ?kitchen-state-w-beaten-eggs ?container-w-beaten-eggs ?proportioned-oil ?quantity-a ?unit-a)"
+    },
+    {
+      "idx": 33,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-b ?rest-b ?output-kitchen-state-b ?output-kitchen-state-a ?output-container-a ?proportioned-vanilla ?quantity-b ?unit-b)"
+    },
+    {
+      "idx": 34,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?container-w-eggs-oil-vanilla-raisins ?rest-c ?output-kitchen-state-c ?output-kitchen-state-b ?output-container-b ?container-with-soaked-raisins ?quantity-c ?unit-c)"
+    },
+    {
+      "idx": 35,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?container-with-flour-and-mixture ?rest-d ?output-kitchen-state-d ?output-kitchen-state-c ?flour-soda-salt-cinnamon-nutmeg ?container-w-eggs-oil-vanilla-raisins ?quantity-d ?unit-d)"
+    },
+    {
+      "idx": 36,
+      "name": "mix",
+      "sexp": "(mix ?dough ?kitchen-state-with-dough ?output-kitchen-state-d ?container-with-flour-and-mixture ?mixing-tool)"
+    },
+    {
+      "idx": 37,
+      "name": "fetch",
+      "sexp": "(fetch ?cookie-sheet ?kitchen-state-with-cookie-sheet ?kitchen-state-with-dough cookie-sheet 1)"
+    },
+    {
+      "idx": 38,
+      "name": "portion-and-arrange",
+      "sexp": "(portion-and-arrange ?portioned-dough ?kitchen-state-with-portions ?kitchen-state-with-cookie-sheet ?dough 1 tablespoon ?pattern ?countertop)"
+    },
+    {
+      "idx": 39,
+      "name": "transfer-items",
+      "sexp": "(transfer-items ?sheet-with-dough ?kitchen-state-with-dough-on-sheet ?kitchen-state-with-portions ?portioned-dough 5-cm-apart ?cookie-sheet)"
+    },
+    {
+      "idx": 40,
+      "name": "bake",
+      "sexp": "(bake ?baked-cookies ?kitchen-state-with-baked-cookies ?kitchen-state-with-dough-on-sheet ?sheet-with-dough ?preheated-oven 10 minute ?bake-quantity ?bake-unit)"
+    }
+  ]
+}

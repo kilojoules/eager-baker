@@ -1,0 +1,103 @@
+{
+  "recipe_id": "mexican-wedding-cookies",
+  "recipe_title": "Mexican Wedding Cookies",
+  "slice_steps": [
+    1,
+    1
+  ],
+  "nl_instruction": "Combine all ingredients.",
+  "kitchen_state": {
+    "summary": "You are mid-recipe. Operations for the first 0 instruction step(s) and all ingredient prep are already done. The following objects are available:",
+    "available_objects": [
+      "warm butter  (from: bring to temperature)",
+      "proportioned powdered sugar  (from: fetch and proportion powdered-white-sugar 120 g)",
+      "sifted flour  (from: sift)",
+      "ground walnut  (from: grind)",
+      "proportioned vanilla  (from: fetch and proportion vanilla 1 teaspoon)",
+      "additional powdered sugar  (from: fetch and proportion powdered-white-sugar 60 g)"
+    ],
+    "prefix_network": [
+      "(get-kitchen ?kitchen)",
+      "(fetch-and-proportion ?proportioned-butter ?ks-with-butter ?kitchen ?target-container-1 butter 230 g)",
+      "(bring-to-temperature ?warm-butter ?ks-with-warm-butter ?ks-with-butter ?proportioned-butter ?room-temp-quantity ?room-temp-unit)",
+      "(fetch-and-proportion ?proportioned-powdered-sugar ?ks-with-powdered-sugar ?ks-with-warm-butter ?target-container-2 powdered-white-sugar 120 g)",
+      "(fetch-and-proportion ?proportioned-flour ?ks-with-flour ?ks-with-powdered-sugar ?target-container-3 all-purpose-flour 240 g)",
+      "(sift ?sifted-flour ?ks-with-sifted-flour ?ks-with-flour ?target-container-4 ?proportioned-flour ?sifting-tool)",
+      "(fetch-and-proportion ?proportioned-walnut ?ks-with-walnut ?ks-with-sifted-flour ?target-container-5 walnut 120 g)",
+      "(grind ?ground-walnut ?ks-with-ground-walnut ?ks-with-walnut ?proportioned-walnut ?grinding-tool)",
+      "(fetch-and-proportion ?proportioned-vanilla ?ks-with-vanilla ?ks-with-ground-walnut ?target-container-7 vanilla 1 teaspoon)",
+      "(fetch-and-proportion ?additional-powdered-sugar ?ks-with-additional-sugar ?ks-with-vanilla ?target-container-8 powdered-white-sugar 60 g)"
+    ],
+    "stray_preconditions": []
+  },
+  "in_scope_ops": [
+    {
+      "idx": 10,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-additional-sugar ?empty-container ?warm-butter ?quantity-a ?unit-a)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 11,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?proportioned-powdered-sugar ?quantity-b ?unit-b)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 12,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-c ?rest-c ?output-ks-c ?output-ks-b ?output-container-b ?sifted-flour ?quantity-c ?unit-c)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 13,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-d ?rest-d ?output-ks-d ?output-ks-c ?output-container-c ?ground-walnut ?quantity-d ?unit-d)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 14,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-e ?rest-e ?output-ks-e ?output-ks-d ?output-container-d ?proportioned-vanilla ?quantity-e ?unit-e)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 15,
+      "name": "mix",
+      "sexp": "(mix ?dough ?ks-with-dough ?output-ks-e ?output-container-e ?mixing-tool)",
+      "implicit_precondition": false
+    }
+  ],
+  "out_of_scope_ops": [
+    {
+      "idx": 16,
+      "name": "portion-and-arrange",
+      "sexp": "(portion-and-arrange ?portioned-dough ?ks-with-dough-portions ?ks-with-dough ?dough 25 g ?pattern ?countertop)"
+    },
+    {
+      "idx": 17,
+      "name": "shape",
+      "sexp": "(shape ?bakeable-balls ?ks-with-balls ?ks-with-dough-portions ?portioned-dough ball-shape)"
+    },
+    {
+      "idx": 18,
+      "name": "fetch",
+      "sexp": "(fetch ?cookie-sheet ?ks-with-cookie-sheet ?ks-with-balls cookie-sheet 1)"
+    },
+    {
+      "idx": 19,
+      "name": "transfer-items",
+      "sexp": "(transfer-items ?tray-with-balls ?ks-with-balls-tray ?ks-with-cookie-sheet ?bakeable-balls ?default-pattern ?cookie-sheet)"
+    },
+    {
+      "idx": 20,
+      "name": "bake",
+      "sexp": "(bake ?baked-balls ?ks-with-baked-balls ?ks-with-balls-tray ?tray-with-balls ?oven 10 minute 180 degrees-celsius)"
+    },
+    {
+      "idx": 21,
+      "name": "dip",
+      "sexp": "(dip ?mexican-wedding-cookies ?ks-with-mexican-wedding-cookies ?ks-with-baked-balls ?baked-balls ?additional-powdered-sugar)"
+    }
+  ]
+}

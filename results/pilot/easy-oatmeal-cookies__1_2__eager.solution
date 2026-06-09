@@ -1,0 +1,6 @@
+(fetch ?oven ?ks-1 ?ks-0 oven 1)
+(preheat-oven ?preheated-oven ?ks-2 ?ks-1 ?oven 175 degrees-celsius)
+(fetch ?soaking-bowl ?ks-3 ?ks-2 bowl 1)
+(transfer-contents ?hot-water-in-bowl ?rest-hot-water ?ks-4 ?ks-3 ?soaking-bowl ?hot-water 1 all)
+(transfer-contents ?raisins-in-bowl ?rest-raisins ?ks-5 ?ks-4 ?soaking-bowl ?proportioned-raisins 1 all)
+(leave-for-time ?soaked-raisins ?ks-6 ?ks-5 ?soaking-bowl 5 minutes)

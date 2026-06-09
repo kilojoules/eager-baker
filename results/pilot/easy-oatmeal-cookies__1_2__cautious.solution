@@ -1,0 +1,5 @@
+(preheat-oven ?preheated-oven ?ks-1 ?ks-0 ?oven 175 degrees-celsius)
+(fetch ?soaking-bowl ?ks-2 ?ks-1 bowl 1)
+(transfer-contents ?raisins-in-bowl ?rest-raisins ?ks-3 ?ks-2 ?soaking-bowl ?proportioned-raisins 150 gram)
+(transfer-contents ?water-in-bowl ?rest-water ?ks-4 ?ks-3 ?soaking-bowl ?hot-water 1 all)
+(leave-for-time ?soaked-raisins ?ks-5 ?ks-4 ?soaking-bowl 10 minutes)

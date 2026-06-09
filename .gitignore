@@ -1,0 +1,6 @@
+# Large benchmark download + extraction (re-fetch via SETUP.md §1)
+reb.zip
+reb_extracted/
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,8 @@
+(transfer-contents ?butter-sugar-bowl ?rest1 ?ks1 ?ks0 ?mixing-bowl ?butter-at-room-temp all all)
+(transfer-contents ?butter-sugar-bowl2 ?rest2 ?ks2 ?ks1 ?mixing-bowl ?proportioned-caster-sugar all all)
+(beat ?creamed-mixture ?ks3 ?ks2 ?butter-sugar-bowl2 ?electric-mixer)
+(sift ?sifted-dry ?ks4 ?ks3 ?sifting-bowl ?proportioned-all-purpose-flour ?sifter)
+(transfer-contents ?sifted-dry2 ?rest3 ?ks5 ?ks4 ?sifting-bowl ?proportioned-cocoa-powder all all)
+(sift ?sifted-dry3 ?ks6 ?ks5 ?sifting-bowl ?sifted-dry2 ?sifter)
+(transfer-contents ?final-mixture ?rest4 ?ks7 ?ks6 ?creamed-mixture ?sifted-dry3 all all)
+(mix ?biscuit-dough ?ks8 ?ks7 ?final-mixture ?wooden-spoon)

@@ -1,0 +1,149 @@
+{
+  "recipe_id": "best-brownies",
+  "recipe_title": "Absolutely Best Brownies",
+  "slice_steps": [
+    1,
+    2
+  ],
+  "nl_instruction": "Preheat oven to 175 degrees C. Grease and flour a baking pan.",
+  "kitchen_state": {
+    "summary": "You are mid-recipe. Operations for the first 0 instruction step(s) and all ingredient prep are already done. The following objects are available:",
+    "available_objects": [
+      "melted butter  (from: melt)",
+      "proportioned sugar  (from: fetch and proportion white-sugar 200 g)",
+      "proportioned eggs  (from: fetch and proportion egg 2 piece)",
+      "proportioned flour  (from: fetch and proportion all-purpose-flour 70 g)",
+      "proportioned cocoa  (from: fetch and proportion cocoa-powder 45 g)",
+      "proportioned salt  (from: fetch and proportion salt 0.25 teaspoon)",
+      "proportioned vanilla  (from: fetch and proportion vanilla-extract 1 teaspoon)",
+      "chopped walnuts  (from: cut chopped)"
+    ],
+    "prefix_network": [
+      "(get-kitchen ?kitchen-state)",
+      "(fetch-and-proportion ?proportioned-butter ?kitchen-state-with-butter ?kitchen-state ?new-container-1 butter 120 g)",
+      "(melt ?melted-butter ?kitchen-state-with-melted-butter ?kitchen-state-with-butter ?proportioned-butter ?microwave)",
+      "(fetch-and-proportion ?proportioned-sugar ?kitchen-state-with-sugar ?kitchen-state-with-melted-butter ?new-container-2 white-sugar 200 g)",
+      "(fetch-and-proportion ?proportioned-eggs ?kitchen-state-with-eggs ?kitchen-state-with-sugar ?new-container-3 egg 2 piece)",
+      "(fetch-and-proportion ?proportioned-flour ?kitchen-state-with-flour ?kitchen-state-with-eggs ?new-container-4 all-purpose-flour 70 g)",
+      "(fetch-and-proportion ?proportioned-cocoa ?kitchen-state-with-cocoa ?kitchen-state-with-flour ?new-container-5 cocoa-powder 45 g)",
+      "(fetch-and-proportion ?proportioned-salt ?kitchen-state-with-salt ?kitchen-state-with-cocoa ?new-container-6 salt 0.25 teaspoon)",
+      "(fetch-and-proportion ?proportioned-vanilla ?kitchen-state-with-vanilla ?kitchen-state-with-salt ?new-container-7 vanilla-extract 1 teaspoon)",
+      "(fetch-and-proportion ?proportioned-walnuts ?kitchen-state-with-walnuts ?kitchen-state-with-vanilla ?new-container-8 walnut 50 g)",
+      "(cut ?chopped-walnuts ?kitchen-state-with-chopped-walnuts ?kitchen-state-with-walnuts ?proportioned-walnuts chopped ?knife)"
+    ],
+    "stray_preconditions": []
+  },
+  "in_scope_ops": [
+    {
+      "idx": 11,
+      "name": "preheat-oven",
+      "sexp": "(preheat-oven ?preheated-oven ?kitchen-state-with-preheated-oven ?kitchen-state-with-chopped-walnuts ?oven 175 degrees-celsius)",
+      "implicit_precondition": true
+    },
+    {
+      "idx": 12,
+      "name": "fetch",
+      "sexp": "(fetch ?pan ?kitchen-state-with-pan ?kitchen-state-with-preheated-oven pan 1)",
+      "implicit_precondition": true
+    },
+    {
+      "idx": 13,
+      "name": "grease",
+      "sexp": "(grease ?greased-pan ?kitchen-state-with-greased-pan ?kitchen-state-with-pan ?pan ?grease)",
+      "implicit_precondition": true
+    },
+    {
+      "idx": 14,
+      "name": "flour",
+      "sexp": "(flour ?floured-pan ?kitchen-state-with-floured-pan ?kitchen-state-with-greased-pan ?greased-pan ?all-purpose-flour)",
+      "implicit_precondition": false
+    }
+  ],
+  "out_of_scope_ops": [
+    {
+      "idx": 15,
+      "name": "fetch",
+      "sexp": "(fetch ?medium-bowl-1 ?kitchen-state-with-medium-bowl ?kitchen-state-with-floured-pan medium-bowl 1)"
+    },
+    {
+      "idx": 16,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-x ?rest-x ?output-kitchen-state-x ?kitchen-state-with-medium-bowl ?medium-bowl-1 ?melted-butter ?quantity-x ?unit-x)"
+    },
+    {
+      "idx": 17,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-y ?rest-y ?output-kitchen-state-y ?output-kitchen-state-x ?output-container-x ?proportioned-sugar ?quantity-y ?unit-y)"
+    },
+    {
+      "idx": 18,
+      "name": "beat",
+      "sexp": "(beat ?beaten-mixture-bowl ?kitchen-state-with-beaten-mixture ?output-kitchen-state-y ?output-container-y ?beating-tool)"
+    },
+    {
+      "idx": 19,
+      "name": "crack",
+      "sexp": "(crack ?mixture-with-cracked-eggs ?kitchen-state-with-cracked-eggs ?kitchen-state-with-beaten-mixture ?proportioned-eggs ?beaten-mixture-bowl)"
+    },
+    {
+      "idx": 20,
+      "name": "mix",
+      "sexp": "(mix ?egg-sugar-mixture ?kitchen-state-with-egg-sugar-mixture ?kitchen-state-with-cracked-eggs ?mixture-with-cracked-eggs ?beating-tool)"
+    },
+    {
+      "idx": 21,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-z ?rest-z ?output-kitchen-state-z ?kitchen-state-with-egg-sugar-mixture ?egg-sugar-mixture ?proportioned-flour ?quantity-z ?unit-z)"
+    },
+    {
+      "idx": 22,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-a ?rest-a ?output-kitchen-state-a ?output-kitchen-state-z ?output-container-z ?proportioned-cocoa ?quantity-a ?unit-a)"
+    },
+    {
+      "idx": 23,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-b ?rest-b ?output-kitchen-state-b ?output-kitchen-state-a ?output-container-a ?proportioned-salt ?quantity-b ?unit-b)"
+    },
+    {
+      "idx": 24,
+      "name": "mix",
+      "sexp": "(mix ?flour-sugar-mixture-bowl ?kitchen-state-with-flour-sugar-mixture ?output-kitchen-state-b ?output-container-b ?beating-tool)"
+    },
+    {
+      "idx": 25,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-c ?rest-c ?output-kitchen-state-c ?kitchen-state-with-flour-sugar-mixture ?flour-sugar-mixture-bowl ?proportioned-vanilla ?quantity-c ?unit-c)"
+    },
+    {
+      "idx": 26,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-d ?rest-d ?output-kitchen-state-d ?output-kitchen-state-c ?output-container-c ?chopped-walnuts ?quantity-d ?unit-d)"
+    },
+    {
+      "idx": 27,
+      "name": "mix",
+      "sexp": "(mix ?dough ?kitchen-state-with-dough ?output-kitchen-state-d ?output-container-d ?beating-tool)"
+    },
+    {
+      "idx": 28,
+      "name": "spread",
+      "sexp": "(spread ?pan-with-dough ?kitchen-state-with-dough-in-pan ?kitchen-state-with-dough ?floured-pan ?dough ?scraper)"
+    },
+    {
+      "idx": 29,
+      "name": "bake",
+      "sexp": "(bake ?baked-brownie ?kitchen-state-with-baked-brownie ?kitchen-state-with-dough-in-pan ?pan-with-dough ?preheated-oven 25 minute ?temp-quantity ?temp-unit)"
+    },
+    {
+      "idx": 30,
+      "name": "bring-to-temperature",
+      "sexp": "(bring-to-temperature ?cooled-brownie ?kitchen-state-with-cooled-brownie ?kitchen-state-with-baked-brownie ?baked-brownie ?room-temp-quantity ?room-temp-unit)"
+    },
+    {
+      "idx": 31,
+      "name": "cut",
+      "sexp": "(cut ?cut-brownie ?kitchen-state-with-cut-brownie ?kitchen-state-with-cooled-brownie ?cooled-brownie squares ?knife)"
+    }
+  ]
+}

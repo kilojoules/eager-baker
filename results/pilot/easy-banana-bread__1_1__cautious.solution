@@ -1,0 +1,4 @@
+(crack ?cracked-eggs ?ks1 ?ks0 ?proportioned-eggs ?mixing-bowl)
+(transfer-contents ?transferred-butter ?rest-butter ?ks2 ?ks1 ?mixing-bowl ?proportioned-butter all g)
+(transfer-contents ?transferred-sugar ?rest-sugar ?ks3 ?ks2 ?mixing-bowl ?proportioned-sugar all g)
+(beat ?creamed-mixture ?ks4 ?ks3 ?mixing-bowl ?hand-mixer)

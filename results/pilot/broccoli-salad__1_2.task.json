@@ -1,0 +1,114 @@
+{
+  "recipe_id": "broccoli-salad",
+  "recipe_title": "Broccoli Salad",
+  "slice_steps": [
+    1,
+    2
+  ],
+  "nl_instruction": "Cut cooked bacon into pieces. Chop up broccoli into bite size pieces.",
+  "kitchen_state": {
+    "summary": "You are mid-recipe. Operations for the first 0 instruction step(s) and all ingredient prep are already done. The following objects are available:",
+    "available_objects": [
+      "proportioned broccoli  (from: fetch and proportion broccoli 1 piece)",
+      "chopped onion  (from: cut chopped)",
+      "proportioned bacon  (from: fetch and proportion cooked-bacon 450 g)",
+      "proportioned vinegar  (from: fetch and proportion cider-vinegar 2.5 tablespoon)",
+      "proportioned mayo  (from: fetch and proportion mayonnaise 230 g)",
+      "proportioned sugar  (from: fetch and proportion white-sugar 70 g)",
+      "proportioned cheese  (from: fetch and proportion grated-mozzarella 170 g)"
+    ],
+    "prefix_network": [
+      "(get-kitchen ?kitchen)",
+      "(fetch-and-proportion ?proportioned-broccoli ?ks-with-broccoli ?kitchen ?target-container-1 broccoli 1 piece)",
+      "(fetch-and-proportion ?proportioned-onion ?ks-with-onion ?ks-with-broccoli ?target-container-2 red-onion 50 g)",
+      "(cut ?chopped-onion ?ks-with-chopped-onion ?ks-with-onion ?proportioned-onion chopped ?knife)",
+      "(fetch-and-proportion ?proportioned-bacon ?ks-with-bacon ?ks-with-chopped-onion ?target-container-3 cooked-bacon 450 g)",
+      "(fetch-and-proportion ?proportioned-vinegar ?ks-with-vinegar ?ks-with-bacon ?target-container-4 cider-vinegar 2.5 tablespoon)",
+      "(fetch-and-proportion ?proportioned-mayo ?ks-with-mayo ?ks-with-vinegar ?target-container-5 mayonnaise 230 g)",
+      "(fetch-and-proportion ?proportioned-sugar ?ks-with-sugar ?ks-with-mayo ?target-container-6 white-sugar 70 g)",
+      "(fetch-and-proportion ?proportioned-cheese ?ks-with-grated-cheese ?ks-with-sugar ?target-container-7 grated-mozzarella 170 g)"
+    ],
+    "stray_preconditions": []
+  },
+  "in_scope_ops": [
+    {
+      "idx": 9,
+      "name": "cut",
+      "sexp": "(cut ?chopped-bacon ?ks-with-chopped-bacon ?ks-with-grated-cheese ?proportioned-bacon chopped ?knife)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 10,
+      "name": "cut",
+      "sexp": "(cut ?chopped-broccoli ?ks-with-chopped-broccoli ?ks-with-chopped-bacon ?proportioned-broccoli chopped ?knife)",
+      "implicit_precondition": false
+    }
+  ],
+  "out_of_scope_ops": [
+    {
+      "idx": 11,
+      "name": "fetch",
+      "sexp": "(fetch ?large-bowl-1 ?ks-with-large-bowl-1 ?ks-with-chopped-broccoli large-bowl 1)"
+    },
+    {
+      "idx": 12,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-large-bowl-1 ?large-bowl-1 ?chopped-broccoli ?quantity-a ?unit-a)"
+    },
+    {
+      "idx": 13,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?chopped-onion ?quantity-b ?unit-b)"
+    },
+    {
+      "idx": 14,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-c ?rest-c ?output-ks-c ?output-ks-b ?output-container-b ?proportioned-cheese ?quantity-c ?unit-c)"
+    },
+    {
+      "idx": 15,
+      "name": "mingle",
+      "sexp": "(mingle ?broccoli-mixture ?ks-with-broccoli-mixture ?output-ks-c ?output-container-c ?mingling-tool)"
+    },
+    {
+      "idx": 16,
+      "name": "fetch",
+      "sexp": "(fetch ?large-bowl-2 ?ks-with-large-bowl-2 ?ks-with-broccoli-mixture large-bowl 1)"
+    },
+    {
+      "idx": 17,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-d ?rest-d ?output-ks-d ?ks-with-large-bowl-2 ?large-bowl-2 ?proportioned-vinegar ?quantity-d ?unit-d)"
+    },
+    {
+      "idx": 18,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-e ?rest-e ?output-ks-e ?output-ks-d ?output-container-d ?proportioned-sugar ?quantity-e ?unit-e)"
+    },
+    {
+      "idx": 19,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-f ?rest-f ?output-ks-f ?output-ks-e ?output-container-e ?proportioned-mayo ?quantity-f ?unit-f)"
+    },
+    {
+      "idx": 20,
+      "name": "mix",
+      "sexp": "(mix ?dressing ?ks-with-dressing ?output-ks-f ?output-container-f ?mixing-tool)"
+    },
+    {
+      "idx": 21,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-g ?rest-g ?output-ks-g ?ks-with-dressing ?broccoli-mixture ?dressing ?quantity-g ?unit-g)"
+    },
+    {
+      "idx": 22,
+      "name": "mingle",
+      "sexp": "(mingle ?broccoli-salad ?ks-with-broccoli-salad ?output-ks-g ?output-container-g ?mingling-tool)"
+    },
+    {
+      "idx": 23,
+      "name": "refrigerate",
+      "sexp": "(refrigerate ?cooled-salad ?ks-with-cooled-salad ?ks-with-broccoli-salad ?broccoli-salad ?fridge 24 hour)"
+    }
+  ]
+}

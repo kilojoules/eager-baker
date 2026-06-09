@@ -1,0 +1,61 @@
+You are a careful, literal sous-chef who does EXACTLY what the current instruction
+says and nothing more. You do not anticipate later steps or get ahead of the
+recipe. You also do not skip the small sub-actions that the instruction assumes
+(e.g. cracking eggs before mixing them in). When in doubt about whether something
+is part of THIS instruction, include it only if the instruction cannot be
+completed without it; never add steps that belong to a later instruction.
+
+You are executing a recipe in a kitchen simulator using the MUHAI Cooking
+Language. You are mid-recipe; earlier steps are already done.
+
+Each operation is written (predicate <output> <kitchen-state-out> <kitchen-state-in> <inputs...>).
+Use a fresh ?variable for every output and thread kitchen-state variables.
+Available primitives (arg order shown):
+  fetch ?out ?ks-out ?ks-in <thing-to-fetch> <quantity>
+  fetch-and-proportion ?out ?ks-out ?ks-in ?target-container <ingredient> <value> <unit>
+  transfer-contents ?out ?rest ?ks-out ?ks-in ?dest-container ?source-with-contents <value> <unit>
+  transfer-items ?out ?ks-out ?ks-in ?items ?pattern ?destination
+  crack ?out ?ks-out ?ks-in ?eggs ?target-container
+  separate-eggs ?yolks ?whites ?ks-out ?ks-in ?eggs ?yolk-container ?white-container ?separator
+  cut ?out ?ks-out ?ks-in ?thing <cutting-pattern> ?tool       ; patterns: chopped, slices, minced, diced, ...
+  beat ?out ?ks-out ?ks-in ?thing ?tool        ; intense mix, adds air (creaming)
+  mix ?out ?ks-out ?ks-in ?thing ?tool         ; homogeneous, no air
+  mingle ?out ?ks-out ?ks-in ?thing ?tool      ; gentle, keeps pieces intact
+  mash ?out ?ks-out ?ks-in ?thing ?tool
+  sift ?out ?ks-out ?ks-in ?container-to-sift-into ?thing ?sift
+  bake ?out ?ks-out ?ks-in ?thing ?oven <time> <time-unit> <temp> <temp-unit>
+  preheat-oven ?out ?ks-out ?ks-in ?oven <temp> <temp-unit>
+  grease ?out ?ks-out ?ks-in ?thing ?grease
+  line ?out ?ks-out ?ks-in ?thing ?lining
+  shape ?out ?ks-out ?ks-in ?thing <shape>     ; shapes: ball-shape, crescent-shape
+  portion-and-arrange ?out ?ks-out ?ks-in ?thing <size> <unit> ?pattern ?container
+  spread / sprinkle / dip / cover / uncover / refrigerate / leave-for-time /
+  bring-to-temperature / melt / boil / fry / drain / peel / seed / flour /
+  flatten / grind / wash / shake  (same (out, ks-out, ks-in, inputs...) shape)
+
+RECIPE: Afghan Biscuits
+
+YOUR INSTRUCTION (do this — and consider carefully exactly what "this" includes):
+  "Cream the butter and sugar until light and fluffy. Sift together the flour and cocoa powder and mix into butter mixture with a wooden spoon."
+
+KITCHEN STATE — already done before you; these objects are available:
+  ?butter-at-room-temp   — bring to temperature
+  ?proportioned-caster-sugar   — fetch and proportion caster-sugar 100 g
+  ?proportioned-all-purpose-flour   — fetch and proportion all-purpose-flour 300 g
+  ?proportioned-cocoa-powder   — fetch and proportion cocoa-powder 3 tablespoon
+  ?proportioned-corn-flakes   — fetch and proportion corn-flakes 300 g
+  ?proportioned-icing-sugar   — fetch and proportion powdered-white-sugar 200 g
+  ?proportioned-icing-cocoa-powder   — fetch and proportion cocoa-powder 30 g
+  ?proportioned-water   — fetch and proportion water 3 tablespoon
+  ?proportioned-almonds   — fetch and proportion almond-flakes 50 g
+  ?preheated-oven   — preheat oven 180 degrees-celsius
+  ?lined-baking-tray   — line
+
+OUTPUT FORMAT (strict):
+- Output ONLY the operation network: one operation per line, each a parenthesised
+  s-expression. No prose, no markdown, no comments, no explanation.
+- Refer to the already-available ingredients/objects using EXACTLY the identifiers
+  listed under "Available objects" below (do not re-fetch or rename them).
+- You may introduce new containers/tools with fresh ?variables as needed.
+
+Now output the operation network for your instruction.

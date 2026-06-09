@@ -1,0 +1,104 @@
+{
+  "recipe_id": "easy-banana-bread",
+  "recipe_title": "Easy Banana Bread",
+  "slice_steps": [
+    1,
+    1
+  ],
+  "nl_instruction": "Cream together butter, eggs and sugar until smooth.",
+  "kitchen_state": {
+    "summary": "You are mid-recipe. Operations for the first 0 instruction step(s) and all ingredient prep are already done. The following objects are available:",
+    "available_objects": [
+      "proportioned butter  (from: fetch and proportion butter 60 g)",
+      "proportioned eggs  (from: fetch and proportion egg 2 piece)",
+      "proportioned sugar  (from: fetch and proportion sugar 200 g)",
+      "mashed bananas  (from: mash)",
+      "proportioned vanilla  (from: fetch and proportion vanilla-extract 1 teaspoon)",
+      "proportioned self rising flour  (from: fetch and proportion self-rising-flour 200 g)"
+    ],
+    "prefix_network": [
+      "(get-kitchen ?kitchen-state)",
+      "(fetch-and-proportion ?proportioned-butter ?kitchen-state-with-butter ?kitchen-state ?target-container-1 butter 60 g)",
+      "(fetch-and-proportion ?proportioned-eggs ?kitchen-state-with-eggs ?kitchen-state-with-butter ?target-container-2 egg 2 piece)",
+      "(fetch-and-proportion ?proportioned-sugar ?kitchen-state-with-sugar ?kitchen-state-with-eggs ?target-container-3 sugar 200 g)",
+      "(fetch-and-proportion ?proportioned-bananas ?kitchen-state-with-bananas ?kitchen-state-with-sugar ?target-container-4 banana 3 piece)",
+      "(mash ?mashed-bananas ?kitchen-state-with-mashed-bananas ?kitchen-state-with-bananas ?proportioned-bananas ?fork)",
+      "(fetch-and-proportion ?proportioned-vanilla ?kitchen-state-with-vanilla ?kitchen-state-with-mashed-bananas ?target-container-5 vanilla-extract 1 teaspoon)",
+      "(fetch-and-proportion ?proportioned-self-rising-flour ?kitchen-state-with-self-rising-flour ?kitchen-state-with-vanilla ?target-container-6 self-rising-flour 200 g)"
+    ],
+    "stray_preconditions": []
+  },
+  "in_scope_ops": [
+    {
+      "idx": 8,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-x ?rest-x ?output-kitchen-state-x ?kitchen-state-with-self-rising-flour ?target-container-7 ?proportioned-butter ?quantity-x ?unit-x)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 9,
+      "name": "crack",
+      "sexp": "(crack ?output-container-y ?output-kitchen-state-y ?output-kitchen-state-x ?proportioned-eggs ?output-container-x)",
+      "implicit_precondition": true
+    },
+    {
+      "idx": 10,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-z ?rest-z ?output-kitchen-state-z ?output-kitchen-state-y ?output-container-y ?proportioned-sugar ?quantity-z ?unit-z)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 11,
+      "name": "beat",
+      "sexp": "(beat ?creamed-mixture ?kitchen-state-with-creamed-mixture ?output-kitchen-state-z ?output-container-z ?beating-tool)",
+      "implicit_precondition": false
+    }
+  ],
+  "out_of_scope_ops": [
+    {
+      "idx": 12,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-a ?rest-a ?output-kitchen-state-a ?kitchen-state-with-creamed-mixture ?creamed-mixture ?mashed-bananas ?quantity-a ?unit-a)"
+    },
+    {
+      "idx": 13,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-b ?rest-b ?output-kitchen-state-b ?output-kitchen-state-a ?output-container-a ?proportioned-vanilla ?quantity-b ?unit-b)"
+    },
+    {
+      "idx": 14,
+      "name": "beat",
+      "sexp": "(beat ?beaten-mixture ?kitchen-state-with-beaten-mixture ?output-kitchen-state-b ?output-container-b ?beating-tool)"
+    },
+    {
+      "idx": 15,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-c ?rest-c ?output-kitchen-state-c ?kitchen-state-with-beaten-mixture ?beaten-mixture ?proportioned-self-rising-flour ?quantity-c ?unit-c)"
+    },
+    {
+      "idx": 16,
+      "name": "mix",
+      "sexp": "(mix ?banana-bread-batter ?kitchen-state-with-banana-bread-batter ?output-kitchen-state-c ?output-container-c ?beating-tool)"
+    },
+    {
+      "idx": 17,
+      "name": "fetch",
+      "sexp": "(fetch ?pan ?kitchen-state-with-pan ?kitchen-state-with-banana-bread-batter pan 1)"
+    },
+    {
+      "idx": 18,
+      "name": "grease",
+      "sexp": "(grease ?greased-pan ?kitchen-state-with-greased-pan ?kitchen-state-with-pan ?pan ?grease)"
+    },
+    {
+      "idx": 19,
+      "name": "spread",
+      "sexp": "(spread ?pan-with-batter ?kitchen-state-with-batter-in-pan ?kitchen-state-with-greased-pan ?greased-pan ?banana-bread-batter ?scraper)"
+    },
+    {
+      "idx": 20,
+      "name": "bake",
+      "sexp": "(bake ?baked-banana-bread ?kitchen-state-with-baked-banana-bread ?kitchen-state-with-batter-in-pan ?pan-with-batter ?oven 60 minute 165 degrees-celsius)"
+    }
+  ]
+}

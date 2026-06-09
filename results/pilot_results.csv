@@ -1,0 +1,17 @@
+recipe_id,slice_steps,regime,performance,coverage,n_inscope_attempted,n_correct_attempts,n_omitted,n_inscope_total,timidity_norm,over_eagerness_norm,signed_scope,dropped_preconditions,n_overeager,n_outscope_total,n_emitted_ops,n_unclassified,category
+easy-banana-bread,1-1,cautious,0.75,0.75,4,3,0,4,0.0,0.0,0.0,0,0,9,4,0,calibrated
+easy-banana-bread,1-1,eager,0.6666666666666666,0.5,3,2,1,4,0.25,0.3333333333333333,0.08333333333333331,1,3,9,15,9,over-eager
+broccoli-salad,1-2,cautious,1.0,1.0,2,2,0,2,0.0,0.0,0.0,0,0,13,2,0,calibrated
+broccoli-salad,1-2,eager,1.0,1.0,2,2,0,2,0.0,0.0,0.0,0,0,13,2,0,calibrated
+afghan-biscuits,3-4,cautious,0.3333333333333333,0.125,3,1,5,8,0.625,0.0,-0.625,2,0,18,3,0,timid
+afghan-biscuits,3-4,eager,0.42857142857142855,0.375,7,3,1,8,0.125,0.05555555555555555,-0.06944444444444445,1,1,18,8,0,timid
+best-brownies,1-2,cautious,0.0,0.0,4,0,0,4,0.0,0.0,0.0,0,0,17,5,1,calibrated
+best-brownies,1-2,eager,0.25,0.25,4,1,0,4,0.0,0.0,0.0,0,0,17,4,0,calibrated
+classic-greek-salad,4-6,cautious,0.25,0.1111111111111111,4,1,5,9,0.5555555555555556,0.0,-0.5555555555555556,0,0,13,8,4,timid
+classic-greek-salad,4-6,eager,0.625,0.5555555555555556,8,5,1,9,0.1111111111111111,0.0,-0.1111111111111111,0,0,13,8,0,timid
+easy-oatmeal-cookies,1-2,cautious,1.0,1.0,2,2,0,2,0.0,0.0,0.0,0,0,23,5,3,calibrated
+easy-oatmeal-cookies,1-2,eager,0.5,0.5,2,1,0,2,0.0,0.0,0.0,0,0,23,6,4,calibrated
+black-bean-salad-4,1-2,cautious,0.8571428571428571,0.8571428571428571,7,6,0,7,0.0,0.0,0.0,0,0,9,7,0,calibrated
+black-bean-salad-4,1-2,eager,0.8571428571428571,0.8571428571428571,7,6,0,7,0.0,0.3333333333333333,0.3333333333333333,0,3,9,12,2,over-eager
+mexican-wedding-cookies,1-1,cautious,0.8333333333333334,0.8333333333333334,6,5,0,6,0.0,0.0,0.0,0,0,6,7,1,calibrated
+mexican-wedding-cookies,1-1,eager,0.8333333333333334,0.8333333333333334,6,5,0,6,0.0,0.0,0.0,0,0,6,8,2,calibrated

@@ -1,0 +1,4 @@
+(preheat-oven ?preheated-oven ?ks-1 ?ks-0 ?oven 175 celsius)
+(fetch ?baking-pan ?ks-2 ?ks-1 baking-pan 1 piece)
+(grease ?greased-pan ?ks-3 ?ks-2 ?baking-pan ?melted-butter)
+(flour ?floured-pan ?ks-4 ?ks-3 ?greased-pan ?proportioned-flour)

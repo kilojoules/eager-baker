@@ -1,0 +1,185 @@
+{
+  "recipe_id": "afghan-biscuits",
+  "recipe_title": "Afghan Biscuits",
+  "slice_steps": [
+    3,
+    4
+  ],
+  "nl_instruction": "Cream the butter and sugar until light and fluffy. Sift together the flour and cocoa powder and mix into butter mixture with a wooden spoon.",
+  "kitchen_state": {
+    "summary": "You are mid-recipe. Operations for the first 2 instruction step(s) and all ingredient prep are already done. The following objects are available:",
+    "available_objects": [
+      "butter at room temp  (from: bring to temperature)",
+      "proportioned caster sugar  (from: fetch and proportion caster-sugar 100 g)",
+      "proportioned all purpose flour  (from: fetch and proportion all-purpose-flour 300 g)",
+      "proportioned cocoa powder  (from: fetch and proportion cocoa-powder 3 tablespoon)",
+      "proportioned corn flakes  (from: fetch and proportion corn-flakes 300 g)",
+      "proportioned icing sugar  (from: fetch and proportion powdered-white-sugar 200 g)",
+      "proportioned icing cocoa powder  (from: fetch and proportion cocoa-powder 30 g)",
+      "proportioned water  (from: fetch and proportion water 3 tablespoon)",
+      "proportioned almonds  (from: fetch and proportion almond-flakes 50 g)",
+      "preheated oven  (from: preheat oven 180 degrees-celsius)",
+      "lined baking tray  (from: line)"
+    ],
+    "prefix_network": [
+      "(get-kitchen ?kitchen-state)",
+      "(fetch-and-proportion ?proportioned-butter ?kitchen-state-with-butter ?kitchen-state ?target-container-1 butter 200 g)",
+      "(bring-to-temperature ?butter-at-room-temp ?kitchen-state-with-butter-at-room-temp ?kitchen-state-with-butter ?proportioned-butter ?room-temp-quantity ?room-temp-unit)",
+      "(fetch-and-proportion ?proportioned-caster-sugar ?kitchen-state-with-caster-sugar ?kitchen-state-with-butter ?target-container-2 caster-sugar 100 g)",
+      "(fetch-and-proportion ?proportioned-all-purpose-flour ?kitchen-state-with-all-purpose-flour ?kitchen-state-with-caster-sugar ?target-container-3 all-purpose-flour 300 g)",
+      "(fetch-and-proportion ?proportioned-cocoa-powder ?kitchen-state-with-cocoa-powder ?kitchen-state-with-all-purpose-flour ?target-container-4 cocoa-powder 3 tablespoon)",
+      "(fetch-and-proportion ?proportioned-corn-flakes ?kitchen-state-with-corn-flakes ?kitchen-state-with-cocoa-powder ?target-container-5 corn-flakes 300 g)",
+      "(fetch-and-proportion ?proportioned-icing-sugar ?kitchen-state-with-icing-sugar ?kitchen-state-with-corn-flakes ?target-container-6 powdered-white-sugar 200 g)",
+      "(fetch-and-proportion ?proportioned-icing-cocoa-powder ?kitchen-state-with-icing-cocoa-powder ?kitchen-state-with-icing-sugar ?target-container-7 cocoa-powder 30 g)",
+      "(fetch-and-proportion ?proportioned-water ?kitchen-state-with-water ?kitchen-state-with-icing-cocoa-powder ?target-container-8 water 3 tablespoon)",
+      "(fetch-and-proportion ?proportioned-almonds ?kitchen-state-with-almonds ?kitchen-state-with-water ?target-container-9 almond-flakes 50 g)",
+      "(preheat-oven ?preheated-oven ?kitchen-state-with-preheated-oven ?kitchen-state-with-almonds ?oven 180 degrees-celsius)",
+      "(fetch ?baking-tray ?kitchen-state-with-baking-tray ?kitchen-state-with-preheated-oven baking-tray 1)",
+      "(fetch ?baking-paper ?kitchen-state-with-baking-paper ?kitchen-state-with-baking-tray baking-paper 1)",
+      "(line ?lined-baking-tray ?kitchen-state-with-lined-baking-tray ?kitchen-state-with-baking-paper ?baking-tray ?baking-paper)"
+    ],
+    "stray_preconditions": []
+  },
+  "in_scope_ops": [
+    {
+      "idx": 15,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-x ?rest-x ?output-kitchen-state-x ?kitchen-state-with-lined-baking-tray ?target-container-10 ?butter-at-room-temp ?quantity-x ?unit-x)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 16,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-y ?rest-y ?output-kitchen-state-y ?output-kitchen-state-x ?output-container-x ?proportioned-caster-sugar ?quantity-y ?unit-y)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 17,
+      "name": "beat",
+      "sexp": "(beat ?container-with-creamed-butter ?kitchen-state-with-creamed-butter ?output-kitchen-state-y ?output-container-y ?beating-tool)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 18,
+      "name": "sift",
+      "sexp": "(sift ?container-with-sifted-flour ?kitchen-state-with-sifted-flour ?kitchen-state-with-creamed-butter ?target-container-11 ?proportioned-all-purpose-flour ?sifting-tool)",
+      "implicit_precondition": true
+    },
+    {
+      "idx": 19,
+      "name": "sift",
+      "sexp": "(sift ?container-with-sifted-ingredients ?kitchen-state-with-sifted-ingredients ?kitchen-state-with-sifted-flour ?container-with-sifted-flour ?proportioned-cocoa-powder ?sifting-tool)",
+      "implicit_precondition": true
+    },
+    {
+      "idx": 20,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?container-with-flour-cocoa-and-butter ?rest-z ?kitchen-state-with-flour-cocoa-and-butter-in-bowl ?kitchen-state-with-sifted-ingredients ?container-with-creamed-butter ?container-with-sifted-ingredients ?quantity-z ?unit-z)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 21,
+      "name": "fetch",
+      "sexp": "(fetch ?wooden-spoon ?kitchen-state-with-wooden-spoon ?kitchen-state-with-flour-cocoa-and-butter-in-bowl wooden-spoon 1)",
+      "implicit_precondition": true
+    },
+    {
+      "idx": 22,
+      "name": "mix",
+      "sexp": "(mix ?flour-cocoa-butter-mixture ?kitchen-state-with-flour-cocoa-butter-mixture ?kitchen-state-with-wooden-spoon ?container-with-flour-cocoa-and-butter ?wooden-spoon)",
+      "implicit_precondition": false
+    }
+  ],
+  "out_of_scope_ops": [
+    {
+      "idx": 23,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?container-with-cornflakes-added ?rest-a ?kitchen-state-with-cornflakes-in-bowl ?kitchen-state-with-flour-cocoa-butter-mixture ?flour-cocoa-butter-mixture ?proportioned-corn-flakes ?quantity-a ?unit-a)"
+    },
+    {
+      "idx": 24,
+      "name": "mix",
+      "sexp": "(mix ?flour-cocoa-butter-cornflakes-mixture ?kitchen-state-with-cornflakes-mixture ?kitchen-state-with-cornflakes-in-bowl ?container-with-cornflakes-added ?mixing-tool)"
+    },
+    {
+      "idx": 25,
+      "name": "portion-and-arrange",
+      "sexp": "(portion-and-arrange ?portioned-dough ?kitchen-state-with-portions-on-countertop ?kitchen-state-with-cornflakes-mixture ?flour-cocoa-butter-cornflakes-mixture 30 g ?default-pattern ?countertop)"
+    },
+    {
+      "idx": 26,
+      "name": "shape",
+      "sexp": "(shape ?dough-balls ?kitchen-state-with-doughballs ?kitchen-state-with-portions-on-countertop ?portioned-dough ball-shape)"
+    },
+    {
+      "idx": 27,
+      "name": "flatten",
+      "sexp": "(flatten ?flattened-dough-balls ?kitchen-state-with-flattened-doughballs ?kitchen-state-with-doughballs ?dough-balls ?rolling-pin)"
+    },
+    {
+      "idx": 28,
+      "name": "transfer-items",
+      "sexp": "(transfer-items ?cookies-on-tray ?kitchen-state-with-cookies-on-tray ?kitchen-state-with-flattened-doughballs ?flattened-dough-balls 5-cm-apart ?lined-baking-tray)"
+    },
+    {
+      "idx": 29,
+      "name": "bake",
+      "sexp": "(bake ?baked-cookies ?kitchen-state-with-baking-cookies ?kitchen-state-with-cookies-on-tray ?cookies-on-tray ?preheated-oven 15 minute ?temp-quantity ?temp-unit)"
+    },
+    {
+      "idx": 30,
+      "name": "fetch",
+      "sexp": "(fetch ?wire-rack ?kitchen-state-with-wire-rack ?kitchen-state-with-baking-cookies wire-rack 1)"
+    },
+    {
+      "idx": 31,
+      "name": "transfer-items",
+      "sexp": "(transfer-items ?cookies-on-wire-rack ?kitchen-state-with-cookies-on-wire-rack ?kitchen-state-with-wire-rack ?baked-cookies ?default-pattern-2 ?wire-rack)"
+    },
+    {
+      "idx": 32,
+      "name": "bring-to-temperature",
+      "sexp": "(bring-to-temperature ?cooled-cookies ?kitchen-state-with-cooling-cookies ?kitchen-state-with-cookies-on-wire-rack ?cookies-on-wire-rack ?room-temp-quantity ?room-temp-unit)"
+    },
+    {
+      "idx": 33,
+      "name": "fetch",
+      "sexp": "(fetch ?large-bowl ?kitchen-state-with-bowl ?kitchen-state-with-cooling-cookies large-bowl 1)"
+    },
+    {
+      "idx": 34,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?container-for-icing-with-sugar ?rest-b ?kitchen-state-with-container-for-icing-with-sugar ?kitchen-state-with-bowl ?large-bowl ?proportioned-icing-sugar ?quantity-b ?unit-b)"
+    },
+    {
+      "idx": 35,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?container-for-icing-with-sugar-and-cocoa ?rest-c ?kitchen-state-with-container-for-icing-with-sugar-and-cocoa ?kitchen-state-with-container-for-icing-with-sugar ?container-for-icing-with-sugar ?proportioned-icing-cocoa-powder ?quantity-c ?unit-c)"
+    },
+    {
+      "idx": 36,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?container-for-icing-with-sugar-cocoa-and-water ?rest-d ?kitchen-state-with-container-for-icing-with-sugar-cocoa-and-water ?kitchen-state-with-container-for-icing-with-sugar-and-cocoa ?container-for-icing-with-sugar ?proportioned-water ?quantity-d ?unit-d)"
+    },
+    {
+      "idx": 37,
+      "name": "mix",
+      "sexp": "(mix ?icing ?kitchen-with-icing-ready ?kitchen-state-with-container-for-icing-with-sugar-cocoa-and-water ?container-for-icing-with-sugar-cocoa-and-water ?mixing-tool)"
+    },
+    {
+      "idx": 38,
+      "name": "fetch",
+      "sexp": "(fetch ?table-spoon ?kitchen-state-with-table-spoon ?kitchen-with-icing-ready table-spoon 1)"
+    },
+    {
+      "idx": 39,
+      "name": "spread",
+      "sexp": "(spread ?iced-cookies ?kitchen-state-with-iced-cookies ?kitchen-state-with-table-spoon ?cooled-cookies ?icing ?table-spoon)"
+    },
+    {
+      "idx": 40,
+      "name": "sprinkle",
+      "sexp": "(sprinkle ?sprinkled-cookies ?kitchen-state-with-sprinkled-cookies ?kitchen-state-with-iced-cookies ?iced-cookies ?proportioned-almonds)"
+    }
+  ]
+}

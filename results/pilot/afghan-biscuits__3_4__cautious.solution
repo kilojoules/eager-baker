@@ -1,0 +1,3 @@
+(beat ?creamed-butter-sugar ?ks1 ?ks0 (list ?butter-at-room-temp ?proportioned-caster-sugar) ?electric-mixer)
+(sift ?sifted-flour-cocoa ?ks2 ?ks1 ?mixing-bowl (list ?proportioned-all-purpose-flour ?proportioned-cocoa-powder) ?sifter)
+(mix ?final-dough ?ks3 ?ks2 (list ?creamed-butter-sugar ?sifted-flour-cocoa) ?wooden-spoon)

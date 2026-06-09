@@ -1,0 +1,7 @@
+(fetch ?large-bowl ?ks1 ?ks0 large-bowl 1)
+(transfer-contents ?transferred-beans ?rest1 ?ks2 ?ks1 ?large-bowl ?washed-black-beans all all)
+(transfer-contents ?transferred-bell-pepper ?rest2 ?ks3 ?ks2 ?large-bowl ?diced-bell-pepper all all)
+(transfer-contents ?transferred-onion ?rest3 ?ks4 ?ks3 ?large-bowl ?sliced-onion all all)
+(transfer-contents ?transferred-jalapeno ?rest4 ?ks5 ?ks4 ?large-bowl ?minced-jalapeno all all)
+(transfer-contents ?transferred-cilantro ?rest5 ?ks6 ?ks5 ?large-bowl ?chopped-cilantro all all)
+(mingle ?combined-salad ?ks7 ?ks6 ?large-bowl ?wooden-spoon)

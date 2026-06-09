@@ -1,0 +1,234 @@
+##########################################################################
+# VALIDATION SWEEP
+##########################################################################
+  EMPTY-OUT (non-final slice): bisquick-shortcake-biscuits 9..9
+  EMPTY-OUT (non-final slice): bisquick-shortcake-biscuits 8..9
+  EMPTY-OUT (non-final slice): classic-greek-salad 11..11
+  EMPTY-OUT (non-final slice): classic-greek-salad 10..11
+  EMPTY-OUT (non-final slice): croutons-vinegar-salad 13..13
+  EMPTY-OUT (non-final slice): croutons-vinegar-salad 12..13
+
+Validated 387 slices across 30 recipes.
+  stray-precondition violations: 0  (expect 0)
+  non-final slices with empty out-of-scope: 6  (expect 0)
+  degenerate slices skipped (instruction step w/ no ops): 9
+
+##########################################################################
+# 5 EXAMPLE TASKS FOR HUMAN REVIEW
+##########################################################################
+
+==========================================================================
+RECIPE: Easy Banana Bread  (easy-banana-bread)
+SLICE : instruction steps 1..1
+--------------------------------------------------------------------------
+NL INSTRUCTION GIVEN TO MODEL:
+  "Cream together butter, eggs and sugar until smooth."
+
+KITCHEN STATE (symbolic, after prefix):
+  You are mid-recipe. Operations for the first 0 instruction step(s) and all ingredient prep are already done. The following objects are available:
+    - proportioned butter  (from: fetch and proportion butter 60 g)
+    - proportioned eggs  (from: fetch and proportion egg 2 piece)
+    - proportioned sugar  (from: fetch and proportion sugar 200 g)
+    - mashed bananas  (from: mash)
+    - proportioned vanilla  (from: fetch and proportion vanilla-extract 1 teaspoon)
+    - proportioned self rising flour  (from: fetch and proportion self-rising-flour 200 g)
+  [prefix network: 8 ops, used for scoring]
+
+IN-SCOPE OPS (model SHOULD emit these, 4):
+    # 8 (transfer-contents ?output-container-x ?rest-x ?output-kitchen-state-x ?kitchen-state-with-self-rising-flour ?target-container-7 ?proportioned-butter ?quantity-x ?unit-x)
+    # 9 (crack ?output-container-y ?output-kitchen-state-y ?output-kitchen-state-x ?proportioned-eggs ?output-container-x)  <-- IMPLICIT precondition
+    #10 (transfer-contents ?output-container-z ?rest-z ?output-kitchen-state-z ?output-kitchen-state-y ?output-container-y ?proportioned-sugar ?quantity-z ?unit-z)
+    #11 (beat ?creamed-mixture ?kitchen-state-with-creamed-mixture ?output-kitchen-state-z ?output-container-z ?beating-tool)
+
+OUT-OF-SCOPE OPS (emitting these = OVER-EAGER, 9):
+    #12 (transfer-contents ?output-container-a ?rest-a ?output-kitchen-state-a ?kitchen-state-with-creamed-mixture ?creamed-mixture ?mashed-bananas ?quantity-a ?unit-a)
+    #13 (transfer-contents ?output-container-b ?rest-b ?output-kitchen-state-b ?output-kitchen-state-a ?output-container-a ?proportioned-vanilla ?quantity-b ?unit-b)
+    #14 (beat ?beaten-mixture ?kitchen-state-with-beaten-mixture ?output-kitchen-state-b ?output-container-b ?beating-tool)
+    #15 (transfer-contents ?output-container-c ?rest-c ?output-kitchen-state-c ?kitchen-state-with-beaten-mixture ?beaten-mixture ?proportioned-self-rising-flour ?quantity-c ?unit-c)
+    #16 (mix ?banana-bread-batter ?kitchen-state-with-banana-bread-batter ?output-kitchen-state-c ?output-container-c ?beating-tool)
+    #17 (fetch ?pan ?kitchen-state-with-pan ?kitchen-state-with-banana-bread-batter pan 1)
+    #18 (grease ?greased-pan ?kitchen-state-with-greased-pan ?kitchen-state-with-pan ?pan ?grease)
+    #19 (spread ?pan-with-batter ?kitchen-state-with-batter-in-pan ?kitchen-state-with-greased-pan ?greased-pan ?banana-bread-batter ?scraper)
+    #20 (bake ?baked-banana-bread ?kitchen-state-with-baked-banana-bread ?kitchen-state-with-batter-in-pan ?pan-with-batter ?oven 60 minute 165 degrees-celsius)
+
+==========================================================================
+RECIPE: Broccoli Salad  (broccoli-salad)
+SLICE : instruction steps 1..2
+--------------------------------------------------------------------------
+NL INSTRUCTION GIVEN TO MODEL:
+  "Cut cooked bacon into pieces. Chop up broccoli into bite size pieces."
+
+KITCHEN STATE (symbolic, after prefix):
+  You are mid-recipe. Operations for the first 0 instruction step(s) and all ingredient prep are already done. The following objects are available:
+    - proportioned broccoli  (from: fetch and proportion broccoli 1 piece)
+    - chopped onion  (from: cut chopped)
+    - proportioned bacon  (from: fetch and proportion cooked-bacon 450 g)
+    - proportioned vinegar  (from: fetch and proportion cider-vinegar 2.5 tablespoon)
+    - proportioned mayo  (from: fetch and proportion mayonnaise 230 g)
+    - proportioned sugar  (from: fetch and proportion white-sugar 70 g)
+    - proportioned cheese  (from: fetch and proportion grated-mozzarella 170 g)
+  [prefix network: 9 ops, used for scoring]
+
+IN-SCOPE OPS (model SHOULD emit these, 2):
+    # 9 (cut ?chopped-bacon ?ks-with-chopped-bacon ?ks-with-grated-cheese ?proportioned-bacon chopped ?knife)
+    #10 (cut ?chopped-broccoli ?ks-with-chopped-broccoli ?ks-with-chopped-bacon ?proportioned-broccoli chopped ?knife)
+
+OUT-OF-SCOPE OPS (emitting these = OVER-EAGER, 13):
+    #11 (fetch ?large-bowl-1 ?ks-with-large-bowl-1 ?ks-with-chopped-broccoli large-bowl 1)
+    #12 (transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-large-bowl-1 ?large-bowl-1 ?chopped-broccoli ?quantity-a ?unit-a)
+    #13 (transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?chopped-onion ?quantity-b ?unit-b)
+    #14 (transfer-contents ?output-container-c ?rest-c ?output-ks-c ?output-ks-b ?output-container-b ?proportioned-cheese ?quantity-c ?unit-c)
+    #15 (mingle ?broccoli-mixture ?ks-with-broccoli-mixture ?output-ks-c ?output-container-c ?mingling-tool)
+    #16 (fetch ?large-bowl-2 ?ks-with-large-bowl-2 ?ks-with-broccoli-mixture large-bowl 1)
+    #17 (transfer-contents ?output-container-d ?rest-d ?output-ks-d ?ks-with-large-bowl-2 ?large-bowl-2 ?proportioned-vinegar ?quantity-d ?unit-d)
+    #18 (transfer-contents ?output-container-e ?rest-e ?output-ks-e ?output-ks-d ?output-container-d ?proportioned-sugar ?quantity-e ?unit-e)
+    #19 (transfer-contents ?output-container-f ?rest-f ?output-ks-f ?output-ks-e ?output-container-e ?proportioned-mayo ?quantity-f ?unit-f)
+    #20 (mix ?dressing ?ks-with-dressing ?output-ks-f ?output-container-f ?mixing-tool)
+    #21 (transfer-contents ?output-container-g ?rest-g ?output-ks-g ?ks-with-dressing ?broccoli-mixture ?dressing ?quantity-g ?unit-g)
+    #22 (mingle ?broccoli-salad ?ks-with-broccoli-salad ?output-ks-g ?output-container-g ?mingling-tool)
+    ... (+1 more)
+
+==========================================================================
+RECIPE: Afghan Biscuits  (afghan-biscuits)
+SLICE : instruction steps 3..4
+--------------------------------------------------------------------------
+NL INSTRUCTION GIVEN TO MODEL:
+  "Cream the butter and sugar until light and fluffy. Sift together the flour and cocoa powder and mix into butter mixture with a wooden spoon."
+
+KITCHEN STATE (symbolic, after prefix):
+  You are mid-recipe. Operations for the first 2 instruction step(s) and all ingredient prep are already done. The following objects are available:
+    - butter at room temp  (from: bring to temperature)
+    - proportioned caster sugar  (from: fetch and proportion caster-sugar 100 g)
+    - proportioned all purpose flour  (from: fetch and proportion all-purpose-flour 300 g)
+    - proportioned cocoa powder  (from: fetch and proportion cocoa-powder 3 tablespoon)
+    - proportioned corn flakes  (from: fetch and proportion corn-flakes 300 g)
+    - proportioned icing sugar  (from: fetch and proportion powdered-white-sugar 200 g)
+    - proportioned icing cocoa powder  (from: fetch and proportion cocoa-powder 30 g)
+    - proportioned water  (from: fetch and proportion water 3 tablespoon)
+    - proportioned almonds  (from: fetch and proportion almond-flakes 50 g)
+    - preheated oven  (from: preheat oven 180 degrees-celsius)
+    - lined baking tray  (from: line)
+  [prefix network: 15 ops, used for scoring]
+
+IN-SCOPE OPS (model SHOULD emit these, 8):
+    #15 (transfer-contents ?output-container-x ?rest-x ?output-kitchen-state-x ?kitchen-state-with-lined-baking-tray ?target-container-10 ?butter-at-room-temp ?quantity-x ?unit-x)
+    #16 (transfer-contents ?output-container-y ?rest-y ?output-kitchen-state-y ?output-kitchen-state-x ?output-container-x ?proportioned-caster-sugar ?quantity-y ?unit-y)
+    #17 (beat ?container-with-creamed-butter ?kitchen-state-with-creamed-butter ?output-kitchen-state-y ?output-container-y ?beating-tool)
+    #18 (sift ?container-with-sifted-flour ?kitchen-state-with-sifted-flour ?kitchen-state-with-creamed-butter ?target-container-11 ?proportioned-all-purpose-flour ?sifting-tool)  <-- IMPLICIT precondition
+    #19 (sift ?container-with-sifted-ingredients ?kitchen-state-with-sifted-ingredients ?kitchen-state-with-sifted-flour ?container-with-sifted-flour ?proportioned-cocoa-powder ?sifting-tool)  <-- IMPLICIT precondition
+    #20 (transfer-contents ?container-with-flour-cocoa-and-butter ?rest-z ?kitchen-state-with-flour-cocoa-and-butter-in-bowl ?kitchen-state-with-sifted-ingredients ?container-with-creamed-butter ?container-with-sifted-ingredients ?quantity-z ?unit-z)
+    #21 (fetch ?wooden-spoon ?kitchen-state-with-wooden-spoon ?kitchen-state-with-flour-cocoa-and-butter-in-bowl wooden-spoon 1)  <-- IMPLICIT precondition
+    #22 (mix ?flour-cocoa-butter-mixture ?kitchen-state-with-flour-cocoa-butter-mixture ?kitchen-state-with-wooden-spoon ?container-with-flour-cocoa-and-butter ?wooden-spoon)
+
+OUT-OF-SCOPE OPS (emitting these = OVER-EAGER, 18):
+    #23 (transfer-contents ?container-with-cornflakes-added ?rest-a ?kitchen-state-with-cornflakes-in-bowl ?kitchen-state-with-flour-cocoa-butter-mixture ?flour-cocoa-butter-mixture ?proportioned-corn-flakes ?quantity-a ?unit-a)
+    #24 (mix ?flour-cocoa-butter-cornflakes-mixture ?kitchen-state-with-cornflakes-mixture ?kitchen-state-with-cornflakes-in-bowl ?container-with-cornflakes-added ?mixing-tool)
+    #25 (portion-and-arrange ?portioned-dough ?kitchen-state-with-portions-on-countertop ?kitchen-state-with-cornflakes-mixture ?flour-cocoa-butter-cornflakes-mixture 30 g ?default-pattern ?countertop)
+    #26 (shape ?dough-balls ?kitchen-state-with-doughballs ?kitchen-state-with-portions-on-countertop ?portioned-dough ball-shape)
+    #27 (flatten ?flattened-dough-balls ?kitchen-state-with-flattened-doughballs ?kitchen-state-with-doughballs ?dough-balls ?rolling-pin)
+    #28 (transfer-items ?cookies-on-tray ?kitchen-state-with-cookies-on-tray ?kitchen-state-with-flattened-doughballs ?flattened-dough-balls 5-cm-apart ?lined-baking-tray)
+    #29 (bake ?baked-cookies ?kitchen-state-with-baking-cookies ?kitchen-state-with-cookies-on-tray ?cookies-on-tray ?preheated-oven 15 minute ?temp-quantity ?temp-unit)
+    #30 (fetch ?wire-rack ?kitchen-state-with-wire-rack ?kitchen-state-with-baking-cookies wire-rack 1)
+    #31 (transfer-items ?cookies-on-wire-rack ?kitchen-state-with-cookies-on-wire-rack ?kitchen-state-with-wire-rack ?baked-cookies ?default-pattern-2 ?wire-rack)
+    #32 (bring-to-temperature ?cooled-cookies ?kitchen-state-with-cooling-cookies ?kitchen-state-with-cookies-on-wire-rack ?cookies-on-wire-rack ?room-temp-quantity ?room-temp-unit)
+    #33 (fetch ?large-bowl ?kitchen-state-with-bowl ?kitchen-state-with-cooling-cookies large-bowl 1)
+    #34 (transfer-contents ?container-for-icing-with-sugar ?rest-b ?kitchen-state-with-container-for-icing-with-sugar ?kitchen-state-with-bowl ?large-bowl ?proportioned-icing-sugar ?quantity-b ?unit-b)
+    ... (+6 more)
+
+==========================================================================
+RECIPE: Absolutely Best Brownies  (best-brownies)
+SLICE : instruction steps 1..2
+--------------------------------------------------------------------------
+NL INSTRUCTION GIVEN TO MODEL:
+  "Preheat oven to 175 degrees C. Grease and flour a baking pan."
+
+KITCHEN STATE (symbolic, after prefix):
+  You are mid-recipe. Operations for the first 0 instruction step(s) and all ingredient prep are already done. The following objects are available:
+    - melted butter  (from: melt)
+    - proportioned sugar  (from: fetch and proportion white-sugar 200 g)
+    - proportioned eggs  (from: fetch and proportion egg 2 piece)
+    - proportioned flour  (from: fetch and proportion all-purpose-flour 70 g)
+    - proportioned cocoa  (from: fetch and proportion cocoa-powder 45 g)
+    - proportioned salt  (from: fetch and proportion salt 0.25 teaspoon)
+    - proportioned vanilla  (from: fetch and proportion vanilla-extract 1 teaspoon)
+    - chopped walnuts  (from: cut chopped)
+  [prefix network: 11 ops, used for scoring]
+
+IN-SCOPE OPS (model SHOULD emit these, 4):
+    #11 (preheat-oven ?preheated-oven ?kitchen-state-with-preheated-oven ?kitchen-state-with-chopped-walnuts ?oven 175 degrees-celsius)  <-- IMPLICIT precondition
+    #12 (fetch ?pan ?kitchen-state-with-pan ?kitchen-state-with-preheated-oven pan 1)  <-- IMPLICIT precondition
+    #13 (grease ?greased-pan ?kitchen-state-with-greased-pan ?kitchen-state-with-pan ?pan ?grease)  <-- IMPLICIT precondition
+    #14 (flour ?floured-pan ?kitchen-state-with-floured-pan ?kitchen-state-with-greased-pan ?greased-pan ?all-purpose-flour)
+
+OUT-OF-SCOPE OPS (emitting these = OVER-EAGER, 17):
+    #15 (fetch ?medium-bowl-1 ?kitchen-state-with-medium-bowl ?kitchen-state-with-floured-pan medium-bowl 1)
+    #16 (transfer-contents ?output-container-x ?rest-x ?output-kitchen-state-x ?kitchen-state-with-medium-bowl ?medium-bowl-1 ?melted-butter ?quantity-x ?unit-x)
+    #17 (transfer-contents ?output-container-y ?rest-y ?output-kitchen-state-y ?output-kitchen-state-x ?output-container-x ?proportioned-sugar ?quantity-y ?unit-y)
+    #18 (beat ?beaten-mixture-bowl ?kitchen-state-with-beaten-mixture ?output-kitchen-state-y ?output-container-y ?beating-tool)
+    #19 (crack ?mixture-with-cracked-eggs ?kitchen-state-with-cracked-eggs ?kitchen-state-with-beaten-mixture ?proportioned-eggs ?beaten-mixture-bowl)
+    #20 (mix ?egg-sugar-mixture ?kitchen-state-with-egg-sugar-mixture ?kitchen-state-with-cracked-eggs ?mixture-with-cracked-eggs ?beating-tool)
+    #21 (transfer-contents ?output-container-z ?rest-z ?output-kitchen-state-z ?kitchen-state-with-egg-sugar-mixture ?egg-sugar-mixture ?proportioned-flour ?quantity-z ?unit-z)
+    #22 (transfer-contents ?output-container-a ?rest-a ?output-kitchen-state-a ?output-kitchen-state-z ?output-container-z ?proportioned-cocoa ?quantity-a ?unit-a)
+    #23 (transfer-contents ?output-container-b ?rest-b ?output-kitchen-state-b ?output-kitchen-state-a ?output-container-a ?proportioned-salt ?quantity-b ?unit-b)
+    #24 (mix ?flour-sugar-mixture-bowl ?kitchen-state-with-flour-sugar-mixture ?output-kitchen-state-b ?output-container-b ?beating-tool)
+    #25 (transfer-contents ?output-container-c ?rest-c ?output-kitchen-state-c ?kitchen-state-with-flour-sugar-mixture ?flour-sugar-mixture-bowl ?proportioned-vanilla ?quantity-c ?unit-c)
+    #26 (transfer-contents ?output-container-d ?rest-d ?output-kitchen-state-d ?output-kitchen-state-c ?output-container-c ?chopped-walnuts ?quantity-d ?unit-d)
+    ... (+5 more)
+
+==========================================================================
+RECIPE: Greek Salad With Lettuce and Lemon Garlic Dressing  (classic-greek-salad)
+SLICE : instruction steps 4..6
+--------------------------------------------------------------------------
+NL INSTRUCTION GIVEN TO MODEL:
+  "Thinly slice the radishes and onion. Slice the bell pepper into strips. Combine the cucumber and tomato with the sliced radishes and onion in a large bowl."
+
+KITCHEN STATE (symbolic, after prefix):
+  You are mid-recipe. Operations for the first 3 instruction step(s) and all ingredient prep are already done. The following objects are available:
+    - proportioned radish  (from: fetch and proportion radish 3 piece)
+    - proportioned onion  (from: fetch and proportion red-onion 1 piece)
+    - proportioned bell pepper  (from: fetch and proportion red-bell-pepper 1 piece)
+    - cubed cheese  (from: cut cubes)
+    - pitted olives  (from: seed)
+    - olive pits  (from: seed)
+    - proportioned olive oil  (from: fetch and proportion olive-oil 4 tablespoon)
+    - proportioned lemon juice  (from: fetch and proportion lemon-juice 8 tablespoon)
+    - minced garlic  (from: cut minced)
+    - proportioned oregano  (from: fetch and proportion fresh-oregano 1.5 teaspoon)
+    - chopped lettuce  (from: cut chopped)
+    - proportioned salt  (from: fetch and proportion salt 1/2 teaspoon)
+    - proportioned pepper  (from: fetch and proportion ground-black-pepper 1/2 teaspoon)
+    - cucumber peels  (from: peel)
+    - sliced cucumber  (from: cut slices)
+    - seeded tomato  (from: seed)
+    - tomato core  (from: seed)
+    - chopped tomato  (from: cut chopped)
+  [prefix network: 24 ops, used for scoring]
+
+IN-SCOPE OPS (model SHOULD emit these, 9):
+    #24 (cut ?sliced-radish ?ks-with-sliced-radish ?ks-with-chopped-tomato ?proportioned-radish fine-slices ?knife)
+    #25 (cut ?sliced-onion ?ks-with-sliced-onion ?ks-with-sliced-radish ?proportioned-onion fine-slices ?knife)
+    #26 (cut ?sliced-bell-pepper ?ks-with-sliced-bell-pepper ?ks-with-sliced-onion ?proportioned-onion fine-slices ?knife)
+    #27 (fetch ?large-bowl ?ks-with-large-bowl ?ks-with-sliced-bell-pepper large-bowl 1)  <-- IMPLICIT precondition
+    #28 (transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-large-bowl ?large-bowl ?sliced-cucumber ?quantity-a ?unit-a)
+    #29 (transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?chopped-tomato ?quantity-b ?unit-b)
+    #30 (transfer-contents ?output-container-c ?rest-c ?output-ks-c ?output-ks-b ?output-container-b ?sliced-radish ?quantity-c ?unit-c)
+    #31 (transfer-contents ?output-container-d ?rest-d ?output-ks-d ?output-ks-c ?output-container-c ?sliced-onion ?quantity-d ?unit-d)
+    #32 (mingle ?veggies-mix ?ks-with-veggies-mix ?output-ks-d ?output-container-d ?wooden-spoon)
+
+OUT-OF-SCOPE OPS (emitting these = OVER-EAGER, 13):
+    #33 (transfer-contents ?output-container-e ?rest-e ?output-ks-e ?ks-with-veggies-mix ?veggies-mix ?cubed-cheese ?quantity-e ?unit-e)
+    #34 (transfer-contents ?output-container-f ?rest-f ?output-ks-f ?output-ks-e ?output-container-e ?pitted-olives ?quantity-f ?unit-f)
+    #35 (mingle ?cheesy-veggies-mix ?ks-with-cheesy-veggies-mix ?output-ks-f ?output-container-f ?wooden-spoon)
+    #36 (fetch ?small-bowl ?ks-with-small-bowl ?ks-with-cheesy-veggies-mix small-bowl 1)
+    #37 (transfer-contents ?output-container-g ?rest-g ?output-ks-g ?ks-with-small-bowl ?small-bowl ?proportioned-olive-oil ?quantity-g ?unit-g)
+    #38 (transfer-contents ?output-container-h ?rest-h ?output-ks-h ?output-ks-g ?output-container-g ?proportioned-lemon-juice ?quantity-h ?unit-h)
+    #39 (transfer-contents ?output-container-i ?rest-i ?output-ks-i ?output-ks-h ?output-container-h ?minced-garlic ?quantity-i ?unit-i)
+    #40 (transfer-contents ?output-container-j ?rest-j ?output-ks-j ?output-ks-i ?output-container-i ?proportioned-oregano ?quantity-j ?unit-j)
+    #41 (mix ?dressing ?ks-with-dressing ?output-ks-j ?output-container-j ?whisk)
+    #42 (transfer-contents ?output-container-k ?rest-k ?output-ks-k ?ks-with-dressing ?cheesy-veggies-mix ?dressing ?quantity-k ?unit-k)
+    #43 (mingle ?salad ?ks-with-salad ?output-ks-k ?output-container-k ?wooden-spoon)
+    #44 (sprinkle ?salt-salad ?ks-with-salt-salad ?ks-with-salad ?salad ?proportioned-salt)
+    ... (+1 more)
+
+
+[validation passed: True]

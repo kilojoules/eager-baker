@@ -1,0 +1,7 @@
+(fetch ?mixing-bowl ?ks-1 ?ks-0 mixing-bowl 1)
+(transfer-contents ?transferred-butter ?rest-1 ?ks-2 ?ks-1 ?mixing-bowl ?warm-butter all portion)
+(transfer-contents ?transferred-sugar ?rest-2 ?ks-3 ?ks-2 ?mixing-bowl ?proportioned-powdered-sugar all portion)
+(transfer-contents ?transferred-vanilla ?rest-3 ?ks-4 ?ks-3 ?mixing-bowl ?proportioned-vanilla all portion)
+(transfer-contents ?transferred-flour ?rest-4 ?ks-5 ?ks-4 ?mixing-bowl ?sifted-flour all portion)
+(transfer-contents ?transferred-walnut ?rest-5 ?ks-6 ?ks-5 ?mixing-bowl ?ground-walnut all portion)
+(mix ?combined-dough ?ks-7 ?ks-6 ?mixing-bowl ?wooden-spoon)

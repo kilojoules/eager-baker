@@ -1,0 +1,137 @@
+{
+  "recipe_id": "black-bean-salad-4",
+  "recipe_title": "Black Bean and Mango Salad",
+  "slice_steps": [
+    1,
+    2
+  ],
+  "nl_instruction": "Gather the ingredients. In a large bowl, combine the rinsed black beans, the diced bell pepper, green onions, minced jalapeno pepper, and fresh cilantro.",
+  "kitchen_state": {
+    "summary": "You are mid-recipe. Operations for the first 0 instruction step(s) and all ingredient prep are already done. The following objects are available:",
+    "available_objects": [
+      "washed black beans  (from: wash)",
+      "bell pepper seeds  (from: seed)",
+      "diced bell pepper  (from: cut diced)",
+      "sliced onion  (from: cut fine-slices)",
+      "jalapeno seeds  (from: seed)",
+      "minced jalapeno  (from: cut minced)",
+      "chopped cilantro  (from: cut minced)",
+      "proportioned lime juice  (from: fetch and proportion lime-juice 250 ml)",
+      "proportioned olive oil  (from: fetch and proportion olive-oil 1 tablespoon)",
+      "diced mango  (from: cut diced)",
+      "proportioned salt  (from: fetch and proportion salt 0.5 teaspoon)"
+    ],
+    "prefix_network": [
+      "(get-kitchen ?kitchen)",
+      "(fetch-and-proportion ?proportioned-black-beans ?ks-with-black-beans ?kitchen ?target-container-1 black-bean 400 g)",
+      "(wash ?washed-black-beans ?ks-with-washed-black-beans ?ks-with-black-beans ?proportioned-black-beans)",
+      "(fetch-and-proportion ?proportioned-bell-pepper ?ks-with-bell-pepper ?ks-with-washed-black-beans ?target-container-2 red-bell-pepper 150 g)",
+      "(seed ?seeded-bell-pepper ?bell-pepper-seeds ?ks-with-seeded-bell-pepper ?ks-with-bell-pepper ?proportioned-bell-pepper ?knife)",
+      "(cut ?diced-bell-pepper ?ks-with-diced-bell-pepper ?ks-with-seeded-bell-pepper ?seeded-bell-pepper diced ?knife)",
+      "(fetch-and-proportion ?proportioned-onion ?ks-with-onion ?ks-with-diced-bell-pepper ?target-container-3 green-onion 6 piece)",
+      "(cut ?sliced-onion ?ks-with-sliced-onion ?ks-with-onion ?proportioned-onion fine-slices ?knife)",
+      "(fetch-and-proportion ?proportioned-jalapeno ?ks-with-jalapeno ?ks-with-sliced-onion ?target-container-4 jalapeno 1 piece)",
+      "(seed ?seeded-jalapeno ?jalapeno-seeds ?ks-with-seeded-jalapeno ?ks-with-jalapeno ?proportioned-jalapeno ?knife)",
+      "(cut ?minced-jalapeno ?ks-with-minced-jalapeno ?ks-with-seeded-jalapeno ?seeded-jalapeno minced ?knife)",
+      "(fetch-and-proportion ?proportioned-cilantro ?ks-with-cilantro ?ks-with-minced-jalapeno ?target-container-5 fresh-cilantro 20 g)",
+      "(cut ?chopped-cilantro ?ks-with-chopped-cilantro ?ks-with-cilantro ?proportioned-cilantro minced ?knife)",
+      "(fetch-and-proportion ?proportioned-lime-juice ?ks-with-lime-juice ?ks-with-cilantro ?target-container-6 lime-juice 250 ml)",
+      "(fetch-and-proportion ?proportioned-olive-oil ?ks-with-olive-oil ?ks-with-lime-juice ?target-container-7 olive-oil 1 tablespoon)",
+      "(fetch-and-proportion ?proportioned-mango ?ks-with-mango ?ks-with-olive-oil ?target-container-8 mango 330 g)",
+      "(cut ?diced-mango ?ks-with-diced-mango ?ks-with-mango ?proportioned-mango diced ?knife)",
+      "(fetch-and-proportion ?proportioned-salt ?ks-with-salt ?ks-with-diced-mango ?target-container-9 salt 0.5 teaspoon)"
+    ],
+    "stray_preconditions": []
+  },
+  "in_scope_ops": [
+    {
+      "idx": 18,
+      "name": "fetch",
+      "sexp": "(fetch ?large-bowl ?ks-with-large-bowl ?ks-with-salt large-bowl 1)",
+      "implicit_precondition": true
+    },
+    {
+      "idx": 19,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-a ?rest-a ?output-ks-a ?ks-with-large-bowl ?large-bowl ?washed-black-beans ?quantity-a ?unit-a)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 20,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-b ?rest-b ?output-ks-b ?output-ks-a ?output-container-a ?diced-bell-pepper ?quantity-b ?unit-b)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 21,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-c ?rest-c ?output-ks-c ?output-ks-b ?output-container-b ?sliced-onion ?quantity-c ?unit-c)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 22,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-d ?rest-d ?output-ks-d ?output-ks-c ?output-container-c ?minced-jalapeno ?quantity-d ?unit-d)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 23,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-e ?rest-e ?output-ks-e ?output-ks-d ?output-container-d ?chopped-cilantro ?quantity-e ?unit-e)",
+      "implicit_precondition": false
+    },
+    {
+      "idx": 24,
+      "name": "mingle",
+      "sexp": "(mingle ?bean-mix ?ks-with-bean-mix ?output-ks-e ?output-container-e ?mingling-tool)",
+      "implicit_precondition": false
+    }
+  ],
+  "out_of_scope_ops": [
+    {
+      "idx": 25,
+      "name": "fetch",
+      "sexp": "(fetch ?small-bowl ?ks-with-small-bowl ?ks-with-bean-mix small-bowl 1)"
+    },
+    {
+      "idx": 26,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-f ?rest-f ?output-ks-f ?ks-with-small-bowl ?small-bowl ?proportioned-olive-oil ?quantity-f ?unit-f)"
+    },
+    {
+      "idx": 27,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-g ?rest-g ?output-ks-g ?output-ks-f ?output-container-f ?proportioned-lime-juice ?quantity-g ?unit-g)"
+    },
+    {
+      "idx": 28,
+      "name": "mix",
+      "sexp": "(mix ?liquid-mixture ?ks-with-liquid-mixture ?output-ks-g ?output-container-g ?mixing-tool)"
+    },
+    {
+      "idx": 29,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-h ?rest-h ?output-ks-h ?ks-with-liquid-mixture ?bean-mix ?liquid-mixture ?quantity-h ?unit-h)"
+    },
+    {
+      "idx": 30,
+      "name": "mingle",
+      "sexp": "(mingle ?black-bean-salad ?ks-with-black-bean-salad ?output-ks-h ?output-container-h ?mingling-tool)"
+    },
+    {
+      "idx": 31,
+      "name": "transfer-contents",
+      "sexp": "(transfer-contents ?output-container-i ?rest-i ?output-ks-i ?ks-with-black-bean-salad ?black-bean-salad ?diced-mango ?quantity-i ?unit-i)"
+    },
+    {
+      "idx": 32,
+      "name": "mingle",
+      "sexp": "(mingle ?black-bean-mango-salad ?ks-with-black-bean-mango-salad ?output-ks-i ?output-container-i ?mingling-tool)"
+    },
+    {
+      "idx": 33,
+      "name": "sprinkle",
+      "sexp": "(sprinkle ?seasoned-salad ?ks-with-seasoned-salad ?ks-with-black-bean-mango-salad ?black-bean-mango-salad ?proportioned-salt)"
+    }
+  ]
+}

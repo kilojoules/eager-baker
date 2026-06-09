@@ -1,0 +1,8 @@
+(cut ?sliced-radishes ?ks1 ?ks0 ?proportioned-radish slices ?knife)
+(cut ?sliced-onion ?ks2 ?ks1 ?proportioned-onion slices ?knife)
+(cut ?sliced-bell-pepper ?ks3 ?ks2 ?proportioned-bell-pepper slices ?knife)
+(fetch ?large-bowl ?ks4 ?ks3 large-bowl 1 piece)
+(transfer-contents ?cucumber-in-bowl ?rest1 ?ks5 ?ks4 ?large-bowl ?sliced-cucumber 1 all)
+(transfer-contents ?tomato-in-bowl ?rest2 ?ks6 ?ks5 ?large-bowl ?chopped-tomato 1 all)
+(transfer-contents ?radish-in-bowl ?rest3 ?ks7 ?ks6 ?large-bowl ?sliced-radishes 1 all)
+(transfer-contents ?onion-in-bowl ?rest4 ?ks8 ?ks7 ?large-bowl ?sliced-onion 1 all)
