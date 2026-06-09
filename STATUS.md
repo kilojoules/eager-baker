@@ -21,9 +21,18 @@ Checkpoint after the Phase-1 hard gate. Read this first.
   scope axis at equal performance** (cautious signed −0.15, 0/8 over-eager; eager
   +0.03, 2/8 over-eager). Scorer validated on 6 synthetic cases first.
   (`FINDINGS.md`, `results/pilot_plot.png`, `results/pilot_results.csv`)
-- **Stopped here for review.** Pilot gate passed → next is Phase 5 (couple the
-  axes via destructive slices) and the full-scale run. Both are larger spends and
-  Phase 5 has an open feasibility question (per-slice DAS), so I paused.
+- **Step 3 (scaled run): ✅ DONE.** 3 real open-weights models via a uniform
+  RunPod/vLLM client (Gate A satisfied with genuinely distinct models, no
+  personas); n=50/model; metric frozen; analysis pre-registered. **Result: models
+  differ significantly in over-eager rate** — Qwen3-30B 20%, Qwen2.5-7B 44%,
+  Phi-3.5-mini 72% (omnibus p<0.001; all pairwise sig after Holm), at equal
+  performance → calibration not capability. The effect is in the *rate*, not the
+  signed-scope magnitude (all net-timid). §4 simulator tagging done (5 coupled).
+  All RunPod pods terminated. See `FINDINGS.md` (STEP 3), `STEP3_POWER.md`,
+  `STEP3_ANALYSIS_PLAN.md`, `results/step3_*`.
+- **Still open:** Phase 5 (fold DAS penalty into scoring for coupled tasks — the
+  §4 tags now exist); more model families (Mistral failed to serve); larger n for
+  the ~24–28 pp pairwise gaps that sit at the MDE.
 
 ## What's the load-bearing result
 

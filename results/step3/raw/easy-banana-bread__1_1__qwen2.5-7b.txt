@@ -1,0 +1,3 @@
+SELECTED=['B', 'M']
+---RAW---
+B, M

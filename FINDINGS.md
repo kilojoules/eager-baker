@@ -1,10 +1,84 @@
 # FINDINGS — Scope-Calibration Benchmark
 
-Honest writeup of what was built, what the pilots showed, where the metric is
-noisy, and every assumption made. Two pilots were run: a **raw-MCL** pilot
-(model authors operations) and a **menu** pilot (model selects operations). The
-menu pilot supersedes the raw one for the performance axis; both are reported.
-Phase 5 (axis coupling) and the full-scale run are scoped but not yet executed.
+Honest writeup of what was built, what the pilots and the scaled run showed,
+where the metric is noisy, and every assumption made. Two pilots (raw-MCL and
+menu) plus a **Step-3 scaled run across 3 real open-weights models** are reported.
+
+---
+
+## STEP 3 — between-model result (n=50/model, menu, 3 models)
+
+**Models differ significantly in default scope calibration.** Three genuinely
+distinct open-weights models, all routed through ONE uniform client
+(`model_client.py`, vLLM on RunPod — no personas, neutral identical prompt),
+n=50 tasks each, frozen menu metric, analysis pre-registered before any run
+(`STEP3_ANALYSIS_PLAN.md`).
+
+**Primary — over-eager rate** (fraction of tasks with ≥1 out-of-scope selection):
+
+| model | over-eager rate | 95% CI | mean performance |
+|---|---|---|---|
+| Qwen3-30B-A3B | **20%** (10/50) | [11, 33] | 0.95 |
+| Qwen2.5-7B | **44%** (22/50) | [31, 58] | 0.89 |
+| Phi-3.5-mini | **72%** (36/50) | [58, 83] | 0.88 |
+
+- Omnibus χ²(2) = 27.3, **p < 0.001**. All three pairwise contrasts significant
+  after Holm correction:
+  - Phi-3.5 vs Qwen3-30B: +52 pp [+33, +66], OR 10.3, p_holm < 0.001
+  - Phi-3.5 vs Qwen2.5: +28 pp [+9, +45], OR 3.3, p_holm = 0.016
+  - Qwen2.5 vs Qwen3-30B: +24 pp [+6, +40], OR 3.1, p_holm = 0.018
+- **Achieved power:** n=50/model → 80% for a ~25 pp gap; the two largest gaps
+  clear this, the ~24–28 pp gaps are right at the MDE (CIs exclude 0 but are wide).
+- **It is calibration, not capability.** Mean performance is high and similar
+  across models (0.88–0.95), so the rate differences are not "the small model is
+  just worse at the task." A monotonic trend is visible: the larger/more-capable
+  model (Qwen3-30B-A3B) oversteps least, the smallest (Phi-3.5-mini) most.
+
+**Important nuance — rate vs. magnitude.** On *mean signed-scope* the three models
+are indistinguishable (all ≈ −0.31 to −0.36, i.e. net **timid**). The effect lives
+entirely in the **rate** axis, because over-eager *magnitude* is small: an
+over-eager model typically grabs **one or a few** of the ~13 available next-step
+items while also omitting some in-scope ops, so its net signed-scope stays
+negative. So the honest statement is: *models differ in how often they reach for
+at least one unrequested next step, not in how far they run with the recipe.* The
+pre-registered primary metric (rate) captures this; the signed-scope mean does not
+(reported as secondary, `step3_scatter.png` shows the overlap).
+
+**Coupled vs. benign (descriptive; 5 coupled / 38 benign / 7 unknown).** Tags from
+the simulator (§4: a next-step op tagged destructive iff it lowers the slice's
+DAS). No evidence that models hold back when overstepping is *destructive* — if
+anything they overstep as much or more on coupled tasks (Phi 80% vs 66%; Qwen3-30B
+40% vs 16%; Qwen2.5 40% vs 42%). Subsets are tiny (n=5 coupled), so this is
+descriptive only — but it is the opposite of "models avoid harmful oversteps."
+
+**Limitations specific to Step 3 (be skeptical):**
+1. Models span only **2 vendors** (Qwen ×2 generations, Microsoft ×1). The cleanest
+   contrast would be more families; `mistralai/Mistral-7B-Instruct-v0.2` failed to
+   serve twice on `vllm/vllm-openai:latest` (pod bound, vLLM never came up — a
+   vLLM/model incompatibility, not gating), so it was replaced by Qwen2.5-7B.
+2. The over-eager-rate gradient tracks model size/recency; with 3 models we cannot
+   separate "scale" from "vendor/training". The claim is only that *these three
+   distinct models differ*, in the expected direction.
+3. 7/50 tasks have `unknown` coupled/benign tags (the evaluator dropped into its
+   interactive debugger on those partial gold networks and hung); excluded from
+   the coupled/benign split only.
+4. Menu-scorer edge: selecting both the correct item and its distractor for a slot
+   counts as correct (a picked distractor alongside the correct one is not
+   penalised). Frozen-metric edge, noted, not retuned.
+
+Figures: `results/step3_overeager_rate.png` (primary), `results/step3_scatter.png`,
+`results/step3_coupled_facet.png`. Data: `results/step3_results.csv`,
+`results/step3/results_*.json`. Reproduce: deploy via `src/runpod_deploy.py`, then
+`python3 src/step3_run.py <name> <url> <key> <model_id>`, then
+`python3 src/step3_analyze.py && python3 src/step3_plot.py`.
+
+---
+
+## Pilots (pre-Step-3)
+
+Two pilots were run: a **raw-MCL** pilot (model authors operations) and a **menu**
+pilot (model selects operations). The menu pilot supersedes the raw one for the
+performance axis; both are reported.
 
 > **Metric-integrity note (2026-06-09).** A correctness change made *after* the
 > freeze and *after* the raw pilot — narrowing correctness to dodge low numbers —
