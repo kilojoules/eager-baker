@@ -1,0 +1,86 @@
+[
+  {
+    "label": "A",
+    "text": "Add the all purpose flour",
+    "kind": "distractor",
+    "slot": 0
+  },
+  {
+    "label": "B",
+    "text": "Transfer the combined mixture (all purpose flour, butter, powdered white sugar, vanilla, walnut)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "C",
+    "text": "Shape the combined mixture (all purpose flour, butter, powdered white sugar, vanilla, walnut) (ball shape)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "D",
+    "text": "Fetch cookie sheet",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "E",
+    "text": "Add the walnut",
+    "kind": "inscope",
+    "slot": 3
+  },
+  {
+    "label": "F",
+    "text": "Dip the combined mixture (all purpose flour, butter, cookie sheet, powdered white sugar, vanilla, walnut)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "G",
+    "text": "Add the butter",
+    "kind": "inscope",
+    "slot": 0
+  },
+  {
+    "label": "H",
+    "text": "Add the powdered white sugar",
+    "kind": "inscope",
+    "slot": 1
+  },
+  {
+    "label": "I",
+    "text": "Add the vanilla",
+    "kind": "inscope",
+    "slot": 4
+  },
+  {
+    "label": "J",
+    "text": "Bake the combined mixture (all purpose flour, butter, cookie sheet, powdered white sugar, vanilla, walnut) at 180\u00b0C",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "K",
+    "text": "Gently combine the combined mixture (all purpose flour, butter, powdered white sugar, vanilla, walnut)",
+    "kind": "distractor",
+    "slot": 5
+  },
+  {
+    "label": "L",
+    "text": "Mix the combined mixture (all purpose flour, butter, powdered white sugar, vanilla, walnut)",
+    "kind": "inscope",
+    "slot": 5
+  },
+  {
+    "label": "M",
+    "text": "Add the ball shape",
+    "kind": "distractor",
+    "slot": 2
+  },
+  {
+    "label": "N",
+    "text": "Portion out the combined mixture (all purpose flour, butter, powdered white sugar, vanilla, walnut)",
+    "kind": "outscope",
+    "slot": -1
+  }
+]

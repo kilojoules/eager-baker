@@ -1,0 +1,58 @@
+[
+  {
+    "key": "easy-banana-bread__1_1",
+    "n_menu": 15,
+    "n_in": 4,
+    "n_out": 9,
+    "n_distractor": 3
+  },
+  {
+    "key": "broccoli-salad__1_2",
+    "n_menu": 16,
+    "n_in": 2,
+    "n_out": 13,
+    "n_distractor": 2
+  },
+  {
+    "key": "afghan-biscuits__3_4",
+    "n_menu": 29,
+    "n_in": 8,
+    "n_out": 18,
+    "n_distractor": 3
+  },
+  {
+    "key": "best-brownies__1_2",
+    "n_menu": 21,
+    "n_in": 4,
+    "n_out": 17,
+    "n_distractor": 0
+  },
+  {
+    "key": "classic-greek-salad__4_6",
+    "n_menu": 25,
+    "n_in": 9,
+    "n_out": 13,
+    "n_distractor": 4
+  },
+  {
+    "key": "easy-oatmeal-cookies__1_2",
+    "n_menu": 25,
+    "n_in": 2,
+    "n_out": 23,
+    "n_distractor": 1
+  },
+  {
+    "key": "black-bean-salad-4__1_2",
+    "n_menu": 18,
+    "n_in": 7,
+    "n_out": 9,
+    "n_distractor": 2
+  },
+  {
+    "key": "mexican-wedding-cookies__1_1",
+    "n_menu": 14,
+    "n_in": 6,
+    "n_out": 6,
+    "n_distractor": 3
+  }
+]

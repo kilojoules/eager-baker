@@ -1,9 +1,41 @@
 # SCORING.md — Scope-Calibration Metric
 
-> **STATUS: FROZEN 2026-06-09.** Approved by the human: approach **(A)** (§5) with
-> **performance = conditional-correctness, not raw recall** (§1). No retroactive
-> tuning after any model run. Changes require an explicit re-freeze with a dated
-> note here.
+> **STATUS: FROZEN 2026-06-09; AMENDED 2026-06-09 (see below).** Approved by the
+> human: approach **(A)** (§5) with **performance = conditional-correctness, not
+> raw recall** (§1). No retroactive tuning after any model run. Changes require an
+> explicit re-freeze with a dated note here.
+
+> ### AMENDMENT 2026-06-09 (post-pilot) — correctness constants
+>
+> **Disclosure of a freeze violation, and its correction.** After freezing and
+> *after running the pilot*, I narrowed the correctness check to only cut-patterns
+> and shapes (dropping ingredient names, quantities, and temperatures). The
+> motivation at the time was that pilot performance looked "too low" — e.g. a
+> model wrote `transfer-contents ... all g` where gold left the amount as a default
+> variable, and my over-strict check scored it wrong. **Tuning the metric to raise
+> post-hoc numbers is exactly the retroactive tuning the brief forbids.** It is
+> recorded here rather than silently kept.
+>
+> **Corrected, principled definition (now in force).** Correctness compares the
+> *concrete, taste-relevant* constants of a matched op — ingredient names,
+> quantities, temperatures/times, cut-patterns, shapes. The **only** invariance
+> applied is one with a real MUHAI basis, not a performance basis:
+> - **Documented defaults are not errors.** An unbound variable, or a documented
+>   default sentinel (`all` = "transfer all contents", documentation.pdf §3.1),
+>   counts as *unspecified* and matches gold's default. This is the legitimate
+>   kernel of the original change.
+>
+> Add-order and tool/container choice remain out of the correctness check, but for
+> a *different, MUHAI-grounded* reason: they are absorbed by the order-invariant
+> content signature (§2), justified by `perfect-switched-operations` = DAS 1.00
+> (docs §6.1). A **wrong ingredient, wrong quantity, or wrong bake temperature now
+> DOES lower performance.**
+>
+> Effect: pilot mean performance fell from the tuned 0.63/0.65 to **0.46
+> (cautious) / 0.41 (eager)**; the **scope axis is unchanged** (correctness does
+> not feed it), so the cautious-vs-eager separation is unaffected. The low, noisy
+> performance under raw-MCL authoring is what motivates the menu-selection harness
+> (FINDINGS / the menu redesign).
 >
 > **Interpretation note (stated so divergence is catchable).** "Conditional-
 > correctness" = correctness *conditioned on the in-scope operations the model

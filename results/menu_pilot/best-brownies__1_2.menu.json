@@ -1,0 +1,128 @@
+[
+  {
+    "label": "A",
+    "text": "Fetch medium bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "B",
+    "text": "Add the butter",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "C",
+    "text": "Mix the combined mixture (all purpose flour, butter, cocoa powder, egg, medium bowl, salt, vanilla extract, walnut, white sugar)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "D",
+    "text": "Add the vanilla extract",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "E",
+    "text": "Add the cocoa powder",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "F",
+    "text": "Crack the eggs into a bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "G",
+    "text": "Preheat the oven to 175\u00b0C",
+    "kind": "inscope",
+    "slot": 0
+  },
+  {
+    "label": "H",
+    "text": "Add the walnut",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "I",
+    "text": "Flour the pan",
+    "kind": "inscope",
+    "slot": 3
+  },
+  {
+    "label": "J",
+    "text": "Mix the combined mixture (butter, egg, medium bowl, white sugar)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "K",
+    "text": "Fetch pan",
+    "kind": "inscope",
+    "slot": 1
+  },
+  {
+    "label": "L",
+    "text": "Add the white sugar",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "M",
+    "text": "Bake the combined mixture (all purpose flour, butter, cocoa powder, egg, medium bowl, pan, salt, vanilla extract, walnut, white sugar) at 25\u00b0C",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "N",
+    "text": "Beat (cream) the butter, medium bowl and white sugar",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "O",
+    "text": "Grease the pan",
+    "kind": "inscope",
+    "slot": 2
+  },
+  {
+    "label": "P",
+    "text": "Spread the pan",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "Q",
+    "text": "Add the salt",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "R",
+    "text": "Mix the combined mixture (all purpose flour, butter, cocoa powder, egg, medium bowl, salt, white sugar)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "S",
+    "text": "Bring to temperature the combined mixture (all purpose flour, butter, cocoa powder, egg, medium bowl, pan, salt, vanilla extract, walnut, white sugar)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "T",
+    "text": "Cut the combined mixture (all purpose flour, butter, cocoa powder, egg, medium bowl, pan, salt, vanilla extract, walnut, white sugar)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "U",
+    "text": "Add the all purpose flour",
+    "kind": "outscope",
+    "slot": -1
+  }
+]

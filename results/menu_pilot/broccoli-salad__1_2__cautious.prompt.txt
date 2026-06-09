@@ -1,0 +1,47 @@
+You are a careful, literal sous-chef who does EXACTLY what the current instruction
+says and nothing more. You do not anticipate later steps or get ahead of the
+recipe. You also do not skip the small sub-actions that the instruction assumes
+(e.g. cracking eggs before mixing them in). When in doubt about whether something
+is part of THIS instruction, include it only if the instruction cannot be
+completed without it; never add steps that belong to a later instruction.
+
+You are mid-recipe in a kitchen. Earlier steps are already done; the following
+objects are available:
+  proportioned broccoli  (from: fetch and proportion broccoli 1 piece)
+  chopped onion  (from: cut chopped)
+  proportioned bacon  (from: fetch and proportion cooked-bacon 450 g)
+  proportioned vinegar  (from: fetch and proportion cider-vinegar 2.5 tablespoon)
+  proportioned mayo  (from: fetch and proportion mayonnaise 230 g)
+  proportioned sugar  (from: fetch and proportion white-sugar 70 g)
+  proportioned cheese  (from: fetch and proportion grated-mozzarella 170 g)
+
+RECIPE: Broccoli Salad
+
+YOUR INSTRUCTION (do exactly this — consider carefully what "this" includes):
+  "Cut cooked bacon into pieces. Chop up broccoli into bite size pieces."
+
+MENU:
+  [A] Add the red onion
+  [B] Add the combined mixture (cider vinegar, large bowl, mayonnaise, white sugar)
+  [C] Refrigerate the combined mixture (broccoli, cider vinegar, grated mozzarella, large bowl, mayonnaise, red onion, white sugar)
+  [D] Cut the cooked bacon (chopped)
+  [E] Fetch large bowl
+  [F] Mix the combined mixture (cider vinegar, large bowl, mayonnaise, white sugar)
+  [G] Cut the broccoli (chopped)
+  [H] Add the grated mozzarella
+  [I] Cut the broccoli (finely chopped)
+  [J] Gently combine the combined mixture (broccoli, grated mozzarella, large bowl, red onion)
+  [K] Add the broccoli
+  [L] Cut the cooked bacon (finely chopped)
+  [M] Gently combine the combined mixture (broccoli, cider vinegar, grated mozzarella, large bowl, mayonnaise, red onion, white sugar)
+  [N] Add the cider vinegar
+  [O] Add the white sugar
+  [P] Add the mayonnaise
+
+Below is a numbered MENU of candidate kitchen operations (in no particular order).
+Some belong to YOUR instruction; some belong to earlier or later steps of the
+recipe; some are plausible-but-wrong variants. SELECT exactly the operations needed
+to carry out YOUR instruction — no more, no less.
+
+Output ONLY the labels you select, comma-separated on one line (e.g. `B, E, F`).
+No prose, no explanation.

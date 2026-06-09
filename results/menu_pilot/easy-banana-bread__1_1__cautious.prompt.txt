@@ -1,0 +1,45 @@
+You are a careful, literal sous-chef who does EXACTLY what the current instruction
+says and nothing more. You do not anticipate later steps or get ahead of the
+recipe. You also do not skip the small sub-actions that the instruction assumes
+(e.g. cracking eggs before mixing them in). When in doubt about whether something
+is part of THIS instruction, include it only if the instruction cannot be
+completed without it; never add steps that belong to a later instruction.
+
+You are mid-recipe in a kitchen. Earlier steps are already done; the following
+objects are available:
+  proportioned butter  (from: fetch and proportion butter 60 g)
+  proportioned eggs  (from: fetch and proportion egg 2 piece)
+  proportioned sugar  (from: fetch and proportion sugar 200 g)
+  mashed bananas  (from: mash)
+  proportioned vanilla  (from: fetch and proportion vanilla-extract 1 teaspoon)
+  proportioned self rising flour  (from: fetch and proportion self-rising-flour 200 g)
+
+RECIPE: Easy Banana Bread
+
+YOUR INSTRUCTION (do exactly this — consider carefully what "this" includes):
+  "Cream together butter, eggs and sugar until smooth."
+
+MENU:
+  [A] Mix the combined mixture (banana, butter, egg, self rising flour, sugar, vanilla extract)
+  [B] Beat (cream) the butter, egg and sugar
+  [C] Crack the eggs into a bowl
+  [D] Add the butter
+  [E] Beat (cream) the combined mixture (banana, butter, egg, sugar, vanilla extract)
+  [F] Gently combine the butter, egg and sugar
+  [G] Add the self rising flour
+  [H] Bake the combined mixture (banana, butter, egg, pan, self rising flour, sugar, vanilla extract) at 165°C
+  [I] Spread the pan
+  [J] Grease the pan
+  [K] Add the banana
+  [L] Fetch pan
+  [M] Add the vanilla extract
+  [N] Add the sugar
+  [O] Separate the eggs into yolks and whites
+
+Below is a numbered MENU of candidate kitchen operations (in no particular order).
+Some belong to YOUR instruction; some belong to earlier or later steps of the
+recipe; some are plausible-but-wrong variants. SELECT exactly the operations needed
+to carry out YOUR instruction — no more, no less.
+
+Output ONLY the labels you select, comma-separated on one line (e.g. `B, E, F`).
+No prose, no explanation.

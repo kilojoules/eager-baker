@@ -1,0 +1,64 @@
+You are a careful, literal sous-chef who does EXACTLY what the current instruction
+says and nothing more. You do not anticipate later steps or get ahead of the
+recipe. You also do not skip the small sub-actions that the instruction assumes
+(e.g. cracking eggs before mixing them in). When in doubt about whether something
+is part of THIS instruction, include it only if the instruction cannot be
+completed without it; never add steps that belong to a later instruction.
+
+You are mid-recipe in a kitchen. Earlier steps are already done; the following
+objects are available:
+  butter at room temp  (from: bring to temperature)
+  proportioned caster sugar  (from: fetch and proportion caster-sugar 100 g)
+  proportioned all purpose flour  (from: fetch and proportion all-purpose-flour 300 g)
+  proportioned cocoa powder  (from: fetch and proportion cocoa-powder 3 tablespoon)
+  proportioned corn flakes  (from: fetch and proportion corn-flakes 300 g)
+  proportioned icing sugar  (from: fetch and proportion powdered-white-sugar 200 g)
+  proportioned icing cocoa powder  (from: fetch and proportion cocoa-powder 30 g)
+  proportioned water  (from: fetch and proportion water 3 tablespoon)
+  proportioned almonds  (from: fetch and proportion almond-flakes 50 g)
+  preheated oven  (from: preheat oven 180 degrees-celsius)
+  lined baking tray  (from: line)
+
+RECIPE: Afghan Biscuits
+
+YOUR INSTRUCTION (do exactly this — consider carefully what "this" includes):
+  "Cream the butter and sugar until light and fluffy. Sift together the flour and cocoa powder and mix into butter mixture with a wooden spoon."
+
+MENU:
+  [A] Fetch wire rack
+  [B] Shape the combined mixture (all purpose flour, butter, caster sugar, cocoa powder, corn flakes, wooden spoon) (ball shape)
+  [C] Bring to temperature the combined mixture (all purpose flour, baking paper, baking tray, butter, caster sugar, cocoa powder, corn flakes, wire rack, wooden spoon)
+  [D] Add the butter
+  [E] Flatten the combined mixture (all purpose flour, butter, caster sugar, cocoa powder, corn flakes, wooden spoon)
+  [F] Add the 5 cm apart
+  [G] Portion out the combined mixture (all purpose flour, butter, caster sugar, cocoa powder, corn flakes, wooden spoon)
+  [H] Add the water
+  [I] Add the powdered white sugar
+  [J] Gently combine the combined mixture (all purpose flour, butter, caster sugar, cocoa powder)
+  [K] Sprinkle the combined mixture (all purpose flour, baking paper, baking tray, butter, caster sugar, cocoa powder, corn flakes, large bowl, powdered white sugar, table spoon, water, wire rack, wooden spoon)
+  [L] Mix the combined mixture (all purpose flour, butter, caster sugar, cocoa powder)
+  [M] Beat (cream) the butter and caster sugar
+  [N] Add the cocoa powder
+  [O] Add the corn flakes
+  [P] Gently combine the butter and caster sugar
+  [Q] Spread the combined mixture (all purpose flour, baking paper, baking tray, butter, caster sugar, cocoa powder, corn flakes, wire rack, wooden spoon)
+  [R] Transfer the combined mixture (all purpose flour, butter, caster sugar, cocoa powder, corn flakes, wooden spoon)
+  [S] Sift the mixture
+  [T] Fetch large bowl
+  [U] Mix the combined mixture (all purpose flour, butter, caster sugar, cocoa powder, corn flakes, wooden spoon)
+  [V] Bake the combined mixture (all purpose flour, baking paper, baking tray, butter, caster sugar, cocoa powder, corn flakes, wooden spoon) at 15°C
+  [W] Add the all purpose flour and cocoa powder
+  [X] Fetch wooden spoon
+  [Y] Mix the large bowl, powdered white sugar and water
+  [Z] Add the caster sugar
+  [A26] Fetch table spoon
+  [A27] Transfer the combined mixture (all purpose flour, baking paper, baking tray, butter, caster sugar, cocoa powder, corn flakes, wooden spoon)
+  [A28] Sift the all purpose flour
+
+Below is a numbered MENU of candidate kitchen operations (in no particular order).
+Some belong to YOUR instruction; some belong to earlier or later steps of the
+recipe; some are plausible-but-wrong variants. SELECT exactly the operations needed
+to carry out YOUR instruction — no more, no less.
+
+Output ONLY the labels you select, comma-separated on one line (e.g. `B, E, F`).
+No prose, no explanation.

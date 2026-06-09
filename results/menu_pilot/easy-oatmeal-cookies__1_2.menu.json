@@ -1,0 +1,152 @@
+[
+  {
+    "label": "A",
+    "text": "Mix the combined mixture (all purpose flour, baking soda, brown sugar, ground cinnamon, ground nutmeg, large bowl, oats, salt, walnut)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "B",
+    "text": "Crack the eggs into a bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "C",
+    "text": "Fetch large bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "D",
+    "text": "Preheat the oven to 175\u00b0C",
+    "kind": "inscope",
+    "slot": 0
+  },
+  {
+    "label": "E",
+    "text": "Add the baking soda",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "F",
+    "text": "Sift the large bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "G",
+    "text": "Portion out the combined mixture (all purpose flour, baking soda, egg, fork, ground cinnamon, ground nutmeg, large bowl, raisin, salt, vanilla extract, vegetable oil, water)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "H",
+    "text": "Add the vegetable oil",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "I",
+    "text": "Add the combined mixture (egg, fork, large bowl, raisin, vanilla extract, vegetable oil, water)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "J",
+    "text": "Add the brown sugar",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "K",
+    "text": "Add the salt",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "L",
+    "text": "Add the raisin",
+    "kind": "inscope",
+    "slot": 1
+  },
+  {
+    "label": "M",
+    "text": "Add the raisin and water",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "N",
+    "text": "Add the oats",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "O",
+    "text": "Beat (cream) the egg and large bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "P",
+    "text": "Transfer the combined mixture (all purpose flour, baking soda, egg, fork, ground cinnamon, ground nutmeg, large bowl, raisin, salt, vanilla extract, vegetable oil, water)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "Q",
+    "text": "Fetch fork",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "R",
+    "text": "Add the 5 cm apart",
+    "kind": "distractor",
+    "slot": 1
+  },
+  {
+    "label": "S",
+    "text": "Add the ground nutmeg",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "T",
+    "text": "Add the ground cinnamon",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "U",
+    "text": "Bake the combined mixture (all purpose flour, baking soda, cookie sheet, egg, fork, ground cinnamon, ground nutmeg, large bowl, raisin, salt, vanilla extract, vegetable oil, water) at 10\u00b0C",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "V",
+    "text": "Mix the combined mixture (all purpose flour, baking soda, egg, fork, ground cinnamon, ground nutmeg, large bowl, raisin, salt, vanilla extract, vegetable oil, water)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "W",
+    "text": "Add the vanilla extract",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "X",
+    "text": "Add the walnut",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "Y",
+    "text": "Fetch cookie sheet",
+    "kind": "outscope",
+    "slot": -1
+  }
+]

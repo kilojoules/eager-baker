@@ -1,0 +1,110 @@
+[
+  {
+    "label": "A",
+    "text": "Gently combine the combined mixture (black bean, fresh cilantro, green onion, jalapeno, large bowl, lime juice, olive oil, red bell pepper, small bowl)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "B",
+    "text": "Gently combine the combined mixture (black bean, fresh cilantro, green onion, jalapeno, large bowl, lime juice, mango, olive oil, red bell pepper, small bowl)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "C",
+    "text": "Add the lime juice, olive oil and small bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "D",
+    "text": "Add the lime juice",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "E",
+    "text": "Add the fresh cilantro",
+    "kind": "inscope",
+    "slot": 5
+  },
+  {
+    "label": "F",
+    "text": "Sprinkle the combined mixture (black bean, fresh cilantro, green onion, jalapeno, large bowl, lime juice, mango, olive oil, red bell pepper, small bowl)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "G",
+    "text": "Gently combine the combined mixture (black bean, fresh cilantro, green onion, jalapeno, large bowl, red bell pepper)",
+    "kind": "inscope",
+    "slot": 6
+  },
+  {
+    "label": "H",
+    "text": "Add the mango",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "I",
+    "text": "Add the olive oil",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "J",
+    "text": "Add the jalapeno",
+    "kind": "inscope",
+    "slot": 4
+  },
+  {
+    "label": "K",
+    "text": "Add the diced",
+    "kind": "distractor",
+    "slot": 1
+  },
+  {
+    "label": "L",
+    "text": "Add the red bell pepper",
+    "kind": "inscope",
+    "slot": 2
+  },
+  {
+    "label": "M",
+    "text": "Beat (cream) the combined mixture (black bean, fresh cilantro, green onion, jalapeno, large bowl, red bell pepper)",
+    "kind": "distractor",
+    "slot": 6
+  },
+  {
+    "label": "N",
+    "text": "Add the green onion",
+    "kind": "inscope",
+    "slot": 3
+  },
+  {
+    "label": "O",
+    "text": "Mix the lime juice, olive oil and small bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "P",
+    "text": "Fetch small bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "Q",
+    "text": "Fetch large bowl",
+    "kind": "inscope",
+    "slot": 0
+  },
+  {
+    "label": "R",
+    "text": "Add the black bean",
+    "kind": "inscope",
+    "slot": 1
+  }
+]

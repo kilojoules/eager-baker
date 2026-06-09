@@ -1,0 +1,176 @@
+[
+  {
+    "label": "A",
+    "text": "Fetch wire rack",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "B",
+    "text": "Shape the combined mixture (all purpose flour, butter, caster sugar, cocoa powder, corn flakes, wooden spoon) (ball shape)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "C",
+    "text": "Bring to temperature the combined mixture (all purpose flour, baking paper, baking tray, butter, caster sugar, cocoa powder, corn flakes, wire rack, wooden spoon)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "D",
+    "text": "Add the butter",
+    "kind": "inscope",
+    "slot": 0
+  },
+  {
+    "label": "E",
+    "text": "Flatten the combined mixture (all purpose flour, butter, caster sugar, cocoa powder, corn flakes, wooden spoon)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "F",
+    "text": "Add the 5 cm apart",
+    "kind": "distractor",
+    "slot": 0
+  },
+  {
+    "label": "G",
+    "text": "Portion out the combined mixture (all purpose flour, butter, caster sugar, cocoa powder, corn flakes, wooden spoon)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "H",
+    "text": "Add the water",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "I",
+    "text": "Add the powdered white sugar",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "J",
+    "text": "Gently combine the combined mixture (all purpose flour, butter, caster sugar, cocoa powder)",
+    "kind": "distractor",
+    "slot": 7
+  },
+  {
+    "label": "K",
+    "text": "Sprinkle the combined mixture (all purpose flour, baking paper, baking tray, butter, caster sugar, cocoa powder, corn flakes, large bowl, powdered white sugar, table spoon, water, wire rack, wooden spoon)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "L",
+    "text": "Mix the combined mixture (all purpose flour, butter, caster sugar, cocoa powder)",
+    "kind": "inscope",
+    "slot": 7
+  },
+  {
+    "label": "M",
+    "text": "Beat (cream) the butter and caster sugar",
+    "kind": "inscope",
+    "slot": 2
+  },
+  {
+    "label": "N",
+    "text": "Add the cocoa powder",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "O",
+    "text": "Add the corn flakes",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "P",
+    "text": "Gently combine the butter and caster sugar",
+    "kind": "distractor",
+    "slot": 2
+  },
+  {
+    "label": "Q",
+    "text": "Spread the combined mixture (all purpose flour, baking paper, baking tray, butter, caster sugar, cocoa powder, corn flakes, wire rack, wooden spoon)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "R",
+    "text": "Transfer the combined mixture (all purpose flour, butter, caster sugar, cocoa powder, corn flakes, wooden spoon)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "S",
+    "text": "Sift the mixture",
+    "kind": "inscope",
+    "slot": 3
+  },
+  {
+    "label": "T",
+    "text": "Fetch large bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "U",
+    "text": "Mix the combined mixture (all purpose flour, butter, caster sugar, cocoa powder, corn flakes, wooden spoon)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "V",
+    "text": "Bake the combined mixture (all purpose flour, baking paper, baking tray, butter, caster sugar, cocoa powder, corn flakes, wooden spoon) at 15\u00b0C",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "W",
+    "text": "Add the all purpose flour and cocoa powder",
+    "kind": "inscope",
+    "slot": 5
+  },
+  {
+    "label": "X",
+    "text": "Fetch wooden spoon",
+    "kind": "inscope",
+    "slot": 6
+  },
+  {
+    "label": "Y",
+    "text": "Mix the large bowl, powdered white sugar and water",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "Z",
+    "text": "Add the caster sugar",
+    "kind": "inscope",
+    "slot": 1
+  },
+  {
+    "label": "A26",
+    "text": "Fetch table spoon",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "A27",
+    "text": "Transfer the combined mixture (all purpose flour, baking paper, baking tray, butter, caster sugar, cocoa powder, corn flakes, wooden spoon)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "A28",
+    "text": "Sift the all purpose flour",
+    "kind": "inscope",
+    "slot": 4
+  }
+]

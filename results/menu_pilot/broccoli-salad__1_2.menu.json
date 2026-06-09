@@ -1,0 +1,98 @@
+[
+  {
+    "label": "A",
+    "text": "Add the red onion",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "B",
+    "text": "Add the combined mixture (cider vinegar, large bowl, mayonnaise, white sugar)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "C",
+    "text": "Refrigerate the combined mixture (broccoli, cider vinegar, grated mozzarella, large bowl, mayonnaise, red onion, white sugar)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "D",
+    "text": "Cut the cooked bacon (chopped)",
+    "kind": "inscope",
+    "slot": 0
+  },
+  {
+    "label": "E",
+    "text": "Fetch large bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "F",
+    "text": "Mix the combined mixture (cider vinegar, large bowl, mayonnaise, white sugar)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "G",
+    "text": "Cut the broccoli (chopped)",
+    "kind": "inscope",
+    "slot": 1
+  },
+  {
+    "label": "H",
+    "text": "Add the grated mozzarella",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "I",
+    "text": "Cut the broccoli (finely chopped)",
+    "kind": "distractor",
+    "slot": 1
+  },
+  {
+    "label": "J",
+    "text": "Gently combine the combined mixture (broccoli, grated mozzarella, large bowl, red onion)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "K",
+    "text": "Add the broccoli",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "L",
+    "text": "Cut the cooked bacon (finely chopped)",
+    "kind": "distractor",
+    "slot": 0
+  },
+  {
+    "label": "M",
+    "text": "Gently combine the combined mixture (broccoli, cider vinegar, grated mozzarella, large bowl, mayonnaise, red onion, white sugar)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "N",
+    "text": "Add the cider vinegar",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "O",
+    "text": "Add the white sugar",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "P",
+    "text": "Add the mayonnaise",
+    "kind": "outscope",
+    "slot": -1
+  }
+]

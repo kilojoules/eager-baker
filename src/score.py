@@ -94,23 +94,27 @@ def content_closures(ops: list[Op]) -> dict:
     return {op.idx: op_content(op.idx, set()) for op in ops}
 
 
-# qualitative modifiers that change WHAT is produced (not how much / which tool).
-# Ingredient identity is already captured in the content signature, and quantities
-# / tool choices / add-order are intentionally NOT correctness criteria (MUHAI
-# treats those as taste-neutral; see docs §6.1 perfect-switched-operations).
-_MODIFIERS = {
-    "chopped", "finely-chopped", "slices", "fine-slices", "squares",
-    "two-cm-cubes", "halved", "shredded", "minced", "diced",
-    "ball-shape", "crescent-shape",
-}
+# Documented MUHAI default sentinels: a model writing these explicitly is
+# equivalent to gold leaving the argument as an unbound default variable, so they
+# must NOT count as a correctness difference. Justified by documentation.pdf §3.1
+# default values: transfer-contents value/unit "default to an amount for which all
+# contents are transferred". (This is the ONLY invariance applied to constants;
+# see SCORING.md AMENDMENT 2026-06-09.)
+_DEFAULT_SENTINELS = {"all"}
 
 
 def _salient_constants(op: Op) -> frozenset:
-    """Discriminating modifier constants used for the CORRECTNESS check:
-    cut-patterns and shapes. (Quantities, units, temps, tool/container choices,
-    and add-order are deliberately excluded — they are not taste-determining.)
-    Limitation logged in FINDINGS: a wrong bake temperature is NOT penalised."""
-    return frozenset(a for a in op.args if a in _MODIFIERS)
+    """Concrete, taste-relevant constants used for the CORRECTNESS check:
+    ingredient names, quantities, temperatures/times, cut-patterns and shapes.
+    EXCLUDED: bare unit tokens (g, piece, degrees-celsius, ...), unbound variables
+    (unspecified -> default), and documented default sentinels ('all'). A wrong
+    ingredient/quantity/temperature/pattern therefore DOES lower performance.
+    Add-order and tool/container choice are not represented here (handled by the
+    order-invariant content signature), per MUHAI's order/default invariances."""
+    return frozenset(a for a in op.args
+                     if not is_var(a)
+                     and a not in _UNITS
+                     and a not in _DEFAULT_SENTINELS)
 
 
 @dataclass

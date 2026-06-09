@@ -1,0 +1,152 @@
+[
+  {
+    "label": "A",
+    "text": "Add the radish",
+    "kind": "inscope",
+    "slot": 6
+  },
+  {
+    "label": "B",
+    "text": "Add the lemon juice",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "C",
+    "text": "Add the fresh oregano",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "D",
+    "text": "Add the combined mixture (fresh oregano, garlic, lemon juice, olive oil, small bowl)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "E",
+    "text": "Add the tomato",
+    "kind": "inscope",
+    "slot": 5
+  },
+  {
+    "label": "F",
+    "text": "Sprinkle the combined mixture (black olive, cucumber, feta cheese, fresh oregano, garlic, large bowl, lemon juice, olive oil, radish, red onion, salt, small bowl, tomato)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "G",
+    "text": "Cut the red onion",
+    "kind": "inscope",
+    "slot": 1
+  },
+  {
+    "label": "H",
+    "text": "Cut the red onion (finely chopped)",
+    "kind": "distractor",
+    "slot": 1
+  },
+  {
+    "label": "I",
+    "text": "Mix the combined mixture (fresh oregano, garlic, lemon juice, olive oil, small bowl)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "J",
+    "text": "Add the 1/2",
+    "kind": "distractor",
+    "slot": 4
+  },
+  {
+    "label": "K",
+    "text": "Add the feta cheese",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "L",
+    "text": "Gently combine the combined mixture (black olive, cucumber, feta cheese, large bowl, radish, red onion, tomato)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "M",
+    "text": "Add the red onion",
+    "kind": "inscope",
+    "slot": 7
+  },
+  {
+    "label": "N",
+    "text": "Beat (cream) the combined mixture (cucumber, large bowl, radish, red onion, tomato)",
+    "kind": "distractor",
+    "slot": 8
+  },
+  {
+    "label": "O",
+    "text": "Cut the radish",
+    "kind": "inscope",
+    "slot": 0
+  },
+  {
+    "label": "P",
+    "text": "Add the olive oil",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "Q",
+    "text": "Add the black olive",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "R",
+    "text": "Add the garlic",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "S",
+    "text": "Sprinkle the combined mixture (black olive, cucumber, feta cheese, fresh oregano, garlic, large bowl, lemon juice, olive oil, radish, red onion, small bowl, tomato)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "T",
+    "text": "Fetch large bowl",
+    "kind": "inscope",
+    "slot": 3
+  },
+  {
+    "label": "U",
+    "text": "Cut the radish (finely chopped)",
+    "kind": "distractor",
+    "slot": 0
+  },
+  {
+    "label": "V",
+    "text": "Add the cucumber",
+    "kind": "inscope",
+    "slot": 4
+  },
+  {
+    "label": "W",
+    "text": "Fetch small bowl",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "X",
+    "text": "Gently combine the combined mixture (black olive, cucumber, feta cheese, fresh oregano, garlic, large bowl, lemon juice, olive oil, radish, red onion, small bowl, tomato)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "Y",
+    "text": "Gently combine the combined mixture (cucumber, large bowl, radish, red onion, tomato)",
+    "kind": "inscope",
+    "slot": 8
+  }
+]

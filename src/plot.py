@@ -73,6 +73,11 @@ def plot(rows, out_png, title, regime_field="regime"):
 
 
 if __name__ == "__main__":
-    rows = load(os.path.join(RES, "pilot_results.csv"))
-    plot(rows, os.path.join(RES, "pilot_plot.png"),
-         "Scope calibration vs. performance — pilot (8 recipes × 2 regimes, Sonnet)")
+    import sys
+    if len(sys.argv) >= 4:
+        rows = load(os.path.join(RES, sys.argv[1]))
+        plot(rows, os.path.join(RES, sys.argv[2]), sys.argv[3])
+    else:
+        rows = load(os.path.join(RES, "pilot_results.csv"))
+        plot(rows, os.path.join(RES, "pilot_plot.png"),
+             "Scope calibration vs. performance — raw-MCL pilot (8×2, Sonnet)")

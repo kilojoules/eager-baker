@@ -1,0 +1,92 @@
+[
+  {
+    "label": "A",
+    "text": "Mix the combined mixture (banana, butter, egg, self rising flour, sugar, vanilla extract)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "B",
+    "text": "Beat (cream) the butter, egg and sugar",
+    "kind": "inscope",
+    "slot": 3
+  },
+  {
+    "label": "C",
+    "text": "Crack the eggs into a bowl",
+    "kind": "inscope",
+    "slot": 1
+  },
+  {
+    "label": "D",
+    "text": "Add the butter",
+    "kind": "inscope",
+    "slot": 0
+  },
+  {
+    "label": "E",
+    "text": "Beat (cream) the combined mixture (banana, butter, egg, sugar, vanilla extract)",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "F",
+    "text": "Gently combine the butter, egg and sugar",
+    "kind": "distractor",
+    "slot": 3
+  },
+  {
+    "label": "G",
+    "text": "Add the self rising flour",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "H",
+    "text": "Bake the combined mixture (banana, butter, egg, pan, self rising flour, sugar, vanilla extract) at 165\u00b0C",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "I",
+    "text": "Spread the pan",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "J",
+    "text": "Grease the pan",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "K",
+    "text": "Add the banana",
+    "kind": "distractor",
+    "slot": 0
+  },
+  {
+    "label": "L",
+    "text": "Fetch pan",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "M",
+    "text": "Add the vanilla extract",
+    "kind": "outscope",
+    "slot": -1
+  },
+  {
+    "label": "N",
+    "text": "Add the sugar",
+    "kind": "inscope",
+    "slot": 2
+  },
+  {
+    "label": "O",
+    "text": "Separate the eggs into yolks and whites",
+    "kind": "distractor",
+    "slot": 1
+  }
+]
