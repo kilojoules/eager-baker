@@ -37,7 +37,9 @@ are net-timid — they grab one or a few of the available next steps, not the wh
 recipe.) Full numbers, CIs, power, and the coupled/benign split in
 **[FINDINGS.md](FINDINGS.md)**; method in **[STATUS.md](STATUS.md)**.
 
-![over-eager rate by model](results/step3_overeager_rate.png)
+![performance vs over-eagerness](results/step3_perf_vs_eager.png)
+
+(Primary metric with significance: [`step3_overeager_rate.png`](results/step3_overeager_rate.png) — over-eager rate per model with 95% CIs.)
 
 > An earlier pilot drove Claude Sonnet via two prompt *personas* (cautious/eager);
 > under the menu harness the persona effect collapsed, which is why the scaled run

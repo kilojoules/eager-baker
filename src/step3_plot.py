@@ -53,6 +53,32 @@ def main():
     fig.tight_layout(); fig.savefig(os.path.join(RES, "step3_overeager_rate.png"), dpi=140)
     print("wrote step3_overeager_rate.png")
 
+    # ---- Figure 1b: performance vs over-eagerness (one point per model) ----
+    fig, ax = plt.subplots(figsize=(8, 6))
+    for i, m in enumerate(names):
+        rows = models[m]; n = len(rows)
+        k = sum(1 for r in rows if r["n_overeager"] > 0)
+        rate = k/n
+        rlo, rhi = wilson(k, n)
+        perfs = [r["performance"] for r in rows if r["performance"] is not None]
+        mp = sum(perfs)/len(perfs)
+        sd = (sum((x-mp)**2 for x in perfs)/(len(perfs)-1))**0.5 if len(perfs) > 1 else 0
+        pse = 1.96*sd/math.sqrt(len(perfs)) if perfs else 0
+        ax.errorbar(rate, mp, xerr=[[rate-rlo], [rhi-rate]], yerr=pse,
+                    fmt="o", ms=14, color=COLORS[i % 4], capsize=5, lw=1.5,
+                    markeredgecolor="black", zorder=3, label=m)
+        ax.annotate(f" {m}\n {rate:.0%} over-eager, perf {mp:.2f}",
+                    (rate, mp), textcoords="offset points", xytext=(10, -4),
+                    fontsize=9, va="center")
+    ax.set_xlim(0, 1.0); ax.set_ylim(0, 1.05)
+    ax.set_xlabel("over-eagerness  →  (rate of tasks with ≥1 unrequested next step)")
+    ax.set_ylabel("performance (conditional-correctness)")
+    ax.set_title("Performance vs over-eagerness — 3 models (n=50, menu)\n"
+                 "flat y, spread x ⇒ the models differ in CALIBRATION, not capability")
+    ax.grid(alpha=0.3)
+    fig.tight_layout(); fig.savefig(os.path.join(RES, "step3_perf_vs_eager.png"), dpi=140)
+    print("wrote step3_perf_vs_eager.png")
+
     # ---- Figure 2: 2D scatter signed-scope vs performance ----
     fig, ax = plt.subplots(figsize=(8.5, 6.5))
     ax.axvspan(-0.05, 0.05, color="#d9f0d3", alpha=0.6, zorder=0)
