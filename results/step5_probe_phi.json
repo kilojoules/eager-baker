@@ -1,0 +1,110 @@
+{
+  "auc": 0.8766351795188502,
+  "sweep": [
+    {
+      "thr": 0.0,
+      "overeager_rate": 1.0,
+      "recall": 0.986
+    },
+    {
+      "thr": 0.05,
+      "overeager_rate": 0.88,
+      "recall": 0.911174603174603
+    },
+    {
+      "thr": 0.1,
+      "overeager_rate": 0.88,
+      "recall": 0.911174603174603
+    },
+    {
+      "thr": 0.15,
+      "overeager_rate": 0.88,
+      "recall": 0.911174603174603
+    },
+    {
+      "thr": 0.2,
+      "overeager_rate": 0.88,
+      "recall": 0.908952380952381
+    },
+    {
+      "thr": 0.25,
+      "overeager_rate": 0.88,
+      "recall": 0.908952380952381
+    },
+    {
+      "thr": 0.3,
+      "overeager_rate": 0.88,
+      "recall": 0.908952380952381
+    },
+    {
+      "thr": 0.35,
+      "overeager_rate": 0.88,
+      "recall": 0.908952380952381
+    },
+    {
+      "thr": 0.4,
+      "overeager_rate": 0.88,
+      "recall": 0.908952380952381
+    },
+    {
+      "thr": 0.45,
+      "overeager_rate": 0.88,
+      "recall": 0.908952380952381
+    },
+    {
+      "thr": 0.5,
+      "overeager_rate": 0.88,
+      "recall": 0.908952380952381
+    },
+    {
+      "thr": 0.55,
+      "overeager_rate": 0.86,
+      "recall": 0.908952380952381
+    },
+    {
+      "thr": 0.6,
+      "overeager_rate": 0.86,
+      "recall": 0.908952380952381
+    },
+    {
+      "thr": 0.65,
+      "overeager_rate": 0.86,
+      "recall": 0.8927301587301586
+    },
+    {
+      "thr": 0.7,
+      "overeager_rate": 0.86,
+      "recall": 0.8927301587301586
+    },
+    {
+      "thr": 0.75,
+      "overeager_rate": 0.86,
+      "recall": 0.8865079365079364
+    },
+    {
+      "thr": 0.8,
+      "overeager_rate": 0.86,
+      "recall": 0.8865079365079364
+    },
+    {
+      "thr": 0.85,
+      "overeager_rate": 0.86,
+      "recall": 0.8865079365079364
+    },
+    {
+      "thr": 0.9,
+      "overeager_rate": 0.86,
+      "recall": 0.8865079365079364
+    },
+    {
+      "thr": 0.95,
+      "overeager_rate": 0.86,
+      "recall": 0.8865079365079364
+    },
+    {
+      "thr": 1.0,
+      "overeager_rate": 0.0,
+      "recall": 0.0
+    }
+  ]
+}

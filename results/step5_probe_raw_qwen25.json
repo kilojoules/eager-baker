@@ -1,0 +1,4717 @@
+{
+  "afghan-biscuits__3_3": {
+    "A": {
+      "p_in": 1.0129992875378123e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 2.2603245090700526e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 4.539788986859403e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 4.7850966497211225e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 4.222835354466608e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.731058584489497,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 2.4300242246814274e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 5.422217534371862e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999999895325921,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.9890130549810948,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.670142055904493e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.000911051094688817,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 6.96225783954407e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 6.144177294676687e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 2.2603242780368226e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 2.4300246212864788e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 7.338211388554389e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 8.315279085607371e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.9626731146638163,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "T": {
+      "p_in": 1.1478769296667485e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 5.144219497096888e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 6.605216746504035e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 4.785096731817236e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 7.889259716056385e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Y": {
+      "p_in": 0.9399133462493554,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "Z": {
+      "p_in": 1.2098656662912993e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "A26": {
+      "p_in": 1.9947294662339057e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "A27": {
+      "p_in": 1.7603440336284795e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies__1_1": {
+    "A": {
+      "p_in": 1.6373770107895092e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 6.962256713951391e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 3.927862715772372e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.5534980190439122e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 5.715002918493239e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.2098660558206011e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.5534975080051566e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.288749748290526e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999417087344407,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9999999827421558,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 8.315278956739033e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9999038975964095,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 4.785096683840796e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.26894141551050293,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 1.7603432515620358e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 3.2887494084547894e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 4.78509319695063e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 1.3709567014639365e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 6.475948364276112e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-2__3_3": {
+    "A": {
+      "p_in": 1.370957111576525e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 7.889261323182808e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 6.9622558754812125e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.067702697644443e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999999918479862,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 8.481101850847696e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.994728970190262e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 6.9622577966884676e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999038975735012,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.9999756997679549,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.9996646500083713,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 3.7266409435022994e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 4.222834342445319e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.5534978893739721e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 5.829129235739505e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9399133561377042,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 5.715002135585605e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 2.5612814633167998e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 4.785094020417992e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 4.7850938249611145e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 5.043473827784045e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 3.9278628493503933e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-3__2_2": {
+    "A": {
+      "p_in": 2.5612817257078587e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 2.2603251726986637e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.9994472213826286,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 2.2603232845678902e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 4.450850299069512e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 2.561281441773899e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 4.785093389552573e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 2.260324811051307e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 4.2228343452105716e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.7603427259664466e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 3.7266378053473846e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 2.5612818756509426e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.0009110511973676288,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "N": {
+      "p_in": 0.9959298622482397,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 5.043476394749116e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 3.7266394797382767e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.0009110513725256285,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 2.699577695394226e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.699577725996474e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 4.006370010526911e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 1.067702836732594e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 4.450849926910488e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 3.120192599568415e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 6.1441759286861715e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-4__1_1": {
+    "A": {
+      "p_in": 0.9994472212509731,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9999980052702784,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.06754668550840878,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9859363741448031,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.9994472214481348,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 1.3709568553783368e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.014063629845490687,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.4738978289561671e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.4738987165274372e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.994730644443276e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 3.1201903755082464e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9933071504780865,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 1.0129987236384167e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 2.699577287547611e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 3.7266383540416614e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9999756997476775,
+      "chosen": "IN",
+      "gold": "IN"
+    }
+  },
+  "almond-crescent-cookies-5__3_3": {
+    "A": {
+      "p_in": 9.422450208406682e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9914225139447772,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 8.939694473933246e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9996646499284738,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 5.422217400946514e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.005911069737327755,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 2.9023127753262873e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.0677032546497148e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.8553906805507703e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 5.715004987785002e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 3.9278604821564815e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 7.889260588099512e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9149009607937928,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.1253515268473699e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 4.222833612418576e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 2.2603250376441735e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.9999038975964095,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 2.561282795473501e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.999999982742158,
+      "chosen": "IN",
+      "gold": "IN"
+    }
+  },
+  "avocado-chicken-salad__2_2": {
+    "A": {
+      "p_in": 4.539786766661996e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9999991684720715,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.9997965729534969,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 8.939695171597969e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 6.962259529199846e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 8.315283180112486e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 2.753569754599536e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.16451646699291617,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 3.288749439705702e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.22270014398423357,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.9984988174731396,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 1.6701417805109955e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 9.422449208018851e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 4.222833910881514e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 3.726637909847662e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 1.1478773461046754e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 1.6701421786607677e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.999999814460854,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "S": {
+      "p_in": 1.3007133082733335e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 3.726640591552465e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.9999992661791944,
+      "chosen": "IN",
+      "gold": "IN"
+    }
+  },
+  "basic-chicken-salad__1_1": {
+    "A": {
+      "p_in": 1.0677031154527494e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 4.222832912256681e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.9023130106335117e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.7772998508568416,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.4378234991142019,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 1.2098658059408406e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 3.9278628493503933e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.6701425714638937e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999980052700407,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 2.9023130033903653e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 2.4300243450137126e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.7981867777396212,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 4.785094422055093e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "best-brownies__3_3": {
+    "A": {
+      "p_in": 4.222834084477942e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.43782349911420193,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.9999417087066486,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 1.5534982919928415e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 7.484619460967967e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 3.2887505528222186e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 3.7266394462244216e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9796676488092533,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.4738977965486623e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 5.043472157452002e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 5.715003059872366e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.8519528038477824,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 2.2603236869681467e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.01299870914809e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 2.3823686995177756e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 5.4222186196857895e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.00247262363041495,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.9999999827421867,
+      "chosen": "IN",
+      "gold": "IN"
+    }
+  },
+  "bisquick-shortcake-biscuits__2_2": {
+    "A": {
+      "p_in": 0.991422515956428,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 1.209865349509438e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.6995774859318654e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9046505415276079,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 1.4738985329134057e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 2.4300237645687293e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.3709578159721648e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9999945777823228,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 4.785092644769398e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.300712658412467e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 3.7266400588013464e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 9.422450258042156e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9999546021475814,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "N": {
+      "p_in": 5.422217457283414e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 5.715005049576017e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 7.889261490795124e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.999992110737414,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 1.994728939769894e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.2603244778226748e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "black-bean-salad-2__1_1": {
+    "A": {
+      "p_in": 1.3709576718730726e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9999998724810026,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 8.939700457486501e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.0129992108112723e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 7.889263496919683e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 3.059023683085392e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 2.561283396997901e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9999991684717742,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 0.9999970976873228,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.000911051406010162,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 2.9023109140706745e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.998498817653571,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 3.535625689599017e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.999997739675702,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 2.9023129462898757e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9989677687795787,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 1.3007131394200143e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 3.7266387857086917e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.0005527785995558127,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.9859363725047796,
+      "chosen": "IN",
+      "gold": "IN"
+    }
+  },
+  "black-bean-salad-3__1_1": {
+    "A": {
+      "p_in": 0.9241418231126367,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 0.0035936020003353966,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.00020342699323229197,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 6.144175275017168e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.939913356558485,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 0.0021827164722211636,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 0.06754668879328725,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 0.029312230062383798,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.00013982212143341918,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.0013250224477147688,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 4.7850933109381125e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.0003353502552839687,
+      "chosen": "OUT",
+      "gold": "IN"
+    }
+  },
+  "black-bean-salad-4__2_2": {
+    "A": {
+      "p_in": 0.9996646500084787,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 2.9023133423189588e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.67014277033836e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 3.288750574740936e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 1.0129994542282675e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 5.422216930683343e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.11920292202211756,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 8.315283845993097e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.9947294563066453e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9999998144608097,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.999796572929219,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 8.939698351612487e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9999991684717742,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "N": {
+      "p_in": 0.9999724642990497,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 1.1478772158999486e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 1.067702858531152e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 6.962254452229986e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 9.610241395570681e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    }
+  },
+  "black-bean-salad-5__1_1": {
+    "A": {
+      "p_in": 5.144220635258092e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9999967112517186,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 1.4738985362163561e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 4.539785197416634e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9933071488404387,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 4.0063696420251375e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 3.288749773032828e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9999977396746242,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 0.9999998874649318,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 1.7603431608802629e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.9988304898412884,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 5.422216947726437e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 4.006369152963114e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.015906391653501332,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 0.7310585727705126,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "P": {
+      "p_in": 2.4300231852907852e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 5.1442206910994834e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.9999930377412601,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "S": {
+      "p_in": 0.22270014398423357,
+      "chosen": "OUT",
+      "gold": "IN"
+    }
+  },
+  "broccoli-salad__1_1": {
+    "A": {
+      "p_in": 1.7603427528635755e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 3.288748179715114e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 3.72663792470655e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9947798751479477,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.9023122898032644e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.5534982736590996e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 5.422218261386198e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 2.902312651580415e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9947798744926369,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 3.7266383530113e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.3709573287525071e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 6.144177415110608e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 3.2887486112455644e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 3.2887498025608747e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 4.22283386571572e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "chocolate-cream-cheese-cupcakes__1_1": {
+    "A": {
+      "p_in": 1.6701421752826004e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.6513548646660542,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.320821300824607,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 5.144220723361736e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 1.2098656668722921e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 2.561282792603597e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.00017952800618130076,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.001926734562586308,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 1.067702972278303e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.00048785722070420634,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 7.73442670764696e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 5.829125119339115e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 2.1444953401834345e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.9999980052700407,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 3.7266388187344754e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9241418272911436,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 9.610237980126365e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.0009110510764630641,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.0001233945878251384,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 8.48110708930246e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 1.9947289942972426e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "chocolate-fudge-cookies__3_3": {
+    "A": {
+      "p_in": 3.4663249337856916e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.0129992103100807e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.4738980125915585e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 2.2603245253515806e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.0035936030149410127,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 1.3007126843243709e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 2.9023114876937314e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 7.889264415286238e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 5.422217611144698e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.8925154661569087e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.3007123702774287e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 2.1444945673864212e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9999832985841273,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "N": {
+      "p_in": 0.0002305067407662635,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.9984988176579334,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "P": {
+      "p_in": 0.9947798738905247,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 4.450849907156138e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.9975273770690568,
+      "chosen": "IN",
+      "gold": "IN"
+    }
+  },
+  "classic-greek-salad__2_2": {
+    "A": {
+      "p_in": 2.260325051228563e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 3.535624631873447e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.260324008059525e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 5.422216924607796e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.0021827167627860547,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 3.2887504623237595e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.00012339454287177087,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 2.5612824869775236e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 4.785094973749105e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 8.315279164380412e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 3.0590214665242253e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 9.422448010323307e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 1.553497917383221e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.5534984715776196e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 7.338206959436284e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 2.9023115827626206e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.00010889689522428687,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 8.315283154338805e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.5612827835839e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 1.0677025955346097e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 5.422218888351322e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 0.1329642419157059,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 1.1478765295651035e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 2.260325342223966e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Y": {
+      "p_in": 5.043473279984942e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "classic-potato-salad__1_1": {
+    "A": {
+      "p_in": 0.9999997617631753,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 2.1024329928064402e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.99472991333801e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.5534973497834685e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.902311227785288e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 6.475949383170859e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 6.475947026199541e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 9.931194290960515e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999869928715349,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.3709569939112868e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 5.043473968990576e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.99929032944309,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 2.3823687756487467e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 2.510997539055626e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 1.2751898736299562e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.0010322312332659948,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 7.338209730184277e-07,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.9914225142219733,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "S": {
+      "p_in": 0.9990889488600116,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.985936374235198,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "U": {
+      "p_in": 0.0010322309427607888,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "V": {
+      "p_in": 0.02931223212930141,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "W": {
+      "p_in": 1.6373767305367408e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.679178699175393,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "Y": {
+      "p_in": 5.315782917768466e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Z": {
+      "p_in": 3.466326692030701e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "A26": {
+      "p_in": 1.186111691763003e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "coconut-tuiles__2_2": {
+    "A": {
+      "p_in": 7.889264340090273e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 2.2603248163140235e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.760342547958696e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.3007125154711328e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.7535687291237838e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 6.475949276305642e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 4.785095480321665e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.288748625028505e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 5.422218242054906e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.3709571906983238e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.5534982995885718e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 8.93969303736591e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.3775406687981454,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "N": {
+      "p_in": 6.962256183575427e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 2.56128124744054e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 7.889265359885389e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.9947798750439686,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.37754066879814546,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.5612834084029745e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 2.430024646198059e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "cole-slaw__1_1": {
+    "A": {
+      "p_in": 1.444980011806461e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9933071481593753,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 1.067702590966702e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9999646437492814,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 2.382369065230737e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.3709578512238763e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.6701423777296134e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 3.466325692276852e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9998415638395736,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 5.715004977139981e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.9998415637262622,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 6.475950179759696e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 3.466327389386923e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.0677027335351504e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 1.994729948707511e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 1.0677032401691278e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 4.006369198406411e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.999738809752189,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 3.059021080092943e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 1.275190867291266e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.9992903294423883,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "V": {
+      "p_in": 3.466326594274736e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 3.2887494186962834e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 6.962256208245255e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Y": {
+      "p_in": 0.5621765008857981,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "Z": {
+      "p_in": 7.338212366597827e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "cranberry-fluff-salad__1_1": {
+    "A": {
+      "p_in": 8.315279171035585e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.2942149659744614,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 1.9947304127200033e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9241418178895029,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 3.2887494293684936e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9959298622557899,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 0.0006263342291569171,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 9.422449177030962e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 2.2603242664259567e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9975273767899572,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.0009110510799598656,
+      "chosen": "OUT",
+      "gold": "IN"
+    }
+  },
+  "croutons-vinegar-salad__3_3": {
+    "A": {
+      "p_in": 2.1024332385408383e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 2.561282759692885e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 3.726638383217145e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.5534979186039632e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 6.962253719379321e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 6.475950821610775e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 4.222833414180696e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 5.715002377260713e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.03732688640708807,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 7.338209669103298e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.2098654787010747e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 6.14417743996631e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 8.939695129969642e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.2751904180021652e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 3.2887494344653115e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 3.2887505729223533e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 1.2098652284869227e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 1.2098653844746303e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.2603237327866534e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.00015843621529205493,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "U": {
+      "p_in": 3.059022517647832e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 3.059022954380827e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 1.370956865074047e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 6.144175305505626e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Y": {
+      "p_in": 1.20986624330528e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Z": {
+      "p_in": 1.5534973673033717e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "A26": {
+      "p_in": 0.14804720179063333,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "A27": {
+      "p_in": 9.931198618404947e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "A28": {
+      "p_in": 0.07585817532042316,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "A29": {
+      "p_in": 1.7603427742275807e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "A30": {
+      "p_in": 2.902311239019548e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "A31": {
+      "p_in": 1.9947297003082614e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "cucumber-slices-with-dill__1_1": {
+    "A": {
+      "p_in": 4.78509616389877e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 3.726638283977118e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.7535700623665485e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.993307149713438,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.9988304895630535,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 7.889262511852706e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.1478773454031234e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 2.9023129982378063e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.5,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.0019267347761575892,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 4.222833910328464e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 6.475950882299678e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 1.1478763838261135e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 3.1201914891386007e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.9999756997592648,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "P": {
+      "p_in": 5.715007115458817e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "easy-banana-bread__1_1": {
+    "A": {
+      "p_in": 1.370956689952776e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9999999715466256,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.9999546021259359,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 0.9046505261034854,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.13296425222296632,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9999785550490283,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 4.785093261012013e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.4449802607898375e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.370957182179663e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.4738987091923122e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 6.144177384800957e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 3.288748219293206e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 5.829128471001985e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.9998204720549945,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 5.829124996265311e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "easy-cherry-tomato-corn-salad__1_1": {
+    "A": {
+      "p_in": 3.2887505548800894e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.0677024765981078e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.2603247808893608e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.952574129515172,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 1.0129990904221097e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9820137891825251,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 1.0677027229854575e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 8.315284052787577e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.760343198331322e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.999569442907628,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.9999999907625537,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.999995214903794,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 1.7603440333723162e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 3.726640591145744e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.9947798744805463,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "P": {
+      "p_in": 0.0004878571070863742,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.9999251537370231,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.9999417087066486,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "S": {
+      "p_in": 2.9023133123327515e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 3.2887497895915056e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.9579122765900843,
+      "chosen": "IN",
+      "gold": "IN"
+    }
+  },
+  "easy-oatmeal-cookies__2_2": {
+    "A": {
+      "p_in": 1.3007123547378612e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.3709568551189867e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.5534984672372015e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.5534975330529693e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 1.37095683889962e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 2.260324817169215e-06,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 2.9023133266078757e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 2.260323715057884e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 5.1442237890251334e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.2098656664849637e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 6.144175993507681e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 1.7603433706779308e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 2.902311222379327e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 2.2603237337405205e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 4.4508494204219256e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 5.043472824660013e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 2.260324768785112e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 2.561282468490874e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.5612824414690586e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 1.3709566742321618e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 2.5612815522464937e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 1.9947292101280286e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 5.422220179997544e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 4.7850944212195096e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "mexican-wedding-cookies__1_1": {
+    "A": {
+      "p_in": 0.000379984567693318,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9626731122542813,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 4.539785204749246e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 2.753568439347717e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.00013982208903364553,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 2.561283090514511e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.0024726226914688716,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 0.6791787121629466,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 0.07585817688736327,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 1.5534984373968292e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.002182716813495464,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9046505261034854,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 1.3709578451191656e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 7.889265359885389e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "vegan-black-bean-and-sweet-potato-salad__2_2": {
+    "A": {
+      "p_in": 1.3709573659792587e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 5.715003044736482e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.994730421529725e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 4.222833425825481e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 3.7266397124372385e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.3007134600350284e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 3.120190382227939e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.7266392625489764e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 2.260325101734205e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.0007096702824050381,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 6.9622562097143e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.679178699175393,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 3.288750236149409e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.6791786926816161,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 2.5612831182444913e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 1.760342997858014e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 1.012999457161713e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 1.4738981931599482e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 9.422442505999003e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "whole-wheat-ginger-snaps__3_3": {
+    "A": {
+      "p_in": 1.370956662102551e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 2.9023118308877897e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.9890130562056108,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 2.260323568359726e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.9023113792366466e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.3709566902320763e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 8.31527809967388e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.012999210678604e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 1.1478769312702956e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 7.8892603808802e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 9.422442278389009e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 3.2887489604612756e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.0017007222023179816,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 2.2603253339680766e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 3.0590220073322395e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 7.338212134660885e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 6.47594650648046e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 2.260323704762699e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 1.9947291984881726e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.9968273165838948,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "U": {
+      "p_in": 3.059021120957347e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 1.7603433001305804e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 2.902311197968039e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 1.7603431713573373e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Y": {
+      "p_in": 3.9278604512912314e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Z": {
+      "p_in": 1.7603435642348735e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "A26": {
+      "p_in": 1.7603429711914282e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "A27": {
+      "p_in": 0.9999999881388715,
+      "chosen": "IN",
+      "gold": "IN"
+    }
+  },
+  "afghan-biscuits__4_4": {
+    "A": {
+      "p_in": 1.1478772193241908e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 6.1441723694499045e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 6.144176785671284e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 8.481101054386648e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 7.88925973855776e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 6.605212850404718e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 2.5612834145900407e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 8.939700545556484e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 2.561281582268652e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 6.962258696402883e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.670142775186882e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 1.0129990543952833e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 2.1444955878174336e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 9.61024484429671e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.000230506629663465,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.985936371252163,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 0.1329642281726931,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.9997388096276459,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "S": {
+      "p_in": 0.9525741248028791,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "T": {
+      "p_in": 4.222833415133172e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.9999646437492814,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 0.0001584362149877705,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 1.0677029883281342e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.9992903294421406,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "Y": {
+      "p_in": 1.2098659617701701e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies__2_2": {
+    "A": {
+      "p_in": 8.481101008109474e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.00037998452088728,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.892515028696713e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9999995549151073,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 1.8925150332957585e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9959298622803288,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 1.473897833889143e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.2098653593687067e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 2.4300231884202006e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.1478772155241172e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.9859363715362616,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.00359360338593492,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 3.120191111609807e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.9999938558224682,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 7.484622605234058e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 5.829129282220892e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-2__4_4": {
+    "A": {
+      "p_in": 8.481102058169456e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 2.561282437890998e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.260325063760409e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 6.9622570265034366e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999417087344407,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 2.430023746888409e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.892514119738192e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.300712812293979e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 4.539786827436823e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9999990577551815,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.9999995549150542,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.000552778656990295,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 3.535624201199831e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 8.93969618876019e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 6.144172366901751e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 8.31527721126901e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 1.6701415812964008e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 6.144175289501421e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-3__3_3": {
+    "A": {
+      "p_in": 1.1478773508819114e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.00037998456777070164,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 3.5356262784763796e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.4738976576532364e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 3.7266405744159254e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 8.315277212479041e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 3.1201914826913254e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.28874845307675e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.999999977840516,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 1.300713305121884e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 7.889265283082172e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 1.012999085085894e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.0017007223396870977,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.9999998555019274,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 8.481105107527598e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9999984465028009,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 7.484625306792544e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 6.144175970171937e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.5612833723241788e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.0002034269692828043,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-4__2_2": {
+    "A": {
+      "p_in": 0.18242553269617778,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 1.0129987317754055e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.1444955958061307e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 5.043472210000776e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 4.222833426593607e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.6701425690943156e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 3.1201918672576835e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 4.0063711151871155e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.010986940981039,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.2098653921595781e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 6.962257064090732e-06,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.9947798750705679,
+      "chosen": "IN",
+      "gold": "IN"
+    }
+  },
+  "almond-crescent-cookies-5__4_4": {
+    "A": {
+      "p_in": 4.5397871036980525e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 7.88926148011845e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.753570014524623e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 2.1444948258643594e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999997617629764,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 1.670142547488622e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 8.481108038663982e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9999996940978095,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 0.9914225130815096,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 1.2098658001133064e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.5534980771421977e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 1.670142057800155e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 1.8925156391581925e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.0002611902103599028,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 1.300712976566772e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 1.3007123475264418e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "avocado-chicken-salad__3_3": {
+    "A": {
+      "p_in": 4.785093866043963e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.6701417766224583e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 5.422219514685292e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 9.610243739747781e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 2.1444955919053996e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 2.144494574891424e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 4.7850938688292405e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.0677028605354387e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.0002034270419422203,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 4.785096114390431e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.670142365626538e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.0001233946326959336,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 1.8925157155244123e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.0129994537934099e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "basic-chicken-salad__4_4": {
+    "A": {
+      "p_in": 6.144173716976683e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9980732654842024,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.9999974387183999,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 9.422446774647195e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9984988174752336,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 0.9999986290426297,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 1.760344032885606e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 8.939696219330997e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999998362622746,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.8933094124452287,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 2.9023129887773702e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "best-brownies__4_4": {
+    "A": {
+      "p_in": 0.00029595715393281535,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9999974387168733,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 2.4300234361391223e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.04208772701447818,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.00020342701602751883,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.012999081636517e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.001501182606955056,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 8.481102926452787e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 9.422447832074413e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.6513548646660542,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 5.8291285038273395e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.5,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 4.539788948544821e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 7.484622556661338e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 5.1442225565466357e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "bisquick-shortcake-biscuits__3_3": {
+    "A": {
+      "p_in": 1.0129990809289526e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.00012339452969349626,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 7.889262556511063e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 5.829124394128245e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.9023122648851576e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 6.14417527743121e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.9999832985701907,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 0.025957355314023947,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.7603427784542727e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.7603432016230192e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.9999885212332421,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.00017952793830046748,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 3.120191841695598e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.06754669254743426,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 0.00037998456928520983,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "black-bean-salad-2__2_2": {
+    "A": {
+      "p_in": 0.9995121429356587,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 1.3007134632243331e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 2.2603248104263593e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 8.939695127237782e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 4.222834412621297e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.4738983479052952e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 3.7266408715939024e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 6.144173064202005e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 3.726637918415926e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 7.88926160852556e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 2.2603237334116006e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 1.3007125214522583e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 4.785093869525561e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "black-bean-salad-4__3_3": {
+    "A": {
+      "p_in": 0.9999996072137529,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.2098656732103949e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.9626731083722525,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.994730643775653e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.5612833707215047e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9990889489684125,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 0.9999974387171786,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 0.9999992661790195,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 1.7603431882641083e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.999999730042319,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 5.04347584305995e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "black-bean-salad-5__2_2": {
+    "A": {
+      "p_in": 4.006370627028531e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 6.605213627952045e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 4.539785746437756e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 6.144177509571218e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.999989870005397,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 0.06008665290908296,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.22270013366638422,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.2887502121249653e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.053403331871329895,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 5.422217006430429e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 6.144176770248233e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "broccoli-salad__2_2": {
+    "A": {
+      "p_in": 0.9999852610215414,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 9.931202572416738e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.8453339871633043e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 3.9278623819702343e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 7.7344182599327e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9999980052700407,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 9.422447912971989e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 2.9023119189880677e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.8553909493576418e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.0677027033620965e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 2.382368195687507e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 8.93969304152874e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 5.31578168705345e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 2.3823692958771148e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "chocolate-cream-cheese-cupcakes__2_2": {
+    "A": {
+      "p_in": 6.144172289026577e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 2.75357041370822e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.147877212191745e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.1478765298323612e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 3.5356262902580435e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.147876942261275e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 6.962254525682224e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 4.785093312121856e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 5.4222214935791845e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.1478769465206974e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.9999810748517578,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 5.422218262175231e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 2.4300243413715658e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 3.7266409531551614e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 1.0129987236384167e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 4.53978738161079e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 8.93969304152874e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "chocolate-fudge-cookies__4_4": {
+    "A": {
+      "p_in": 0.001169510031425257,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.3007133064373538e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 4.222832375797804e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.3007127916439496e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9465966679403514,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 0.0001584362330765589,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 1.0129987028242348e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 2.7535700768112842e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 2.1444955710286866e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 2.753568431894959e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 2.5612827991633765e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 4.785093903610399e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "classic-greek-salad__3_3": {
+    "A": {
+      "p_in": 5.829129268480044e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 3.120190739302442e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.9023129537230756e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.6791787121629466,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9947798744926369,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 9.422443464429094e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.067702850234338e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.726637938426618e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.994729209025e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 8.939695151434248e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.000430557076289378,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 1.4738987157767664e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 5.422221531097694e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 7.48462625254517e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 3.726639658533073e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 6.475947004996133e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 4.006368195068649e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.999290329696295,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.00013982212215359508,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 2.4300252187931865e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 4.450851442490417e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 1.1478766665180116e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 2.902311239019548e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 3.2887485937297434e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "classic-potato-salad__3_3": {
+    "A": {
+      "p_in": 3.120192221857873e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.0002959570563020209,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 5.715002215922202e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.7603427521207022e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 6.1441730819943824e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 2.260324526206772e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.008577484716762103,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 3.726640547518066e-06,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 8.315278052603666e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 2.90231229026784e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.892514807970061e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 5.422219592641703e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 2.4300249078138673e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 8.764254694383382e-08,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 4.2228328933915175e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 2.9023116268338724e-06,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 1.2751910194728614e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 4.450851544112012e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 1.2098661059796601e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 2.3823687831717072e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "coconut-tuiles__3_3": {
+    "A": {
+      "p_in": 5.422216811066073e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 5.422216851622323e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.998830489701491,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 3.7266378273645678e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 4.22283367067323e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 2.2603250804695367e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 5.043474365748654e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.553497521704592e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 3.288749409507654e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.6701421396052663e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 5.42221695048805e-06,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 2.260324511010679e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 1.0129993061998304e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.00010889690808555905,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.9999974387187052,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "P": {
+      "p_in": 2.1444940359199295e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 5.8291279072880346e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 2.753568111125872e-05,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.5612821502298125e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  },
+  "cole-slaw__2_2": {
+    "A": {
+      "p_in": 0.9999994956523514,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 3.0590215146890317e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.14804719615221756,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 1.067703367573441e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999251537905489,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 2.5612831090198002e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 5.422220870401118e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 6.475947732697151e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.1478767876693174e-05,
+      "chosen": "OUT",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.9997965730747005,
+      "chosen": "IN",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 6.962256198265879e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9996646498485762,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 1.760343193361756e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 4.785093333255149e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 9.422444751111363e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9999997300421904,
+      "chosen": "IN",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 6.144173078775661e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 2.2603239590504916e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 4.785095592916563e-06,
+      "chosen": "OUT",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 1.8553918829461312e-07,
+      "chosen": "OUT",
+      "gold": "OUT"
+    }
+  }
+}

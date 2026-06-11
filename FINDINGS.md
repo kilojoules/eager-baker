@@ -105,6 +105,37 @@ picked 14 → 64%/0.81, a different point on the same curve); one model; logprob
 precision is coarse (67 distinct values); a real deployment would need the IN/OUT
 read-out as a serving-time step. Plot: `results/step5_round2.png`.
 
+### STEP 5 ROUND 2c — cross-model: the gap is calibration, not knowledge (n=2)
+
+To test whether the Step-3 between-model over-eagerness gradient is a *calibration*
+gradient (models differ in over-confidence) or a *knowledge* gradient (models
+differ in locating the boundary), I ran the same per-item logit probe on a second
+model. Plot: `results/step5_crossmodel.png`.
+
+| model | boundary AUC (knowledge) | optimal decision point (calibration) | greedy over-eager | recalibration gap |
+|---|---|---|---|---|
+| Qwen2.5-7B | 0.94 | **−7 logits** (well-calibrated; greedy already works) | 26% | 14% |
+| Phi-3.5-mini | 0.88 | **+19 logits** (massively over-confident) | 88% | 56% |
+
+- **Both locate the boundary well** (AUC 0.88 vs 0.94 — comparable, slightly higher
+  for the bigger model). So it is **not** primarily a knowledge difference.
+- **Calibration differs starkly:** phi's optimal decision point sits at +19 logits
+  (greedy at 0 grabs almost everything → 88% over-eager, and 56 pts of that is
+  recalibration-fixable); Qwen2.5-7B's optimal point is already at −7 (greedy works,
+  26% over-eager, little to fix).
+- So **the over-eagerness gap between these two models is driven by calibration
+  (over-confidence), not boundary knowledge** — consistent with the Step-3 ordering
+  (Phi-3.5 72% > Qwen2.5-7B 44% > Qwen3-30B 20% over-eager: bigger = less
+  over-confident = less over-eager). The earlier "scope-adherence capability"
+  verdict is thus refined to **"calibration-dominant, small knowledge component."**
+
+**Honest limitation:** this is a **2-point contrast, not a full gradient.** The
+third (largest) Step-3 model, **Qwen3-30B-A3B, would not load** on RunPod this
+session (its MoE architecture stalled vLLM on two A100 hosts), and a Qwen2.5-14B
+substitute also failed to bind (host issues) — load failures, not results. So the
+calibration-gradient claim is **supported and consistent with Step 3, but not fully
+established**; confirming the monotonic trend needs the third point.
+
 ---
 
 ## STEP 3 — between-model result (n=50/model, menu, 3 models)

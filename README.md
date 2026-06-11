@@ -72,6 +72,16 @@ recipe.) Full numbers, CIs, power, and the coupled/benign split in
 
 ![round 2](results/step5_round2.png)
 
+- **Cross-model (n=2)** (FINDINGS §ROUND 2c): the over-eagerness *difference between
+  models* is also calibration, not knowledge — Qwen2.5-7B and Phi-3.5 have
+  comparable boundary AUC (0.94 vs 0.88) but very different over-confidence (optimal
+  decision point −7 vs +19 logits; greedy over-eager 26% vs 88%). Consistent with
+  the Step-3 ordering (bigger = less over-confident = less over-eager), but a
+  2-point contrast — Qwen3-30B wouldn't load this session to confirm the full
+  gradient.
+
+![cross-model](results/step5_crossmodel.png)
+
 > An earlier pilot drove Claude Sonnet via two prompt *personas* (cautious/eager);
 > under the menu harness the persona effect collapsed, which is why the scaled run
 > compares genuinely distinct *models* instead. See FINDINGS for that pilot and the

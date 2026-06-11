@@ -30,6 +30,14 @@ prior says it won't move with naive prompting.
 > in-sample and **→ 48% / recall 0.65 held-out** (threshold chosen on disjoint
 > tasks). So the over-eagerness is a decoding artifact that a calibrated read-out
 > recovers. (`src/step5_calibrate.py`.)
+>
+> **Cross-model (n=2, FINDINGS §ROUND 2c):** the over-eagerness *difference between
+> models* is also mostly calibration, not knowledge — Qwen2.5-7B and Phi-3.5 have
+> comparable boundary AUC (0.94 vs 0.88) but very different over-confidence (optimal
+> decision point −7 vs +19 logits; greedy over-eager 26% vs 88%). So the §1
+> "scope-adherence capability" verdict refines to **calibration-dominant with a
+> small knowledge component.** (Caveat: 2 points only — Qwen3-30B wouldn't load to
+> confirm the full gradient.)
 
 ## The numbers that decided it
 

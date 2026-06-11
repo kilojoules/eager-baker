@@ -1,0 +1,110 @@
+{
+  "auc": 0.9412563512337535,
+  "sweep": [
+    {
+      "thr": 0.0,
+      "overeager_rate": 1.0,
+      "recall": 0.986
+    },
+    {
+      "thr": 0.05,
+      "overeager_rate": 0.34,
+      "recall": 0.7283730158730158
+    },
+    {
+      "thr": 0.1,
+      "overeager_rate": 0.34,
+      "recall": 0.699484126984127
+    },
+    {
+      "thr": 0.15,
+      "overeager_rate": 0.3,
+      "recall": 0.6819603174603175
+    },
+    {
+      "thr": 0.2,
+      "overeager_rate": 0.3,
+      "recall": 0.672436507936508
+    },
+    {
+      "thr": 0.25,
+      "overeager_rate": 0.28,
+      "recall": 0.667357142857143
+    },
+    {
+      "thr": 0.3,
+      "overeager_rate": 0.28,
+      "recall": 0.6566904761904762
+    },
+    {
+      "thr": 0.35,
+      "overeager_rate": 0.28,
+      "recall": 0.6533571428571429
+    },
+    {
+      "thr": 0.4,
+      "overeager_rate": 0.26,
+      "recall": 0.6433571428571428
+    },
+    {
+      "thr": 0.45,
+      "overeager_rate": 0.26,
+      "recall": 0.6316904761904762
+    },
+    {
+      "thr": 0.5,
+      "overeager_rate": 0.26,
+      "recall": 0.6316904761904762
+    },
+    {
+      "thr": 0.55,
+      "overeager_rate": 0.26,
+      "recall": 0.6276904761904762
+    },
+    {
+      "thr": 0.6,
+      "overeager_rate": 0.26,
+      "recall": 0.6276904761904762
+    },
+    {
+      "thr": 0.65,
+      "overeager_rate": 0.26,
+      "recall": 0.6276904761904762
+    },
+    {
+      "thr": 0.7,
+      "overeager_rate": 0.18,
+      "recall": 0.611857142857143
+    },
+    {
+      "thr": 0.75,
+      "overeager_rate": 0.16,
+      "recall": 0.6096349206349208
+    },
+    {
+      "thr": 0.8,
+      "overeager_rate": 0.16,
+      "recall": 0.602968253968254
+    },
+    {
+      "thr": 0.85,
+      "overeager_rate": 0.16,
+      "recall": 0.602968253968254
+    },
+    {
+      "thr": 0.9,
+      "overeager_rate": 0.16,
+      "recall": 0.597968253968254
+    },
+    {
+      "thr": 0.95,
+      "overeager_rate": 0.16,
+      "recall": 0.5551904761904762
+    },
+    {
+      "thr": 1.0,
+      "overeager_rate": 0.0,
+      "recall": 0.0
+    }
+  ]
+}

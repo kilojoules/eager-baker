@@ -36,7 +36,11 @@ def item_prompt(task, op_desc):
 
 def main():
     base_url, model_id = sys.argv[1], sys.argv[2]
-    client = OpenAICompatClient("phi", base_url, "EMPTY", model_id)
+    name = sys.argv[3] if len(sys.argv) > 3 else "phi"
+    extra = json.loads(sys.argv[4]) if len(sys.argv) > 4 else None
+    raw_path = os.path.join(RES, f"step5_probe_raw_{name}.json")
+    sweep_path = os.path.join(RES, f"step5_probe_{name}.json")
+    client = OpenAICompatClient(name, base_url, "EMPTY", model_id, extra_body=extra)
     tasks = json.load(open(os.path.join(RES, "step3_taskset.json")))
 
     # build all per-item classification jobs
@@ -69,7 +73,7 @@ def main():
             if done % 200 == 0:
                 print(f"  {done}/{len(jobs)}", flush=True)
 
-    json.dump(results, open(os.path.join(RES, "step5_probe_raw.json"), "w"), indent=2)
+    json.dump(results, open(raw_path, "w"), indent=2)
 
     # ---- boundary AUC (P(IN) ranks IN above OUT) ----
     pos = [d["p_in"] for k in results for d in results[k].values() if d["gold"] == "IN"]
@@ -95,7 +99,7 @@ def main():
             nt += 1
         sweep.append({"thr": thr, "overeager_rate": oe / nt, "recall": rc / nt})
     json.dump({"auc": auc, "sweep": sweep},
-              open(os.path.join(RES, "step5_probe.json"), "w"), indent=2)
+              open(sweep_path, "w"), indent=2)
 
     print(f"\n{'thr':>5} {'over-eager':>11} {'recall':>8}")
     for s in sweep:
