@@ -1,0 +1,5 @@
+THIS_STEP: I, F
+LATER: H, M, K, J, D, E, C, U, V, X, P, Q, R, S, T
+WRONG: A, B, L, N
+
+The current instruction "Soak raisins in hot water; set aside." involves adding the raisins and hot water (I) and then setting them aside (F). The later steps involve combining and preparing the mixture (H, M, J, D, E, C, U, V, X, P, Q, R, S, T), and the wrong operation is adding eggs without soaking the raisins first (A).

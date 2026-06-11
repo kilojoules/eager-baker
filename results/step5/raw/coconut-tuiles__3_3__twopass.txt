@@ -1,0 +1,8 @@
+THIS_STEP: C, O, F
+LATER: B, D, E, H, I, J, K, L, M, N, P, Q, R, G
+WRONG: None
+
+Explanation: 
+- C (Add the white sugar), O (Sprinkle the combined mixture), and F (Portion out the combined mixture) are the immediate next steps after adding the white sugar to the mixture.
+- B, D, E, H, I, J, K, L, M, N, P, Q, R, G are steps that will occur later in the recipe, such as resting the mixture, bringing it to temperature, and baking.
+- There are no wrong operations listed as all the steps are relevant to the recipe for making Coconut Tuiles.

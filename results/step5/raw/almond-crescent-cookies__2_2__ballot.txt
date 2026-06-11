@@ -1,0 +1,17 @@
+SEL=['A', 'D', 'E', 'K', 'L', 'M', 'P'] FLAG=[]
+---
+D: IN
+E: IN
+P: IN
+K: IN
+L: IN
+M: IN
+A: OUT (This step involves portioning out, which is not explicitly mentioned in the instruction to add and mix the extracts and flour)
+B: OUT (Almond flour is already part of the combined mixture)
+C: OUT (Baking tray is not needed at this step)
+G: OUT (The mixture is not yet lined on the tray)
+H: OUT (Baking has not started yet)
+I: OUT (The mixture is not yet transferred)
+J: OUT (Sprinkling is not part of the mixing process)
+N: OUT (Almond extract is already part of the combined mixture)
+O: OUT (All-purpose flour is not needed at this step)

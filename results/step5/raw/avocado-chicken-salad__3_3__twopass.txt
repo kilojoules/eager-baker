@@ -1,0 +1,8 @@
+THIS_STEP: K, L, M
+LATER: N, C, E, B, D, F, I, J, A, G, H, rest a, rest b, rest c, rest d
+WRONG: avocado seed, apple seed
+
+Explanation:
+- THIS_STEP includes actions directly related to mixing the current ingredients with a fork (K, L, M), which is the instruction given.
+- LATER includes steps that will be performed after the current mixing step, such as adding salt (E), olive oil (B), cilantro (K), lime juice (M), and other ingredients (N, C, E, B, D, F, I, J).
+- WRONG includes ingredients that are not part of the Avocado Chicken Salad recipe and should not be used in this context (avocado seed, apple seed).

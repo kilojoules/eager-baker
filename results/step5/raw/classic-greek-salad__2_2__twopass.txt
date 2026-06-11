@@ -1,0 +1,5 @@
+THIS_STEP: E, H, J
+LATER: A, C, D, F, G, I, K, L, M, N, O, P, Q, R, S, T, U, V, X, Y
+WRONG: 
+
+The current instruction "Slice it into thin rounds." refers to the cucumber that needs to be cut into slices (E). The operations related to this step that will occur later in the recipe include combining the mixture with other ingredients (H, J, L, M, N, O, P), and the initial preparation of the cucumber (G). There are no wrong variants in the provided labels for this instruction.

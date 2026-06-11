@@ -1,0 +1,8 @@
+THIS_STEP: C, M, A26, A27
+LATER: B, D, E, F, G, H, I, J, K, L, N, O, P, Q, R, S, T, U, V, W, X, Z
+WRONG: 
+
+Explanation:
+- C, M, A26, A27 are the steps directly related to creaming the butter and sugar, which is the current instruction.
+- B, D, E, F, G, H, I, J, K, L, N, O, P, Q, R, S, T, U, V, W, X, Z are steps that will occur after creaming the butter and sugar, as part of the ongoing process of making the ginger snaps.
+- There are no wrong variants (WRONG) listed for this recipe step.

@@ -1,0 +1,8 @@
+THIS_STEP: G, K, H, O
+LATER: B, F, L, M, N
+WRONG: A, I, J
+
+Explanation:
+- THIS_STEP includes actions directly related to stirring in the milk and coconut oil (G, K, H, O) as per the current instruction.
+- LATER includes steps that will follow the stirring, such as portioning out the mixture (B), fetching the cookie sheet (F), adding the bisquick baking mix (L), mixing the combined ingredients (N), and leaving the mixture to rest (M).
+- WRONG includes actions that are not relevant to the current instruction or are incorrect for the recipe, such as cutting the mixture (A), adding the bread knife (I), and fetching the wire rack (J).

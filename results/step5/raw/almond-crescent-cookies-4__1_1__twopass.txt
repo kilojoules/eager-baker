@@ -1,0 +1,5 @@
+THIS_STEP: B, C
+LATER: D, E, F, G, H, I, J, K, L, M, N
+WRONG: None
+
+The current instruction involves creaming the butter, powdered sugar, and vanilla, which corresponds to labels B and C. The later steps involve adding the remaining ingredients and shaping, combining, transferring, and baking the mixture. There are no wrong variants in the provided labels for the given recipe step.

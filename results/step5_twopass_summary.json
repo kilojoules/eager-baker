@@ -1,0 +1,13 @@
+{
+  "act_overeager": 0.64,
+  "act_recall": 0.42519841269841274,
+  "boundary": {
+    "tp": 77,
+    "fp": 72,
+    "tn": 534,
+    "fn": 94,
+    "covered": 777,
+    "n": 923
+  },
+  "boundary_acc": 0.7863577863577863
+}

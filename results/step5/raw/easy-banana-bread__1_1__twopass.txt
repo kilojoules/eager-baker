@@ -1,0 +1,5 @@
+THIS_STEP: B, E
+LATER: A, D, G, H, I, J, K, L, M, N
+WRONG: C, O
+
+The current instruction "Cream together butter, eggs and sugar until smooth" involves beating the butter and eggs with sugar, which corresponds to labels B and E. These steps come after the initial preparation of ingredients but before adding the flour and baking, hence they are part of the later steps. Labels A, D, G, H, I, J, K, L, M, N are part of subsequent steps in the recipe, such as mixing the combined ingredients, greasing the pan, and baking. Label C is incorrect because the recipe does not call for cracking eggs into a bowl separately, and O is wrong because the recipe does not involve separating eggs into yolks and whites.

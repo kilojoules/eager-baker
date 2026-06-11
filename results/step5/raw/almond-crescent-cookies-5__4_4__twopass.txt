@@ -1,0 +1,5 @@
+THIS_STEP: H, I
+LATER: D, E, F, J, K, L, M, N, O
+WRONG: None
+
+The current instruction involves beating the combined mixture, which corresponds to steps H (Beat the combined mixture) and I (Beat (cream) the combined mixture). The later steps involve mixing the ingredients, adding flour, portioning out the mixture, and shaping it, which all come after beating the mixture. There are no wrong variants provided in the menu labels.

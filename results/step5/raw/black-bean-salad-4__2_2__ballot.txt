@@ -1,0 +1,20 @@
+SEL=['A', 'E', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R'] FLAG=[]
+---
+[A]: IN
+[B]: OUT
+[C]: OUT
+[D]: OUT
+[E]: IN
+[F]: OUT
+[G]: OUT
+[H]: OUT
+[I]: OUT
+[J]: IN
+[K]: IN
+[L]: IN
+[M]: IN
+[N]: IN
+[O]: IN
+[P]: IN
+[Q]: IN
+[R]: IN

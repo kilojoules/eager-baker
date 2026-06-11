@@ -1,0 +1,5 @@
+THIS_STEP: F, L
+LATER: A, B, C, D, E, G, H, I, J, K, N
+WRONG: None
+
+Explanation: "F" and "L" are the immediate next steps for handling the broccoli, as the broccoli is already chopped and needs to be further cut (finely) and then added to the mixture. All other steps (A-I) are part of subsequent steps in the recipe that will occur after the current instruction is completed. There are no wrong variants in the given options.

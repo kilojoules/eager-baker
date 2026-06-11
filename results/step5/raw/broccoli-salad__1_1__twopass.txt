@@ -1,0 +1,9 @@
+THIS_STEP: D, H, F
+LATER: E, J, K, M, L, N
+WRONG: 
+
+Explanation:
+- D (Cut the cooked bacon) is a current step because the instruction is to cut the cooked bacon into pieces, which is part of preparing the ingredients for the salad.
+- H (Add the mayonnaise) and F (Add the combined mixture) are later steps as they involve adding ingredients after the initial mixing of the dressing components.
+- E (Add the broccoli), J (Add the grated mozzarella), G (Add the red onion), K (Gently combine the combined mixture), M (Refrigerate the combined mixture), and N (Add the cider vinegar) are all later steps that occur after the initial mixing of the ingredients and dressing.
+- There are no wrong variants in the given options, hence the Wrong category is empty.

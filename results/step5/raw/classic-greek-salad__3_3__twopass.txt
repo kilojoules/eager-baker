@@ -1,0 +1,5 @@
+THIS_STEP: E, R
+LATER: D, A, B, C, F, H, I, J, K, L, M, N, O, P, Q, V, W, X
+WRONG: None
+
+Explanation: The current instruction is to "Cut out the stem and core of the tomato and chop," which corresponds to cutting the tomato (chopped), so labels E and R are in the THIS_STEP group. All other labels refer to steps that either come before or after this specific instruction in the recipe, so they belong in the LATER group. There are no incorrect operations listed, hence WRONG is empty.

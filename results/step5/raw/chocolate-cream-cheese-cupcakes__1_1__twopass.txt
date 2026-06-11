@@ -1,0 +1,10 @@
+THIS_STEP: N, O, P, Q
+LATER: A, B, C, D, F, G, H, I, J, K, L, M, R
+WRONG: None
+
+Explanation:
+- N (Fetch small bowl) is needed to combine the ingredients as per the instruction.
+- O (Add water) and P (Add white sugar) are preparatory steps that will be combined with other ingredients later.
+- Q (Gently combine the combined mixture) is the actual step of combining the ingredients, which aligns with the current instruction.
+- All other labels (A, B, C, D, F, H, I, J, K, L, M, R) are part of later steps in the recipe process, such as mixing dry ingredients, adding wet ingredients, and baking.
+- There are no wrong variants as all the labels are relevant to the recipe.

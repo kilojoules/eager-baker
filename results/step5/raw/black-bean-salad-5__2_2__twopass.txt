@@ -1,0 +1,5 @@
+THIS_STEP: E, F
+LATER: D, G, J, K
+WRONG: A, B, C, H
+
+The current instruction is to gently fold in the chopped avocados, which corresponds to options E and F. These steps involve combining the avocado with the other ingredients already prepared for the salad. Later steps (D, G, J) involve further mixing or refrigerating the salad, which comes after folding in the avocado. Option A (Add the salt) and B (Add the ground black pepper) are earlier steps, as they are part of seasoning the ingredients before combining. Option C (Add the fresh cilantro) is incorrect because the recipe calls for chopped cilantro, not fresh. Option H (Beat the combined mixture) is not applicable to this recipe, as it is not a cream-based salad.

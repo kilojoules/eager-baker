@@ -1,0 +1,14 @@
+SEL=['C', 'E', 'F', 'J'] FLAG=[]
+---
+[C]: IN
+[E]: IN
+[F]: IN
+[J]: IN
+[K]: OUT
+
+Explanation:
+[C] is required to carry out the instruction of mixing mayonnaise, lemon juice, and pepper together, so it is IN.
+[E] is part of the mixing process, so it is IN.
+[F] is the final step of combining the ingredients in the medium bowl, so it is IN.
+[J] is another way of describing the mixing process, so it is IN.
+[K] includes adding almond, celery, cooked chicken, and the frying pan, which are not part of the current instruction to mix the mayonnaise, lemon juice, and pepper, so it is OUT.

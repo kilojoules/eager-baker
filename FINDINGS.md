@@ -50,6 +50,40 @@ decoding cut overrun most but via suppression — a *harder* structured objectiv
 that rewards in-scope recall while penalising overrun is the natural next probe,
 not attempted here.)
 
+### STEP 5 ROUND 2 — boundary IS in the logits; it's a decoding bottleneck, not a ceiling
+
+Round-1 + DIAGNOSIS read the over-eagerness as a scope-adherence *capability*
+limit ("phi can't locate the boundary"). Round 2 (pre-registered, same model/
+tasks/scorer; only the response format changes) **refines that — and partly
+overturns it.** Plot: `results/step5_round2.png`.
+
+- **Behavioural arms still don't win.** C1 *ballot* (forced per-item IN/OUT) went
+  to **92% over-eager / recall 0.74** — up-and-right, "mark more things IN"
+  (more of everything). C2 *two-pass* (partition then act=THIS_STEP) → **64% /
+  0.43** — overrun down a little, recall down (still ~suppression). Two-pass's
+  pass-1 partition was only half-right (IN precision 52%, IN recall 45%).
+- **But the logprob probe (C3) is the headline: boundary AUC = 0.877.** phi's
+  IN/OUT logits rank in-scope items *well* above out-of-scope ones. **The boundary
+  is strongly present in the model's internal signal** — so "can't locate it" is
+  wrong; the flag-never-used and ballot-scrambling were *decoding/behaviour*
+  artifacts, not missing knowledge.
+- **Why greedy fails: saturation.** phi assigns P(IN)≈1.0 to almost everything
+  (poor absolute calibration), so a global P(IN) threshold is flat (≈88% / 0.91 at
+  every cut) and the deploy-realistic largest-gap cut keeps everything (88% / 0.91).
+- **Rank-based selection recovers it.** Selecting per task the *n_in* highest-P(IN)
+  items lands at **52% over-eager / 0.64 recall — inside the success region**
+  (less overstep than baseline 72% at *higher* recall 0.54→0.64). This **falsifies
+  "pure suppression / capability ceiling"**: the ranking carries the boundary.
+
+**Refined verdict:** phi's over-eagerness here is a **decoding/calibration
+bottleneck, not a knowledge ceiling** — the boundary is in the logits (AUC 0.88)
+but greedy selection can't express it because the probabilities are saturated.
+**Honest caveats:** the off-diagonal point uses *oracle n_in* (an upper bound on
+rank quality, not deployable); the deploy-realistic auto-cut still fails; one
+model, n=50. **The open lever is now decoding, not retraining:** calibrate the
+IN/OUT logits (e.g. temperature scaling), or estimate per-task *k* / a
+saturation-aware relative cutoff — that is the natural Round-3 probe.
+
 ---
 
 ## STEP 3 — between-model result (n=50/model, menu, 3 models)

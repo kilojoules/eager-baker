@@ -1,0 +1,8 @@
+THIS_STEP: C, E, I
+LATER: A, B, D, H, F, G, K
+WRONG: G
+
+Explanation: 
+- THIS_STEP includes the actions directly related to the current instruction of mixing mayonnaise, lemon juice, and pepper together, which are fetching the medium bowl (B), adding the mayonnaise (C), and adding the lemon juice (I).
+- LATER includes the subsequent steps in the recipe such as adding the cooked chicken (A), the frying pan (D), the celery (H), and the final mixing of all ingredients (F, G, K).
+- WRONG identifies the option that does not fit with the current instruction, which is adding the almond and the frying pan together with other ingredients (G), as this step comes after the initial mixing of the mayonnaise, lemon juice, and pepper.

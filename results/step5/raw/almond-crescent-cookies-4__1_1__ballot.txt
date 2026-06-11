@@ -1,0 +1,18 @@
+SEL=['B', 'C', 'D', 'E', 'G', 'H', 'I'] FLAG=[]
+---
+B: IN
+C: IN
+D: IN
+E: IN
+F: OUT
+G: IN
+H: IN
+I: IN
+J: OUT
+K: OUT
+L: OUT
+M: OUT
+N: OUT
+O: OUT
+
+Note: The operations F, J, and K are not required for the specific step of "Cream butter, vanilla, sugar and add flour and water" as per the given recipe instruction. F is for adding almonds which is a later step, J is for shaping which is not part of creaming, and K is for transferring which happens after combining and shaping. M and O are preparatory steps for baking which is not part of the creaming process.

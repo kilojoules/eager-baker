@@ -66,8 +66,8 @@ def main():
     print("-"*84)
 
     results = []
-    for arm in [a for a in ["anchor", "fewshot", "flag", "guided", "consequence"]
-                if a in arms]:
+    for arm in [a for a in ["anchor", "fewshot", "flag", "guided", "consequence",
+                            "ballot", "twopass"] if a in arms]:
         A = arms[arm]
         ks = [k for k in keys if k in A]
         oe = sum(A[k]["overrun"] for k in ks)/len(ks)

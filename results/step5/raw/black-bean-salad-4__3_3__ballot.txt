@@ -1,0 +1,16 @@
+SEL=['A', 'B', 'E', 'G', 'H', 'I', 'J', 'K'] FLAG=[]
+---
+[G]: IN
+[H]: IN
+[J]: IN
+[I]: IN
+[F]: OUT (combined mixture already includes olive oil and lime juice)
+[A]: OUT (mango is added later in the recipe)
+[B]: OUT (mango is added later in the recipe)
+[D]: OUT (large bowl and red bell pepper are part of a different step)
+[E]: OUT (mango is added later in the recipe)
+[K]: OUT (black beans are added later in the recipe)
+
+Rest: IN (always present as a container for holding ingredients)
+
+Note: The operations G, H, J, and I are all variations of combining the lime juice and olive oil, which is the current step in the recipe. However, only G and I explicitly mention adding the olive oil and lime juice to a small bowl, which is the exact instruction given. Since G and I are essentially the same action, only one of them should be considered IN. The rest operations are always present but not specific to the current step.

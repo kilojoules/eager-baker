@@ -1,0 +1,8 @@
+THIS_STEP: E, K
+LATER: C, D, F, G, I, J
+WRONG: None
+
+Explanation: 
+- THIS_STEP includes "E" (Gently combine the combined mixture) and "K" (Gently combine the combined mixture again) as these are the steps that involve mixing the current mixture, which includes the almonds.
+- LATER includes "C" (Add the all purpose flour), "D" (Bake the combined mixture), "F" (Grease the cookie sheet), "G" (Portion out the combined mixture), "I" (Shape the combined mixture), and "J" (Beat the combined mixture) as these are subsequent steps in the recipe after mixing.
+- WRONG does not apply as none of the labels represent incorrect operations.

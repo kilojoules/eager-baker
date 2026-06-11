@@ -103,12 +103,20 @@ def build_arm(task, menu, arm: str):
 
 
 def parse_ballot(text: str, menu) -> dict:
-    """{label -> 'IN'|'OUT'} from a per-item ballot reply (missing labels omitted)."""
+    """{label -> 'IN'|'OUT'} from a per-item ballot reply. Line-based: the label is
+    taken from the START of the line (optionally bracketed, e.g. `[B] ...`) and the
+    verdict is the LAST standalone IN/OUT word on that line — robust to the model
+    echoing the operation description (`[B] Beat ... : IN`)."""
     valid = {m.label for m in menu}
     out = {}
-    for lab, verd in re.findall(r"\b([A-Z]\d?)\s*[:\-]\s*(IN|OUT)\b", text.upper()):
-        if lab in valid and lab not in out:
-            out[lab] = verd
+    for line in text.splitlines():
+        up = line.upper()
+        m = re.match(r"\s*\[?([A-Z]\d?)\]?\b", up)
+        if not m or m.group(1) not in valid:
+            continue
+        verds = re.findall(r"\b(IN|OUT)\b", up)
+        if verds:
+            out.setdefault(m.group(1), verds[-1])
     return out
 
 

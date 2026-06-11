@@ -12,6 +12,18 @@ a genuine next-step-overrun component, so it is not *purely* a capability artifa
 — hence "mixed" — but three of four cuts point at capability, and the persona
 prior says it won't move with naive prompting.
 
+> **REFINEMENT (2026-06-11, Round-2 logprob probe — see FINDINGS §STEP 5 ROUND 2).**
+> "Capability" here is **NOT a knowledge/boundary-identification ceiling.** A
+> per-item IN/OUT logprob read-out on phi gives **boundary AUC = 0.877** — the
+> model's logits rank in-scope above out-of-scope items well, and per-task
+> *rank* selection reaches the success region (52% over-eager at 0.64 recall).
+> The failure is at the **decoding/calibration** layer: P(IN) is saturated ≈1.0,
+> so greedy/threshold selection can't express a ranking the model clearly has.
+> So the accurate framing is: **phi knows the boundary but can't act on it under
+> greedy decoding** — a decoding/calibration bottleneck, not missing knowledge.
+> (The "phi never used the flag channel" point in §1 is thus a *behaviour/format*
+> artifact, not evidence it can't locate the boundary.)
+
 ## The numbers that decided it
 
 **§1 — composition.** The frozen over-eager metric already counts *only* next-step

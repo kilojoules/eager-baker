@@ -1,0 +1,11 @@
+THIS_STEP: E, F
+LATER: B, H, G, I, J, K
+WRONG: C, D, A, L
+
+Explanation: 
+- E (Add the semisweet chocolate chips) and F (Mix the combined mixture) are the immediate next steps to fold in the chocolate chips.
+- B (Transfer the combined mixture), H (Leave to rest the combined mixture), G (Add the 5 cm apart), I (Portion out the combined mixture), J (Shape the combined mixture), and K (Fetch wire rack) are steps that will occur later in the recipe process.
+- C (Bake the combined mixture at 8°C) is incorrect because the oven is preheated to 175 degrees Celsius, not 8°C.
+- D (Bring to temperature the combined mixture, wire rack) is also incorrect because the wire rack is fetched later and the temperature mentioned is not applicable.
+- A (Gently combine the combined mixture) is wrong because it suggests a different method than folding in the chocolate chips.
+- L (Transfer the combined mixture) is incorrect as it implies moving the mixture before shaping or baking, which is not the current instruction.

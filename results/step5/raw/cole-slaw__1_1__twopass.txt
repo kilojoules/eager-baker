@@ -1,0 +1,8 @@
+THIS_STEP: G, K, R
+LATER: D, I, O, U, X, Y, Z
+WRONG: None
+
+Explanation: 
+- G (Cut the carrot) and K (Cut the green cabbage) are needed now to chop the carrot and green cabbage as per the instruction.
+- I (Chopped carrot), O (Chopped onion), U (Chopped carrot and green cabbage), X (Chopped green chili pepper), Y (Carrot), Z (Turmeric powder) are operations that will happen later as the ingredients need to be chopped after combining.
+- None of the labels represent wrong operations as all are relevant to the recipe for making Cole Slaw.

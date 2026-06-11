@@ -1,0 +1,9 @@
+THIS_STEP: D, E, P
+LATER: A, B, F, G, H, I, J, K, M, N
+WRONG: O
+
+Explanation: 
+- D (Add the vanilla extract) and E (Shape the combined mixture (almond extract, almond flour, butter, vanilla extract, white sugar) into a crescent shape) are immediate steps needed to add the vanilla extract and shape the mixture as per the current instruction.
+- P (Shape the combined mixture (almond extract, almond flour, butter, vanilla extract, white sugar) into a crescent shape) is a later step as it follows the mixing of the combined ingredients.
+- All other labels (A, B, F, G, H, I, J, K, M, N) are related to later steps such as portioning, lining the tray, and baking, which are not required at the current step of adding and shaping the mixture.
+- O (Add the all-purpose flour) is wrong because the recipe does not call for all-purpose flour at this stage; it only requires almond flour and other ingredients.

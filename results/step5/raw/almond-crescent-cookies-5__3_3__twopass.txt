@@ -1,0 +1,8 @@
+THIS_STEP: D, M, F
+LATER: A, J, K, L, N, O, P, Q, R, S, I, H, I
+WRONG: 
+
+Explanation:
+- THIS_STEP includes actions directly related to creaming the butter and sugar (D - Add the butter, M - Gently combine the butter, large bowl and white sugar, F - Beat the combined mixture).
+- LATER includes steps that will follow the creaming process, such as adding flour, egg, and shaping the dough (J - Add the all purpose flour, K - Add the almond flour, L - Add the egg, N - Shape the combined mixture, O - Add the vanilla extract, P - Add the combined mixture, Q - Fetch large bowl, R - Portion out the combined mixture, S - Beat the butter, large bowl and white sugar, I - Bake the combined mixture).
+- WRONG is empty because there are no incorrect operations listed for the current instruction.

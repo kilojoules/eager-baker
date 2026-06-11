@@ -1,0 +1,8 @@
+THIS_STEP: B, K, M
+LATER: A, D, E, I, J, N
+WRONG: None
+
+Explanation: 
+- THIS_STEP includes actions directly related to combining the ingredients (B, K, M) and shaping them (M).
+- LATER includes steps that will follow the combination, such as transferring the mixture to a cookie sheet (A), dipping it in powdered sugar (D), baking (I), and portioning out (N).
+- WRONG does not apply as all the listed operations are correct for the recipe.

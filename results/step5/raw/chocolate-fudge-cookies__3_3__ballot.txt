@@ -1,0 +1,17 @@
+SEL=['E', 'F', 'H', 'I', 'L', 'M', 'N', 'O'] FLAG=[]
+---
+[E]: IN
+[F]: IN
+[N]: IN
+[O]: IN
+[M]: IN
+[L]: IN
+[H]: IN
+[I]: IN
+[A]: OUT (incorrect temperature for baking)
+[B]: OUT (shaping comes after mixing)
+[D]: OUT (spacing is not part of the current step)
+[G]: OUT (heating to temperature comes after shaping and portioning)
+[Q]: OUT (wire rack is not needed at this step)
+[K]: OUT (egg separation is not part of the current step)
+[P]: OUT (cracking eggs is not part of the current step)

@@ -1,0 +1,17 @@
+SEL=['A', 'B', 'E', 'I'] FLAG=[]
+---
+[B] Beat (cream) the butter, egg and sugar: IN
+[E] Beat (cream) the combined mixture (banana, butter, egg, sugar, vanilla extract): IN
+[F] Gently combine the butter, egg and sugar: OUT
+[G] Add the self rising flour: OUT
+[H] Bake the combined mixture (banana, butter, egg, pan, self rising flour, sugar, vanilla extract): OUT
+[I] Add the vanilla extract: IN
+[J] Grease the pan: OUT
+[K] Add the banana: OUT
+[L] Fetch pan: OUT
+[M] Add the sugar: OUT
+[A]: IN
+[C]: OUT
+[D]: OUT
+
+Note: While option [A] is marked as IN, it is not a direct step in the specific instruction "Cream together butter, eggs and sugar until smooth." It is a subsequent step after the creaming process. However, since the instruction is part of the overall recipe and not a standalone step, it is included in the IN category to reflect that it is part of the necessary sequence of actions for making the banana bread. The direct creaming of butter, egg, and sugar is covered by options [B] and [E].

@@ -1,0 +1,8 @@
+THIS_STEP: E, K, J
+LATER: D, M, I, H, G, F, A, B, N, P, Q, R
+WRONG: 
+
+Explanation:
+- THIS_STEP includes actions directly related to beating the combined mixture with vanilla extract, almond extract, butter, and white sugar (E, K, J).
+- LATER includes subsequent steps like transferring the mixture, adding flour, sifting, and portioning out, which come after beating the mixture.
+- WRONG does not apply as there are no incorrect operations listed.

@@ -1,0 +1,32 @@
+SEL=['B', 'H', 'I', 'K', 'L'] FLAG=[]
+---
+[A] OUT - All purpose flour has not been mentioned yet.
+[B] IN - This operation combines the flour with other ingredients, which is required to proceed.
+[C] OUT - The ball shape is a later step after combining the ingredients.
+[D] OUT - The cookie sheet is needed before the mixture is combined.
+[E] OUT - Walnut is not to be added separately; it should be part of the combined mixture.
+[F] OUT - The dipping process comes after the mixture has been shaped and portioned out.
+[G] OUT - Butter has already been added to the mixture.
+[H] IN - Powdered white sugar is needed to be added to the mixture.
+[I] IN - Vanilla is needed to be added to the mixture.
+[J] OUT - Baking comes after shaping and portioning out the mixture.
+[K] IN - Gently combining the ingredients is a necessary step before shaping and portioning.
+[L] IN - Mixing the ingredients is part of the combining process.
+[M] OUT - The ball shape is a later step after the mixture has been combined.
+[N] IN - Portioning out the mixture is required before baking.
+
+Output:
+[A]: OUT
+[B]: IN
+[C]: OUT
+[D]: OUT
+[E]: OUT
+[F]: OUT
+[G]: OUT
+[H]: IN
+[I]: IN
+[J]: OUT
+[K]: IN
+[L]: IN
+[M]: OUT
+[N]: IN

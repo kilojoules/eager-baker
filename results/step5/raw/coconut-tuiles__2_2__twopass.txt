@@ -1,0 +1,5 @@
+THIS_STEP: Q, R
+LATER: I, J, S, N, O, M, L, K, P, D, F, E, H
+WRONG: None
+
+Explanation: The current instruction is to "Beat the butter," which requires fetching the mixer (Q) and adding the butter to it (R). These steps come after portioning out the combined mixture and before mixing it with the other ingredients, so they are part of later steps in the recipe. There are no wrong variants of the operation provided in the menu labels.

@@ -1,0 +1,8 @@
+THIS_STEP: N, O, P, R
+LATER: A, B, C, D, E, F, G, H, I, J, K, L, S
+WRONG: None
+
+Explanation: 
+- N, O, P, R are the steps directly related to the current instruction of adding vanilla extract, mixing the combined ingredients, and portioning out the mixture, which are immediate next steps in the recipe.
+- A, B, C, D, E, F, G, H, I, J, K, L, S are steps that will occur later in the recipe process, such as adding flour, mixing the ingredients, sifting, transferring the mixture to a baking tray, spacing on the tray, baking, resting, and sprinkling.
+- There are no wrong variants listed as all the steps are relevant to the Almond Crescent Cookies recipe.

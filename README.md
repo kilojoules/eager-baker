@@ -56,14 +56,18 @@ recipe.) Full numbers, CIs, power, and the coupled/benign split in
   pick more wrong distractors, are scope-blind to destructive steps, and overstep
   more under load. §2 (consequence-blindness) direction holds but is **underpowered**
   (destructive next-steps are rare, ~4–11% of slices).
-- **Intervention study** ([INTERVENTION_PLAN.md](INTERVENTION_PLAN.md), FINDINGS
-  §STEP 5): holding phi-3.5-mini fixed and varying only the intervention,
-  **no arm reduced over-eagerness at held in-scope recall** — naive prompting did
-  nothing; a flag-channel and guided-JSON cut overrun only by *suppressing*
-  selection (recall breached); phi never used the flag channel. Reinforces the
-  capability verdict.
+- **Intervention study, Round 1** ([INTERVENTION_PLAN.md](INTERVENTION_PLAN.md),
+  FINDINGS §STEP 5): holding phi-3.5-mini fixed, **no arm reduced over-eagerness at
+  held in-scope recall** — naive prompting did nothing; flag-channel and guided-JSON
+  cut overrun only by *suppressing* selection. (Round-1 plot: `results/step5_intervention.png`.)
+- **Intervention study, Round 2 — the refinement** (FINDINGS §STEP 5 ROUND 2): a
+  per-item logprob read-out shows the slice **boundary IS in phi's logits
+  (AUC=0.88)**; greedy decoding can't express it because P(IN) is saturated, but
+  **rank-based selection reaches the success region** (52% over-eager at 0.64
+  recall). So the over-eagerness is a **decoding/calibration bottleneck, not a
+  knowledge ceiling** — phi knows the boundary, it just can't act on it greedily.
 
-![interventions](results/step5_intervention.png)
+![round 2](results/step5_round2.png)
 
 > An earlier pilot drove Claude Sonnet via two prompt *personas* (cautious/eager);
 > under the menu harness the persona effect collapsed, which is why the scaled run

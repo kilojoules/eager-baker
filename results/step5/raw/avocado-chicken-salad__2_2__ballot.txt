@@ -1,0 +1,20 @@
+SEL=['B', 'H', 'J', 'K', 'L', 'N', 'O', 'P', 'R', 'S'] FLAG=[]
+---
+[B] Add the apple: IN
+[C] Mash the avocado: OUT
+[D] Add the coarse salt: OUT
+[E] Fetch large bowl: OUT
+[F] Fetch plastic wrap: OUT
+[G] Add the combined mixture: OUT
+[H] Add the avocado and fork: IN
+[I] Refrigerate the combined mixture: OUT
+[J] Fetch medium bowl: IN
+[K] Add the cooked chicken: IN
+[L] Gently combine the combined mixture: IN
+[M] Measure out olive oil: OUT
+[N] Add the lime juice: IN
+[O] Add the red onion: IN
+[P] Add the ground black pepper: IN
+[Q] Cover the combined mixture: OUT
+[R] Add the celery: IN
+[S] Gently combine the combined mixture: IN

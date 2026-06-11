@@ -1,0 +1,5 @@
+THIS_STEP: E, F
+LATER: D, A, B, H, I, J, K, L, M, G
+WRONG: None
+
+The current instruction is to place the almonds in a frying pan, which corresponds to labels E (Add the almond) and D (Fetch frying pan). The later steps involve adding and combining other ingredients, as well as preparing the bowl for mixing. There are no wrong variants provided for the current instruction.

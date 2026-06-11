@@ -1,0 +1,24 @@
+SEL=['C'] FLAG=[]
+---
+[C]: IN
+[H]: OUT
+[G]: OUT
+[I]: OUT
+[J]: OUT
+[K]: OUT
+[L]: OUT
+[M]: OUT
+[N]: OUT
+[O]: OUT
+[P]: OUT
+[Q]: OUT
+[R]: OUT
+[S]: OUT
+[T]: OUT
+[U]: OUT
+[V]: OUT
+[W]: OUT
+[X]: OUT
+[A26]: IN
+[A27]: IN
+[Z]: OUT

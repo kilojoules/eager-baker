@@ -45,6 +45,26 @@
       "perf": 0.8877551020408163,
       "flag": 0.0,
       "verdict": "suppression (recall breached)"
+    },
+    {
+      "arm": "ballot",
+      "overeager": 0.92,
+      "drecall": 0.2006825396825399,
+      "mcnemar_p": 0.012939453125,
+      "distractor": 0.7,
+      "perf": 0.9348095238095238,
+      "flag": 0.0,
+      "verdict": "no effect"
+    },
+    {
+      "arm": "twopass",
+      "overeager": 0.64,
+      "drecall": -0.11318253968253955,
+      "mcnemar_p": 0.454498291015625,
+      "distractor": 0.4,
+      "perf": 0.842013888888889,
+      "flag": 0.0,
+      "verdict": "suppression (recall breached)"
     }
   ]
 }

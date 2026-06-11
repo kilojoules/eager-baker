@@ -1,0 +1,5 @@
+THIS_STEP: E, W, Z
+LATER: A26, A27, A28, A29, A30, A31, R, S, T
+WRONG: X, A25, M, N, O, P, Q
+
+Note: There is no label A25 in the provided menu, so it is not included in the WRONG category. The label A25 seems to be a typo or an incorrect reference. If it was meant to be another label, please provide the correct one for accurate categorization.

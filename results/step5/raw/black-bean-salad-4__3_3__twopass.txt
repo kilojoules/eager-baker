@@ -1,0 +1,5 @@
+THIS_STEP: Fetch small bowl, Add the olive oil, Add the lime juice, Gently combine the lime juice, olive oil and small bowl
+LATER: Combine the black bean mix with fresh cilantro, green onion, jalapeno, red bell pepper, large bowl, diced mango, small bowl
+WRONG: Add the mango, Add the bell pepper seeds, Add the jalapeno seeds, Add rest a, Add rest b, Add rest c, Add rest d, Add rest e
+
+Note: The "THIS_STEP" includes the actions directly related to the current instruction of whisking together olive oil and lime juice in a small bowl. "LATER" includes the subsequent step where the combined mixture is gently combined with other ingredients in a larger bowl. "WRONG" lists items that are not relevant to the current instruction or are out of sequence for the recipe.

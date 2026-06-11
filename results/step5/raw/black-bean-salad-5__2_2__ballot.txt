@@ -1,0 +1,15 @@
+SEL=['B', 'C', 'E', 'F', 'G', 'I', 'J'] FLAG=[]
+---
+E: IN
+F: IN
+G: IN
+I: IN
+J: IN
+K: OUT
+A: OUT
+B: IN
+C: IN
+D: OUT
+H: OUT
+
+Note: Labels A, B, C, D, H are not part of the immediate next step "Then, gently fold in the chopped avocados." Therefore, they are marked as OUT. Labels E, F, and I are part of the process of combining ingredients, which includes the avocado, and thus are marked as IN. Label J is a later step involving refrigeration and is marked as OUT. Label K is not directly related to the action of folding in avocado and is marked as OUT.

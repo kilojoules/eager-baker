@@ -1,0 +1,8 @@
+THIS_STEP: N, M, P, Q
+LATER: L, K, J, R, S, U, V, W, X, H, I, J, T
+WRONG: None
+
+Explanation:
+- THIS_STEP includes the actions directly related to beating the butter and powdered sugar (N for fetching the mixer, P for mixing the combined mixture, Q for adding powdered sugar).
+- LATER includes all the subsequent steps that will occur after the initial beating of the butter and sugar, such as adding other ingredients, shaping, baking, and cooling.
+- WRONG does not apply as there are no incorrect operations listed in the menu labels.

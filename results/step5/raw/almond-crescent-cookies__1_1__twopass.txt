@@ -1,0 +1,8 @@
+THIS_STEP: I, J
+LATER: B, C, D, E, F, G, H, K, L, M, N, O, P, Q, R, S
+WRONG: 
+
+Explanation:
+- THIS_STEP includes the actions directly related to beating the butter and sugar together until light and fluffy (I, J).
+- LATER includes all subsequent steps that would follow the beating process in the recipe, such as adding vanilla extract, almond flour, shaping, mixing, transferring, and baking the cookies.
+- WRONG is empty because none of the provided menu labels represent incorrect or unrelated operations to the current step of beating the butter and sugar.

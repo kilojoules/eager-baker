@@ -1,0 +1,10 @@
+THIS_STEP: G, H, Q
+LATER: A, B, C, D, E, F, I, J, K, L, M, N, O, P, R, S, T
+WRONG: 
+
+Explanation:
+- G (Dice the combined mixture) is a later step as the potatoes need to be diced before combining with other ingredients.
+- H (Combine the mixture) is a later step as it refers to the action of combining already diced potatoes with other ingredients.
+- Q (Add the mayonnaise) is a later step because the mayonnaise is to be added to the combined mixture after it has been prepared.
+
+All other labels refer to steps that either come before or after the current instruction of placing diced potatoes in a large bowl, or they are not applicable (WRONG) as there are no wrong variants of the operation provided.

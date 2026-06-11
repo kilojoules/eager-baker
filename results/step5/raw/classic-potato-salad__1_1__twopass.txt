@@ -1,0 +1,8 @@
+THIS_STEP: U, V, A, R, Q
+LATER: T, M, N, O, J, K, X, Y, Z, P, C, D, F, I, H, G, E, B, S, L
+WRONG: None
+
+Explanation:
+THIS_STEP includes the actions directly related to boiling the peeled potatoes with salted water: fetching the cooking pot (T), peeling the potato (U), adding the potato to the cooking pot (V), and then boiling the combined mixture (R), draining it afterward (Q).
+LATER includes all the steps that happen after boiling the potatoes or are preparatory to the boiling step, such as measuring water (L), adding celery (M), combining ingredients (N, O), mixing the ingredients (Y), and adding various other ingredients and seasonings (P, C, D, F, G, H, I).
+WRONG does not apply as there are no incorrect operations listed.

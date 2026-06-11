@@ -1,0 +1,5 @@
+THIS_STEP: B, E, P
+LATER: F, G, H, J, K, L, N, M, Q, R, S, T
+WRONG: None
+
+Explanation: The current instruction involves combining lime juice with garlic, ground black pepper, ground cumin, and salt in a small bowl. This corresponds to labels B (Add the lime juice), E (Add the combined mixture), and P (Add the combined mixture). The later steps involve adding and mixing other ingredients, fetching bowls, and resting the mixture, which are not part of the current step. There are no wrong variants in the given labels.

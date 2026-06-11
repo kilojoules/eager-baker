@@ -1,0 +1,15 @@
+SEL=['B', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'] FLAG=[]
+---
+B: IN
+D: IN
+E: IN
+F: IN
+G: IN
+H: IN
+I: IN
+J: IN
+K: IN
+A: OUT
+C: OUT
+
+All the listed operations are part of the current step of combining the ingredients and letting them stand, except for adding the heavy cream (A) and refrigerating the combined mixture (C), which are either subsequent steps or not required immediately after combining the ingredients.

@@ -1,0 +1,22 @@
+SEL=['E', 'J', 'K', 'O', 'P', 'Q', 'R', 'U'] FLAG=[]
+---
+E: IN
+K: IN
+J: IN
+O: IN
+P: IN
+Q: IN
+U: IN
+R: IN
+T: OUT (wrong temperature, should be 175°C, not 12°C)
+M: OUT (almond flour is added before this step)
+D: OUT (all-purpose flour is added before this step)
+F: OUT (small bowl is fetched before this step)
+G: OUT (wire rack is fetched before this step)
+H: OUT (all-purpose flour is added before this step)
+L: OUT (combined mixture is brought to temperature before this step)
+A: OUT (mixture is not yet combined)
+B: OUT (sifting is not part of this step)
+S: OUT (portioning is not part of this step)
+C: OUT (vanilla extract is added before this step)
+I: OUT (white sugar is added before this step)

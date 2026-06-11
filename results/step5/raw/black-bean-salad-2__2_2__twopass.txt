@@ -1,0 +1,5 @@
+THIS_STEP: A, J
+LATER: B, F, E, G, H, I, M, K, D, C, L, rest a, rest b, rest c, rest d, rest e
+WRONG: None
+
+The current instruction "Slowly whisk in oil" corresponds to adding the olive oil and mixing it with the ingredients in a small bowl (J) and the combined mixture with garlic, ground black pepper, ground cumin, lime juice, and salt (J). These steps are part of the ongoing process of preparing the dressing and combining the ingredients, so they are classified as THIS_STEP. All other labels refer to either subsequent steps or ingredients/actions not applicable to the current instruction, so they are classified as LATER. There are no wrong variants of the operation provided in the menu labels.

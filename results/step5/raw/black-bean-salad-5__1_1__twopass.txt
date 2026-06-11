@@ -1,0 +1,3 @@
+THIS_STEP: B, O, I
+LATER: K, Q, R, S, M, N, L, F, A, D, H, G
+WRONG: J, P, M

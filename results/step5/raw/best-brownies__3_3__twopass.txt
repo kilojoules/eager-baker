@@ -1,0 +1,9 @@
+THIS_STEP: C, H, R
+LATER: A, D, E, F, I, J, K, L, M, N, O, P
+WRONG: G
+
+Explanation:
+- C (Fetch medium bowl) and H (Add the butter) are needed to prepare the medium bowl and add the butter, which are immediate steps for beating the butter and sugar together.
+- R (Beat (cream) the butter, medium bowl and white sugar) is the specific action to combine and beat the ingredients as per the instruction.
+- A, D, E, F, I, J, K, L, M, N, O, P are later steps that involve combining and adding other ingredients, preparing the pan, and eventually baking, which come after the initial mixing of butter and sugar.
+- G is marked as WRONG because it suggests cutting the combined mixture, which is not relevant to the current step of beating the butter and sugar together.

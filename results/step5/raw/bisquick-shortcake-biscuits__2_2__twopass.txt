@@ -1,0 +1,5 @@
+THIS_STEP: D, E, H, K
+LATER: F, G, I, J, L, M, N, O, P, R, S
+WRONG: B, G, Q
+
+The current instruction involves whisking together the baking mix (bisquick) and sugar, which corresponds to actions D (Add the bisquick baking mix), E (Add the white sugar), and H (Add the white sugar) — all of which are steps that need to be performed immediately to carry out the current instruction. Actions F, G, I, J, L, M, N, O, P, R, and S are steps that will occur later in the recipe, after the initial mixture has been combined. B and G are incorrect because a bread knife is not used in this step, and Q is incorrect because gentle combining is not the method specified for mixing the sugar with the baking mix.

@@ -1,0 +1,8 @@
+THIS_STEP: D, X, W
+LATER: A, H, I, J, K, L, M, N, P, Q, R, S, T, U, V, G, F, Y
+WRONG: 
+
+Explanation:
+- THIS_STEP includes actions directly related to the current instruction of mixing the combined mixture with a wooden spoon (D, X, W).
+- LATER includes subsequent steps that will occur after the current mixing step, such as shaping, transferring, and baking the mixture (A, H, I, J, K, L, M, N, P, Q, R, S, T, U, V).
+- WRONG does not apply as there are no incorrect operations listed in the menu labels.

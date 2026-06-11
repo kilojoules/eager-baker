@@ -1,0 +1,8 @@
+THIS_STEP: J, I
+LATER: K, A, B, E, F, G, H, M, N, O, P, Q, R
+WRONG: None
+
+Explanation:
+THIS_STEP includes the actions directly related to spreading the sweet potatoes onto a rimmed baking sheet (J - Add the sweet potato, I - Mix the large bowl, lime juice, and olive oil).
+LATER includes all the subsequent steps that will be performed after the sweet potatoes are spread out, such as adding and combining other ingredients (K - Add the coarse salt, A - Add the lime juice, B - Add the black bean, E - Add the fresh cilantro, F - Add the red onion, G - Add the red pepper flakes, H - Fetch large bowl, M - Add the combined mixture, N - Fetch baking tray, O - Add the ground cumin, P - Gently combine the combined mixture, Q - Add the ground black pepper, R - Add the olive oil).
+WRONG does not apply as there are no incorrect operations listed.

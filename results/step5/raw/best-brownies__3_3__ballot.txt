@@ -1,0 +1,17 @@
+SEL=['A', 'C', 'F', 'H', 'R'] FLAG=[]
+---
+[C]: IN
+[H]: IN
+[R]: IN
+[P]: OUT (added later after mixing)
+[A]: OUT (involves combining all ingredients, not just the ones mentioned in the instruction)
+[B]: OUT (adding white sugar is a separate step before combining)
+[D]: OUT (adding flour is a separate step before combining)
+[E]: OUT (adding salt is a separate step before combining)
+[F]: OUT (mixing the combined mixture includes steps not mentioned in the instruction)
+[G]: OUT (cutting the combined mixture is not part of the instruction)
+[J]: OUT (adding walnuts is not part of the instruction)
+[K]: OUT (spreading the pan is not part of the instruction)
+[L]: OUT (adding butter is not part of the instruction)
+[N]: OUT (baking is a later step, not part of the current instruction)
+[O]: OUT (baking at 25°C is not part of the current instruction)

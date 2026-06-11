@@ -1,0 +1,23 @@
+SEL=['A', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S'] FLAG=[]
+---
+A: IN
+D: IN
+E: IN
+F: IN
+H: IN
+G: IN
+J: IN
+K: IN
+L: IN
+M: IN
+N: IN
+O: IN
+P: OUT (usually greased cookie sheet is part of preparation, but not specified in the current step)
+Q: IN
+R: IN
+S: IN
+
+B: OUT (bread knife is not required for this step)
+G: OUT (mixing of medium bowl and sugar is already included in operation F)
+
+Note: The wire rack (O) and wire rack (N) are not part of the current step, so they are OUT. The greasing of the cookie sheet (P) is typically done before baking, but since it's not explicitly mentioned in the current step, it's considered OUT for this specific instruction.

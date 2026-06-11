@@ -1,0 +1,104 @@
+SEL=['E', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V'] FLAG=[]
+---
+E: IN
+H: OUT
+G: OUT
+J: IN
+K: IN
+L: IN
+M: IN
+N: IN
+O: IN
+P: IN
+Q: IN
+R: IN
+S: IN
+T: IN
+U: IN
+V: IN
+W: OUT
+X: OUT
+A26: IN
+A27: IN
+A28: IN
+A29: IN
+A30: IN
+A31: IN
+Jar lid: OUT
+Baking tray: OUT
+Large bowl: IN
+Mixed greens: IN
+Carrot: IN
+Cherry tomato: IN
+Extra virgin olive oil: IN
+Jar: IN
+Red wine vinegar: IN
+White sugar: IN
+Dried dill weed: OUT
+Garlic powder: OUT
+White bread slice: IN
+Heated oven: OUT
+Romaine lettuce: IN
+Sprinkle: IN
+Refrigerate: IN
+Shake: OUT
+Sprinkle again: OUT
+Uncover: IN
+Vinegar: IN
+Carrot: IN
+Cherry tomato: IN
+Large bowl: IN
+Mixed greens: IN
+Radish: IN
+Red onion: IN
+Romaine lettuce: IN
+White bread slice: IN
+Extra virgin olive oil: IN
+Jar lid: OUT
+Baking tray: OUT
+Large bowl: IN
+Mixed greens: IN
+Dried dill weed: OUT
+Garlic powder: OUT
+White bread slice: IN
+Refrigerate: IN
+Sprinkle: IN
+Gently combine: IN
+Carrot: IN
+Cherry tomato: IN
+Large bowl: IN
+Mixed greens: IN
+Radish: IN
+Red onion: IN
+Romaine lettuce: IN
+White sugar: IN
+Jar lid: OUT
+Baking tray: OUT
+Large bowl: IN
+Mixed greens: IN
+Dried dill weed: OUT
+Garlic powder: OUT
+White bread slice: IN
+Refrigerate: IN
+Sprinkle: IN
+Gently combine: IN
+Carrot: IN
+Cherry tomato: IN
+Large bowl: IN
+Mixed greens: IN
+Radish: IN
+Red onion: IN
+Romaine lettuce: IN
+White sugar: IN
+Jar lid: OUT
+Baking tray: OUT
+Large bowl: IN
+Mixed greens: IN
+Dried dill weed: OUT
+Garlic powder: OUT
+White bread slice: IN
+Refrigerate: IN
+Sprinkle: IN
+Gently combine: IN
+
+(Note: Some labels like "Jar lid" and "Baking tray" are not directly used in the specific instruction "Cut the bread into 2-cm cubes and put in a large bowl," but they are mentioned in the overall recipe context. The instruction focuses on the immediate step, so they are marked as OUT. However, they are still relevant for the complete recipe process.)

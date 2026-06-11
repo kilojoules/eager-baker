@@ -1,0 +1,5 @@
+THIS_STEP: K
+LATER: E, F, G, H, I, J, L, N, O, P
+WRONG: A, B, D, M
+
+The current instruction is to "Add the chocolate chips and set aside," which falls under the step of portioning out the combined mixture (K). This step comes after mixing the combined ingredients (H) and before lining the muffin tins (L) and baking (N). The other options are either part of different steps (A, D, M) or not applicable to the current step (B, E). Adding water (A) and beating the mixture (B) have already been completed, and adding salt again (E) and lining the tins (L) are later steps. Adding oil (I) and baking (N) are also later steps, as is adding cocoa powder (P) and baking soda (Q).

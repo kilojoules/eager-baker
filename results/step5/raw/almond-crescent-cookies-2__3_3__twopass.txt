@@ -1,0 +1,3 @@
+THIS_STEP: E, K, O
+LATER: D, M, H, N, P, Q, R, S, T
+WRONG: V (incorrect baking temperature)
