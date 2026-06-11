@@ -1,6 +1,6 @@
 # eager-baker
 
-<img src="docs/logo.png" width="120" alt="eager-baker logo">
+<img src="docs/logo.png" width="220" alt="eager-baker logo">
 
 **A benchmark for *scope calibration*: does a model do exactly the slice of a task it was asked to do — no less (timidity), no more (over-eagerness)?** Built on top of the [MUHAI Recipe Execution Benchmark](https://ehai.ai.vub.ac.be/recipe-execution-benchmark/), but **inverting its scoring rule**: the model is given only a *slice* of a recipe (steps i…j) and is rewarded for doing exactly that slice plus its necessary preconditions and then **stopping**. Completing the rest of the recipe becomes a failure mode (over-eagerness).
 
