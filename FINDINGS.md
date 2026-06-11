@@ -78,11 +78,32 @@ overturns it.** Plot: `results/step5_round2.png`.
 **Refined verdict:** phi's over-eagerness here is a **decoding/calibration
 bottleneck, not a knowledge ceiling** — the boundary is in the logits (AUC 0.88)
 but greedy selection can't express it because the probabilities are saturated.
-**Honest caveats:** the off-diagonal point uses *oracle n_in* (an upper bound on
-rank quality, not deployable); the deploy-realistic auto-cut still fails; one
-model, n=50. **The open lever is now decoding, not retraining:** calibrate the
-IN/OUT logits (e.g. temperature scaling), or estimate per-task *k* / a
-saturation-aware relative cutoff — that is the natural Round-3 probe.
+
+### …and it's DEPLOYABLE (the calibration fix, no model calls, held-out validated)
+
+The Round-2 probe thresholded the *saturated probability* P(IN) on a coarse grid —
+blind to the action in [0.999, 1.0]. The fix (pure re-analysis of the cached
+logits, `src/step5_calibrate.py`): threshold the **logit difference**
+(IN−OUT logprob), which is **not** saturated (range −23…+27).
+
+- **A single GLOBAL logit-diff threshold reaches the success region** — no oracle,
+  one cutoff for all tasks. In-sample best (logit_diff ≥ 18): **over-eager 36% /
+  recall 0.57** (vs baseline 72% / 0.54) — half the over-eagerness at *held/higher*
+  recall, on a wide robust plateau (thresholds 15–18 all off-diagonal).
+- **Held-out cross-validation** (threshold chosen on a disjoint task half, applied
+  to unseen tasks): **pooled 48% over-eager / 0.65 recall — still off-diagonal.**
+  So it generalises, not just an in-sample fit.
+- Oracle-free *per-task* rules (top-fraction, knee) do NOT work — because n_in
+  varies per task; the GLOBAL logit threshold works because the logit-diff is
+  comparable across tasks (in-scope items consistently sit at logit_diff ≳ 15).
+
+**So the over-eagerness is a decoding artifact, full stop:** greedy argmax
+(logit_diff > 0) selects almost everything, but the boundary is cleanly at
+logit_diff ≈ 15–18 and a single thresholded read-out recovers it on unseen tasks.
+**Honest caveats:** threshold selection is somewhat unstable at n=25/fold (one fold
+picked 14 → 64%/0.81, a different point on the same curve); one model; logprob
+precision is coarse (67 distinct values); a real deployment would need the IN/OUT
+read-out as a serving-time step. Plot: `results/step5_round2.png`.
 
 ---
 

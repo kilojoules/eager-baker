@@ -62,10 +62,13 @@ recipe.) Full numbers, CIs, power, and the coupled/benign split in
   cut overrun only by *suppressing* selection. (Round-1 plot: `results/step5_intervention.png`.)
 - **Intervention study, Round 2 — the refinement** (FINDINGS §STEP 5 ROUND 2): a
   per-item logprob read-out shows the slice **boundary IS in phi's logits
-  (AUC=0.88)**; greedy decoding can't express it because P(IN) is saturated, but
-  **rank-based selection reaches the success region** (52% over-eager at 0.64
-  recall). So the over-eagerness is a **decoding/calibration bottleneck, not a
-  knowledge ceiling** — phi knows the boundary, it just can't act on it greedily.
+  (AUC=0.88)**; greedy decoding can't express it because P(IN) is saturated. The
+  fix is **deployable and needs no retraining**: thresholding the *unsaturated
+  logit difference* with a single global cutoff takes over-eagerness **72% → 36%
+  at held recall** (in-sample), **→ 48% / 0.65 recall held-out** (threshold chosen
+  on disjoint tasks). So the over-eagerness is a **decoding/calibration artifact,
+  not a knowledge ceiling** — phi knows the boundary; greedy argmax just can't
+  express it.
 
 ![round 2](results/step5_round2.png)
 

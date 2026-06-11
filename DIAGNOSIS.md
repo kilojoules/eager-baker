@@ -23,6 +23,13 @@ prior says it won't move with naive prompting.
 > greedy decoding** — a decoding/calibration bottleneck, not missing knowledge.
 > (The "phi never used the flag channel" point in §1 is thus a *behaviour/format*
 > artifact, not evidence it can't locate the boundary.)
+>
+> **And the fix is deployable** (no retraining, no model calls): thresholding the
+> *unsaturated logit difference* (IN−OUT) instead of the saturated probability,
+> with a single global cutoff, takes over-eagerness **72% → 36% at held recall**
+> in-sample and **→ 48% / recall 0.65 held-out** (threshold chosen on disjoint
+> tasks). So the over-eagerness is a decoding artifact that a calibrated read-out
+> recovers. (`src/step5_calibrate.py`.)
 
 ## The numbers that decided it
 

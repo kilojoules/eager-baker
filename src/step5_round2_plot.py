@@ -23,10 +23,19 @@ def main():
     ax.text(0.02, 0.72, "SUCCESS REGION\n(less overstep,\nheld recall)", fontsize=9,
             color="#2a7", va="center")
 
-    # threshold-sweep operating curve (global threshold on P(IN))
+    # threshold-sweep operating curve (global threshold on P(IN)) — the failed one
     xs = [s["overeager_rate"] for s in sweep]; ys = [s["recall"] for s in sweep]
-    ax.plot(xs, ys, "-", color="#888", lw=1, alpha=0.7, zorder=2,
-            label=f"global P(IN) threshold sweep (flat — saturated probs)")
+    ax.plot(xs, ys, "--", color="#bbb", lw=1, alpha=0.7, zorder=2,
+            label="global P(IN) threshold (saturated — can't separate)")
+    # deploy-realistic: global LOGIT-DIFFERENCE threshold sweep — passes through region
+    cal = json.load(open(os.path.join(RES, "step5_calibrate.json")))
+    cx = [c["overeager"] for c in cal["curve"]]; cy = [c["recall"] for c in cal["curve"]]
+    ax.plot(cx, cy, "-", color="#1b9e77", lw=2.2, zorder=3,
+            label="global LOGIT-diff threshold (deploy-realistic)")
+    if cal.get("heldout_pooled"):
+        ho, hr = cal["heldout_pooled"]
+        ax.scatter([ho], [hr], s=300, c="#1b9e77", marker="P", edgecolors="black",
+                   linewidths=1.3, zorder=6, label=f"held-out CV point ({ho:.0%}/{hr:.2f})")
 
     pts = [
         ("baseline (one-shot select)", B_OE, B_RC, "#444", "o"),
@@ -42,9 +51,10 @@ def main():
     ax.set_xlim(0, 1.0); ax.set_ylim(0.3, 1.0)
     ax.set_xlabel("over-eagerness (next-step overrun rate) → lower is the goal")
     ax.set_ylabel("in-scope recall → must be held")
-    ax.set_title(f"Round 2: the boundary IS in phi's logits (AUC={auc:.2f}) but greedy "
-                 f"decoding can't\nexpress it — rank selection reaches the success "
-                 f"region; it's a decoding/calibration bottleneck, not a ceiling")
+    ax.set_title(f"Round 2: boundary is in phi's logits (AUC={auc:.2f}); greedy decoding "
+                 f"can't express it,\nbut a deploy-realistic global logit-diff threshold "
+                 f"passes through the success region\n(held-out CV 48%/0.65) — a "
+                 f"decoding/calibration artifact, not a capability ceiling")
     ax.legend(loc="lower right", fontsize=8.5, framealpha=0.95)
     ax.grid(alpha=0.25)
     fig.tight_layout(); fig.savefig(os.path.join(RES, "step5_round2.png"), dpi=140)
