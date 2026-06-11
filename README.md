@@ -71,6 +71,21 @@ The above rests on a benchmark that reuses MUHAI's gold recipes + kitchen simula
 
 ---
 
+## Open questions & next steps
+
+We think the two behavioral findings are real but small in scope, and we're genuinely unsure about the rest. In rough priority:
+
+1. **Does any of this transfer to real agents?** This is the whole point and it's untested. The natural probe: a small curated set of scope-creep coding tickets (fix *one* ticket — does the model also edit unrelated files?) and check whether a model's recipe over-eagerness predicts its coding over-eagerness. If it doesn't transfer, the benchmark is a cute toy.
+2. **What actually drives the 3-model gradient?** Finding #1 is robust but now *unexplained* — the calibration story that would have explained it (Finding #3) was deflated. Over-eagerness spans 52 points while performance spans ~7, so it isn't just "smaller = worse at the task." Instruction-tuning / RLHF differences? Training data? We don't know.
+3. **Is the residual task-logit signal (AUC 0.70) usable, or is 0.70 itself prompt-dependent?** The control killed the strong claim, but 0.70 > chance means *something* is there. A better task-faithful elicitation (or reading the actual free-text selection's token logits, which we never did) might recover more — or show 0.70 is also framing-inflated.
+4. **Is "interventions only suppress" a ceiling, or did we miss the lever?** We only tried *inference-time* prompt/decoding tricks. The untried arm is a **training objective** that rewards in-scope recall while penalizing overstep (LoRA / DPO on the boundary). That's the honest next intervention.
+5. **Anchor the benchmark.** No human or trivial-heuristic baseline yet — is 72% over-eager even "bad," and what's the calibrated ceiling? Also: n=50, one domain; distractor quality affects the competence axis; the destructive-coupling question stayed underpowered (destructive next-steps are rare).
+6. **Re-run the cross-model comparison honestly** — in the task framing (not the isolated probe), and get Qwen3-30B to load (pin an older vLLM tag for the MoE) so it's a real 3-point comparison rather than n=2 confounded.
+
+We'd treat #1 and #4 as the highest-value next moves; the rest sharpen what's here rather than extend it.
+
+---
+
 ## The two axes (how scoring works)
 
 - **Performance (y):** *conditional-correctness* — of the in-scope operations the model attempted, what fraction were correct? (Kept separate from scope; note it's format-sensitive — see FINDINGS.)
