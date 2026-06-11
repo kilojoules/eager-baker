@@ -76,6 +76,49 @@ class OpenAICompatClient(ModelClient):
             return r.choices[0].message.content or ""
         return strip_think(_retry(call))
 
+    def classify(self, system, user, choices, cfg=None):
+        """Constrained single-choice classification with first-token logprobs.
+        Returns (chosen:str, probs:dict[choice->prob]). Used for C3 (logprob
+        boundary read-out): choices=["IN","OUT"] -> probs["IN"] is P(in-scope)."""
+        cfg = cfg or GenConfig(max_tokens=4)
+
+        def call():
+            return self.client.chat.completions.create(
+                model=self.model_id,
+                messages=[{"role": "system", "content": system},
+                          {"role": "user", "content": user}],
+                temperature=cfg.temperature, max_tokens=cfg.max_tokens,
+                seed=cfg.seed, logprobs=True, top_logprobs=20,
+                extra_body={**self.extra_body, "guided_choice": list(choices)},
+            )
+        r = _retry(call)
+        chosen = (r.choices[0].message.content or "").strip()
+        probs = {c: 0.0 for c in choices}
+        try:
+            top = r.choices[0].logprobs.content[0].top_logprobs
+            import math
+            lp = {}
+            for c in choices:
+                # match the first generated token to a choice by leading char(s)
+                best = None
+                for e in top:
+                    tok = e.token.strip().upper()
+                    if tok and c.upper().startswith(tok):
+                        best = e.logprob if best is None else max(best, e.logprob)
+                lp[c] = best
+            present = {c: v for c, v in lp.items() if v is not None}
+            if present:
+                floor = min(present.values()) - 6.0
+                ex = {c: math.exp(lp.get(c) if lp.get(c) is not None else floor)
+                      for c in choices}
+                z = sum(ex.values()) or 1.0
+                probs = {c: ex[c] / z for c in choices}
+            else:
+                probs = {c: (1.0 if c == chosen else 0.0) for c in choices}
+        except Exception:
+            probs = {c: (1.0 if c == chosen else 0.0) for c in choices}
+        return chosen, probs
+
 
 class AnthropicClient(ModelClient):
     """Claude through the SAME interface (NOT subagents). Requires ANTHROPIC_API_KEY."""

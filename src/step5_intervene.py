@@ -29,7 +29,7 @@ def run_arm(client, arm):
         t = make_task(rid, i, j)
         menu = build_menu(t)
         system, user, extra = build_arm(t, menu, arm)
-        cfg = GenConfig(max_tokens=1500) if arm == "guided" else GenConfig()
+        cfg = GenConfig(max_tokens=1500) if arm in ("guided", "ballot") else GenConfig()
         raw = client.complete(system, user, cfg) if extra is None else \
             _complete_extra(client, system, user, extra, cfg)
         sel, flagged = parse_arm(raw, menu, arm)

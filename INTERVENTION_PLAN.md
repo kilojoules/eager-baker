@@ -96,3 +96,36 @@ carefulness*. Reported per arm; not conflated.
 - Success criterion as written above — no post-hoc redefinition.
 - Both axes every arm; suppression flagged.
 - Flag channel (Arm 3) scored separately; never as performance or over-eagerness.
+
+---
+
+## ROUND 2 — boundary-identification arms (pre-registered 2026-06-11)
+
+Round-1 arms all kept the decision **one-shot index-selection** and slid down the
+suppression diagonal. Round 2 attacks the diagnosis that phi **can't locate the
+boundary** by re-rendering the SAME decision (byte-identical menu/tasks/scorer;
+only the *response format* changes) and by reading the logits. Motivated by
+arXiv:2406.10786 (LLMs do better at per-item classification than index-selection).
+
+**Same success bar as above — must move OFF the diagonal:** over-eager rate ↓
+(McNemar p<0.05 vs the cached one-shot baseline) AND in-scope recall drop ≤ 0.05.
+A reviewer-proof caveat is pre-committed: these arms change the *interface*, so we
+always report head-to-head vs the one-shot baseline; a win means "over-eagerness
+was partly a response-format artifact, recoverable without a conservatism trade."
+
+- **C1 — ballot** (`intervention.py` arm `ballot`; `step5_intervene.py`). Forced
+  IN/OUT verdict on **every** label; selection = INs. NEW diagnostic reported:
+  per-item boundary accuracy (`boundary_eval`) — IN/OUT vs item kind.
+- **C2 — two-pass identify-then-act** (`step5_twopass.py`). Pass 1 partitions the
+  menu (THIS_STEP/LATER/WRONG), **scored** as boundary-identification accuracy;
+  pass 2 acts = THIS_STEP. Resolves "can't locate" vs "locates but won't restrain".
+- **C3 — logprob boundary read-out** (`step5_probe.py`; needs `classify()` in
+  `model_client.py`). Per-item P(IN) → **boundary AUC** + a threshold sweep giving
+  the (over-eager, recall) operating curve. Pure measurement, no behaviour change.
+
+**Pre-registered falsification of "pure suppression":** any operating point or arm
+with **over-eager ≤ ~55% AND recall ≥ ~0.49** (vs baseline 72% / 0.54), or
+**boundary AUC materially > 0.5 with a threshold beating phi's greedy point**.
+**Confirms suppression / capability ceiling:** ballot lands on the diagonal again
+AND per-item boundary accuracy on `outscope` items is near chance → write the
+negative result (clean ceiling at held recall) or escalate to LoRA with eyes open.
