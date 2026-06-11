@@ -24,20 +24,25 @@ prior says it won't move with naive prompting.
 > (The "phi never used the flag channel" point in §1 is thus a *behaviour/format*
 > artifact, not evidence it can't locate the boundary.)
 >
-> **And the fix is deployable** (no retraining, no model calls): thresholding the
-> *unsaturated logit difference* (IN−OUT) instead of the saturated probability,
-> with a single global cutoff, takes over-eagerness **72% → 36% at held recall**
-> in-sample and **→ 48% / recall 0.65 held-out** (threshold chosen on disjoint
-> tasks). So the over-eagerness is a decoding artifact that a calibrated read-out
-> recovers. (`src/step5_calibrate.py`.)
+> Thresholding this probe's logits *looked* like a deployable fix (72%→36% over-
+> eager at held recall). **BUT this was largely a probe artifact — see correction.**
 >
-> **Cross-model (n=2, FINDINGS §ROUND 2c):** the over-eagerness *difference between
-> models* is also mostly calibration, not knowledge — Qwen2.5-7B and Phi-3.5 have
-> comparable boundary AUC (0.94 vs 0.88) but very different over-confidence (optimal
-> decision point −7 vs +19 logits; greedy over-eager 26% vs 88%). So the §1
-> "scope-adherence capability" verdict refines to **calibration-dominant with a
-> small knowledge component.** (Caveat: 2 points only — Qwen3-30B wouldn't load to
-> confirm the full gradient.)
+> ⚠️ **CORRECTION (2026-06-11, M2 control — FINDINGS §ROUND 2d).** The probe above is
+> an *isolated, leading* per-item question, **not** the model's logits on the actual
+> menu task. Reading per-label logits in the **real task framing** drops boundary
+> AUC from **0.88 → 0.70**, and recalibrating those task logits does **not** help
+> (86%/0.57 greedy → 84%/0.52, not off-diagonal). So:
+> - the strong "phi knows the boundary but greedy can't express it / deployable fix"
+>   claim is **WITHDRAWN** — in the model's own decision context the signal is weak
+>   and not recoverable by thresholding;
+> - the cross-model AUCs (Qwen2.5-7B 0.94 vs Phi-3.5 0.88) are isolated-probe numbers
+>   and are **inflated** by the same artifact → the "calibration not knowledge"
+>   cross-model claim is a **deflated lead, not a finding.**
+>
+> What remains, honestly: there is *some* scope signal even in the task logits
+> (0.70 > chance), so it is **not a pure knowledge ceiling** — but it is far from
+> cleanly recoverable. The §1 capability framing and the behavioural results
+> (Step 3, the intervention study) stand; they never depended on the probe.
 
 ## The numbers that decided it
 

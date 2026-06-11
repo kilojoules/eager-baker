@@ -1,0 +1,4717 @@
+{
+  "afghan-biscuits__3_3": {
+    "A": {
+      "p_in": 8.878270769859767e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.010986944927825482,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 4.599053183532508e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 3.72664106039412e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 5.315783703703147e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 7.889262585441413e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 3.775135894220702e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9399133552961427,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999999847700187,
+      "chosen": "YES\n\nThe",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.999999814460854,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 3.39826983329982e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 5.905308923226474e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9770226291282228,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 4.363460152632317e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 2.7535697662094155e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.000709670553277441,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 1.8795281424218837e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.0004305570912072069,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.1444940744864302e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "T": {
+      "p_in": 3.535624228171595e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.2689414272294874,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 3.927861534349064e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 2.1444958635523312e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.9994472212502333,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "Y": {
+      "p_in": 0.01798621075167607,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "Z": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "A26": {
+      "p_in": 0.02297737070451605,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "A27": {
+      "p_in": 7.9919665613263e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies__1_1": {
+    "A": {
+      "p_in": 5.384937649257931e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 5.043472879383035e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.000709670300072421,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9984988179861646,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.001926734512887334,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 6.475946437966953e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.0129989768616954e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9525741229516211,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9999999973534255,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 5.905307514992527e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.00669285138245478,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 2.382368531929327e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 4.785096206047877e-06,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 0.2689414096510108,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.006692851713699271,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.06008665438181588,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 2.1724417474322308e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.9400766847068386e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-2__3_3": {
+    "A": {
+      "p_in": 0.22270014398423357,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.4637799095332598e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.00026119036954982245,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.11920292828022305,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999999928058653,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 0.003172682925693208,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 6.5601993860292384e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.8553903548231313e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.999983298584127,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.999999887464811,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 1.0261883300557959e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 1.3007130014636887e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 3.059021539864825e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.18242552158390105,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 2.7535691100158776e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 1.1253516205427619e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.004070137632842106,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.004070138153817358,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 3.059021904147363e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 2.7535697667202906e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 5.384944709259902e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-3__2_2": {
+    "A": {
+      "p_in": 2.0611543553111545e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.6224593382055109,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.9933071487568537,
+      "chosen": "YES\n\nOperation",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 0.999664650009025,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.5109999906899275e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 7.582556805454656e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.0261883300557959e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 5.905301179583034e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999938558275953,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 5.315786872908501e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.8807970873650401,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 2.2603237589779086e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 2.144495608424996e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "N": {
+      "p_in": 0.9525741274956179,
+      "chosen": "YES\n\nThe",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 5.384937650006647e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9990889487500214,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.22270013882530887,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 1.9810104503823218e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 1.981009742667193e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 6.91440340397832e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 6.825609419848033e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 0.014063626655838346,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.3775406687981454,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-4__1_1": {
+    "A": {
+      "p_in": 0.993307150543097,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9999999966017302,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.9999999468421439,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.001926734716160623,
+      "chosen": "NO. According to",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.9241418241572634,
+      "chosen": "YES\n\nAcc",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 2.9400801925901026e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.1480471961522176,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9933071496917679,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999999928058662,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.0015011823268852968,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.9241418246795768,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 5.315782437080208e-08,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 1.3887950487058833e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 4.539787945561647e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 1.1253520230080141e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 7.194136408999734e-09,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    }
+  },
+  "almond-crescent-cookies-5__3_3": {
+    "A": {
+      "p_in": 0.022977368488305956,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.18242551491653522,
+      "chosen": "NO. According to",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 7.991956080333312e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 2.7535700938304286e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 3.398267402818601e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9975273770805425,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 7.582564941335739e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.00012339461895748255,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 3.7751363442610094e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.7603438428740716e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.0009110513476241563,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9999546021367564,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.7603430034743913e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.00043055704081726285,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.0031726829971195614,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.0758581847220642,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.0007096703823826181,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.9959298627144747,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    }
+  },
+  "avocado-chicken-salad__2_2": {
+    "A": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.982013786780872,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 2.9023133677438847e-06,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 2.9023112926779284e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.7535687809124434e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 6.5601993860292384e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.993307150159225,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.18242552158390102,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 5.602799745388451e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9959298621066702,
+      "chosen": "YES\n\nOperation",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.8175744739711883,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.9999832985801468,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 2.144494330062167e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.037326887210266405,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.26894142136999516,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 1.012999460150437e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.7310585669110203,
+      "chosen": "YES. The instruction",
+      "gold": "IN"
+    },
+    "S": {
+      "p_in": 0.9999546021313491,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 6.825602910396624e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.9890130559222517,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    }
+  },
+  "basic-chicken-salad__1_1": {
+    "A": {
+      "p_in": 8.423459737769511e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 6.475947209985977e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.6791787056691698,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.622459324198198,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.9999952149043644,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 5.9053061073581e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.300713466685723e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 4.193797158196019e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 8.87827288705388e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 8.878266536823496e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.6224593312018545,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.6224593312018546,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    }
+  },
+  "best-brownies__3_3": {
+    "A": {
+      "p_in": 6.825602910396624e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.2689414272294874,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.9990889488596408,
+      "chosen": "YES\n\nThe",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 1.4449794156217135e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 5.315787506511448e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.0005527787002108724,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 3.77513274348383e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9999999992417438,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 4.139939027941221e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 2.511001487368099e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 6.475947982002148e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 0.0015011825596660151,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.317652055141088e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 6.91440422788811e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.6224593312018546,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.9959298625276032,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.9999999881388729,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    }
+  },
+  "bisquick-shortcake-biscuits__2_2": {
+    "A": {
+      "p_in": 0.9999999983947733,
+      "chosen": "YES\n\nThe",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 5.6756886153163575e-14,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9999994956527121,
+      "chosen": "YES\n\nOperation",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.6224593382055109,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9820137896431161,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 7.484621837708902e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 1.0129987357287368e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 2.9023130231176453e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.970687767658707,
+      "chosen": "YES\n\nAcc",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 6.224145364496242e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 5.043473480784173e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "N": {
+      "p_in": 6.560202514205158e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 8.423465762707952e-12,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.047425878563044574,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 2.753570094621784e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.940078440167189e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "black-bean-salad-2__1_1": {
+    "A": {
+      "p_in": 0.00015843623393639304,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9241418267688303,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 2.289735664460536e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.879530384226149e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999962733598273,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.8553912395338048e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.1253516205427619e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 0.9933071489054494,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 1.1253516205427619e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 3.059022998558814e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9999546021098393,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 1.2501536099095834e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.4449795205457127e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 2.902312331125353e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9999251537816229,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 6.560205642368399e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.952574131703022,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.382368531882742e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.0001233946041687204,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    }
+  },
+  "black-bean-salad-3__1_1": {
+    "A": {
+      "p_in": 0.8175744739711883,
+      "chosen": "YES\n\nAcc",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 4.847372750994977e-11,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.03732688533618365,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 2.902313366402952e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999999956365362,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 8.764243272196782e-08,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 0.7310585903489891,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 6.224147590423816e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.7603434231385591e-06,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.9999997617631184,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.0015011825010345866,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9996646497778694,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    }
+  },
+  "black-bean-salad-4__2_2": {
+    "A": {
+      "p_in": 0.9959298615705943,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 3.224185094612843e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 0.006692849354743527,
+      "chosen": "NO. According to",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.4378234991142019,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 9.736204945927437e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.9998766053665913,
+      "chosen": "YES\n\nThe",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.370957859054265e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 2.3823685319244518e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.3775406687981454,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.022977371875344106,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9999546021313451,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "N": {
+      "p_in": 0.010986940060122357,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 0.9975273768020172,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 1.7603434231097403e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.0019267349539098054,
+      "chosen": "NO. According to",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.43782349911420193,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    }
+  },
+  "black-bean-salad-5__1_1": {
+    "A": {
+      "p_in": 3.775135894220702e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.26894142136999516,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.9999898700041898,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.0015011822736633235,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 3.535625905424669e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 7.582564037664985e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.444980209556342e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 0.9525741269907294,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.003172682958829145,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.0009110513399417875,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 8.764251630275322e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 5.315785605498567e-08,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 0.9999898700078124,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "P": {
+      "p_in": 0.9999994956525918,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.2689414272294874,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.022977368279229544,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "S": {
+      "p_in": 0.6224593312018546,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    }
+  },
+  "broccoli-salad__1_1": {
+    "A": {
+      "p_in": 8.764244315741453e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 4.847371017348773e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.9959298631863726,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9999724643023313,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.22270013366638422,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.001501182484806245,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 4.847369861738045e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.1253520230080141e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999921107345926,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 3.0590215399183813e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.017986210356883813,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 4.1399400149893274e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 1.6701429779256086e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.00015843619756748776,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.9706877688776584,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    }
+  },
+  "chocolate-cream-cheese-cupcakes__1_1": {
+    "A": {
+      "p_in": 0.00015843629259415065,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 3.7751327440087204e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.0024726234770824466,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 2.75356878194421e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 7.287720620754886e-14,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 5.043472278299047e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.0007096704719579186,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 9.237453981399283e-09,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 4.8473710174408044e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 3.5817475019982567e-10,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 2.789466761966237e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 2.1724407115321463e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 3.927862470905692e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.8807970889295663,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 0.00012339461915677268,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.0002034269736186913,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 0.9994472212501048,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 7.889265407177056e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 1.7603438428848787e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.9820137885903368,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 9.736202624821245e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "chocolate-fudge-cookies__3_3": {
+    "A": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.6224593241981982,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.817574471748733,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.8807970748488297,
+      "chosen": "YES\n\nAcc",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 0.9999999586006098,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 2.289735664460536e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9999898700041895,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.993307149713438,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.047425868970162655,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.8175744695262777,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.0052201248012717074,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "N": {
+      "p_in": 0.9984988174708712,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.9999251537905441,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "P": {
+      "p_in": 4.847366394625359e-11,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 1.542810467520537e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.9706877693546394,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    }
+  },
+  "classic-greek-salad__2_2": {
+    "A": {
+      "p_in": 2.2603242977308917e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.43782349911420193,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.09534946618445304,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.880797085800514,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9890130594035196,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 0.679178699175393,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.07585817793199001,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.8519528019683105,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9996646498486835,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.0009110513559952894,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.00043055698854850533,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9890130586546423,
+      "chosen": "YES. The instruction",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.003172683329951664,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.6918993341585357e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.5,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.0031726821643031037,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.0011695102621997312,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.0024726235029250026,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.7310585786300049,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.18242551713899047,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.0001584362735901966,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 0.008577485952264206,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 1.250152268703385e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.9975273771913783,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "Y": {
+      "p_in": 0.02297736823741426,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "classic-potato-salad__1_1": {
+    "A": {
+      "p_in": 0.00012339454552178923,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 2.1444956077189637e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 7.582559518199075e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.0007096704579230782,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9046505421702796,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.003172683490476894,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.3775406687981454,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.5,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 5.829125856424875e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 7.484626296598251e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.008577486847211355,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 2.3823693839154895e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 1.8553912395338048e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.00150118214750108,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.037326891226158315,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 3.098820246928754e-12,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 3.9278620024560995e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.4378234991142019,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "S": {
+      "p_in": 0.0031726826171608324,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.02931223366624024,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "U": {
+      "p_in": 0.008577483552539126,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "V": {
+      "p_in": 0.9820137916170774,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    },
+    "W": {
+      "p_in": 0.000203427045624026,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.000430557090668612,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "Y": {
+      "p_in": 0.07585817584273653,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Z": {
+      "p_in": 6.224146848432789e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "A26": {
+      "p_in": 0.04742586796038572,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "coconut-tuiles__2_2": {
+    "A": {
+      "p_in": 9.736199142818343e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 9.237448475387384e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.067702868878864e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.4449796927262634e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 5.905301179583034e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 4.139939521391704e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 4.3634617137089345e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.224189323773857e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 6.14417753171671e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.017986211409663194,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.14804720367010532,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 1.0677033791630344e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.6224593241981982,
+      "chosen": "YES\n\nG",
+      "gold": "IN"
+    },
+    "N": {
+      "p_in": 2.789470419804397e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 9.610240351710089e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 3.53562549329801e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.9999251537370122,
+      "chosen": "YES\n\nG",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.8519528038477824,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.9706877694076373,
+      "chosen": "YES\n\nG",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.003172682626733435,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "cole-slaw__1_1": {
+    "A": {
+      "p_in": 1.388794883148701e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.022977371080853636,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 8.315277293914133e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.010986941497157152,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.18242552825126704,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 7.484625403938018e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.999999855501979,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.017986208152627175,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.06008664449346691,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.00012339461909752425,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 1.317652055141088e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 1.6052288180412363e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.9997965729776981,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.029312232129301407,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 9.237457284968723e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 1.6701415872385704e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.2689414272294874,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.2603237589938405e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 7.582556805454656e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.029312233242257107,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "V": {
+      "p_in": 0.0015011825216253857,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 2.3823682479317953e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.5,
+      "chosen": "NO. According to",
+      "gold": "OUT"
+    },
+    "Y": {
+      "p_in": 0.37754066879814546,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Z": {
+      "p_in": 0.8807970826714614,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    }
+  },
+  "cranberry-fluff-salad__1_1": {
+    "A": {
+      "p_in": 1.317651269750657e-10,
+      "chosen": "NO. According to",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.1824255326961778,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.731058584489497,
+      "chosen": "YES\n\nB",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 4.5397884849053674e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 6.825599655739207e-08,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 1.6052288180107596e-09,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 0.9999952149037964,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 2.6465733163905695e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.047425869138458816,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.9999970976876688,
+      "chosen": "YES. Operation [",
+      "gold": "IN"
+    }
+  },
+  "croutons-vinegar-salad__3_3": {
+    "A": {
+      "p_in": 2.789466761578392e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 3.72664017246987e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 3.5817475019982567e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 4.139939521391704e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999251537816229,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 9.610239174727693e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.002472623092889812,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.320821300824607,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 5.043474081271421e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9914225134616642,
+      "chosen": "YES.",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.2227001285074597,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.01798621035688381,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 4.139941002027314e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.22270014398423355,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.00015843619719404782,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9947798754453766,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.03732689149388446,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.9999546021151111,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 2.1444945858485726e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.6224593382055109,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "U": {
+      "p_in": 2.260324297262181e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 0.09534947325384278,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 2.2603248367949354e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 5.109088418951535e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Y": {
+      "p_in": 1.522997769710156e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Z": {
+      "p_in": 0.03732688654095112,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "A26": {
+      "p_in": 0.9890130573795268,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    },
+    "A27": {
+      "p_in": 0.00857748606314261,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "A28": {
+      "p_in": 0.00015843616012668012,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "A29": {
+      "p_in": 1.300713466420736e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "A30": {
+      "p_in": 0.9770226282501018,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "A31": {
+      "p_in": 3.5356259096177054e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "cucumber-slices-with-dill__1_1": {
+    "A": {
+      "p_in": 5.905303291449445e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.01798621085037414,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.005220125011648231,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.04742586863357034,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.9999999804443169,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 2.510998793341295e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.04742587098971658,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.3007130011300897e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.5,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.0005527786160529506,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 3.535624648542694e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 1.981008561880437e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 2.061154600985703e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.00015843617918594497,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 2.2603253756956754e-06,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "P": {
+      "p_in": 0.005220126162673953,
+      "chosen": "NO. According to",
+      "gold": "OUT"
+    }
+  },
+  "easy-banana-bread__1_1": {
+    "A": {
+      "p_in": 0.26894141551050293,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9999999928058722,
+      "chosen": "YES\n\nOperation",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 1.605227861239821e-09,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 1.1253521571574156e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.9999996072136125,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9820137914525806,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 3.098820246928754e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 5.109088418951535e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 3.0988202469363287e-12,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.9555690030300874e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.3176518980648069e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 6.14417313720999e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9525741276639141,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 3.726641061109272e-06,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "easy-cherry-tomato-corn-salad__1_1": {
+    "A": {
+      "p_in": 1.76034300345598e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 6.914402579700744e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.0261884523699518e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9820137871756645,
+      "chosen": "YES. Operation [",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.037326886273225016,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.00043055707112888645,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 5.315783703703147e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.059023363207381e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 3.059021539864825e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.00020342692517810748,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.8519528057272544,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.817574471748733,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 7.582559518199075e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.022977369491872766,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.14804720554957732,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "P": {
+      "p_in": 0.9241418257242036,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 3.535626757125808e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.0007096704683253718,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "S": {
+      "p_in": 2.7535681233968765e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.998498817493556,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.5,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    }
+  },
+  "easy-oatmeal-cookies__2_2": {
+    "A": {
+      "p_in": 2.26032537546132e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 2.061155092333951e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 9.237456183293948e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.0129994592807221e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 7.889264465397747e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9999989322968754,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 0.9999546021151111,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9975273768020172,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9999999468421312,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 2.7894690896755415e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.000911051229103755,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9959298620104031,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.8553912395338048e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 1.6918973155110944e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.11920291107043363,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 2.1724391554376094e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.9975273771511787,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 7.582566746677644e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 3.098818769283079e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.37754066879814546,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 1.955567137781402e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 0.000335350269850728,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.09534945525903342,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "mexican-wedding-cookies__1_1": {
+    "A": {
+      "p_in": 9.610239212762526e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9046505370289059,
+      "chosen": "YES\n\nG",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.006692851054306047,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.0261880853960208e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 1.6701417863832937e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 2.5109999906899275e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.463778688619763e-12,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 2.7894680920908113e-10,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 9.610243794422881e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 3.726638839833152e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.99999627336116,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9999952149055052,
+      "chosen": "YES\n\nG",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 2.940078440167189e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.18242552825126704,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "vegan-black-bean-and-sweet-potato-salad__2_2": {
+    "A": {
+      "p_in": 4.363460153239008e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.250153460943199e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.4378234991142019,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 2.4133642101812093e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.902312677084523e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.0002611902165612174,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.6791787121629465,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.300713466619476e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 4.599057021276349e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9999977396765105,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 1.0129987357020188e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 7.889259764079887e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9933071483729815,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.731058584489497,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 2.9023133690425823e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9975273768720792,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.0002611903676043109,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.37754067580180184,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 1.186111435482418e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "whole-wheat-ginger-snaps__3_3": {
+    "A": {
+      "p_in": 0.03732688587163586,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.067702615417244e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.5,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 3.0988176606464363e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.004070137870678626,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 4.8473710038626877e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.7310585727705127,
+      "chosen": "YES\n\nAcc",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 0.9241418189341296,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9890130559829715,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.04742586897016266,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.0019267347356372497,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9999962733593831,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.010986940434560983,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 7.48462629599926e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.006692849565253979,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 0.0009110511327827608,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.5621765008857981,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 6.144173136131494e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.037326890422979896,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "U": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 0.6791786926816161,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 0.9984988176504299,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.00015843623590271617,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Y": {
+      "p_in": 6.914405874146836e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Z": {
+      "p_in": 5.315789407685159e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "A26": {
+      "p_in": 0.18242551713899047,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "A27": {
+      "p_in": 0.6224593312018546,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    }
+  },
+  "afghan-biscuits__4_4": {
+    "A": {
+      "p_in": 0.02931223297726765,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 5.384944711295458e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.999999694097846,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.646572369549735e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.6701415872385704e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.8795303849366283e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 2.1724388987050071e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 3.726640616748873e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9996646498085151,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.817574471748733,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 2.4133636349072922e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 7.991963703026928e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.0019267344714715235,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.1192029235866439,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.2689414272294874,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 0.9933071503728311,
+      "chosen": "YES\n\nThe",
+      "gold": "IN"
+    },
+    "R": {
+      "p_in": 0.002472623485696632,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "S": {
+      "p_in": 6.475947982022763e-07,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "T": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 2.144494329952946e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 2.7535691100158776e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 3.2661297849165024e-13,
+      "chosen": "NO.",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.9994472212501048,
+      "chosen": "YES\n\nThe",
+      "gold": "IN"
+    },
+    "Y": {
+      "p_in": 3.098820985595085e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies__2_2": {
+    "A": {
+      "p_in": 3.9278615344267634e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.3007126913820052e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 4.420227576678606e-14,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.7310585786300049,
+      "chosen": "YES\n\nAcc",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 4.599053183532508e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.00026119040301110453,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 5.905301179583034e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 1.9555687699034453e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9996646500083713,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 5.905306107343667e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.999983298584127,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 1.012999098021058e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 2.3823682479292225e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 2.5110002900304575e-08,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 1.9810092703578902e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.0015011823441606264,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-2__4_4": {
+    "A": {
+      "p_in": 5.602793734519342e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.3176507985295658e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9859363730213224,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9241418116217418,
+      "chosen": "YES\n\nThe",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 3.2241877863540345e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 2.5436665570558005e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 4.1937976580557674e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.370957860567974e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.8807970701552505,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.995929862223701,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.9999994956527721,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.00091105102761381,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.9959298622406892,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 5.38494278538849e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 2.2603248367949354e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 1.463777816138448e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-3__3_3": {
+    "A": {
+      "p_in": 8.423466766863141e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9046505267461573,
+      "chosen": "YES\n\nThe",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 1.3887952141925884e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.3887937242470829e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 3.97896063794737e-12,
+      "chosen": "NO.",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.9820137913867819,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.5817492099244366e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.00020342694909207423,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 2.2603237589779086e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.04742587098971659,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 1.250152268703385e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9999832985801452,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.9820137924066618,
+      "chosen": "YES\n\nAcc",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 0.9999898700126424,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 1.3007134667259441e-05,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 0.04742587250438209,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.9975273770747995,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 4.1937991579536223e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 4.363463794399622e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "almond-crescent-cookies-4__2_2": {
+    "A": {
+      "p_in": 0.7772998560157665,
+      "chosen": "YES\n\nOperation",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 3.978964433138596e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 8.764246406296574e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.9555678374073827e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999546021421678,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 1.0261888193828562e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.22270013882530887,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.9820137869782682,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 3.7266401724291984e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 2.413362484115683e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.9999994956523514,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.11920293140927592,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    }
+  },
+  "almond-crescent-cookies-5__4_4": {
+    "A": {
+      "p_in": 1.6918977206274006e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.0024726233679694355,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 5.109088418951535e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9999251537433458,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.6791787121629466,
+      "chosen": "YES. The instruction",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 4.599057021276349e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.18242552825126704,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.8807970670261976,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 0.02931222831345362,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 7.194136408863148e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 5.109087195606292e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.37754066879814546,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.0007096705552175515,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.00033535026882627406,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.0019267344784114698,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "avocado-chicken-salad__3_3": {
+    "A": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.2015431461171803e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.186111435482418e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9820137913867819,
+      "chosen": "YES\n\nOperation",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 1.8553919030875476e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9525741286736911,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.2661321214927744e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.004070136781538485,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.0677024881761599e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.8807970670261976,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9999977396759715,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.9990889489668762,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.002472623509242072,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "basic-chicken-salad__4_4": {
+    "A": {
+      "p_in": 5.602793734519342e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9990889488588461,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 0.9999999468421439,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 3.266130953410928e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.7310585786300049,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 0.999993855825398,
+      "chosen": "YES. Operation [",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 1.4637797355957538e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 3.978964433138596e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.9706877674467155,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.9999832985761634,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.000911051091350961,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "best-brownies__4_4": {
+    "A": {
+      "p_in": 7.287727570876809e-14,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.9999999996418251,
+      "chosen": "YES\n\nThe",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 1.0129987357287368e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.00043055713983106614,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "E": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 5.905306107343667e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.047425876038601794,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.2689414096510109,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 8.878264420019558e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9998766053661227,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9999546021421678,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.04742587300927061,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.522998314387037e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 4.539789027816371e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "bisquick-shortcake-biscuits__3_3": {
+    "A": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.067702870039777e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.9999832985801452,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 2.087968658361419e-14,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 7.484626296598251e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 7.582562229985665e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.2689414272294874,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 0.9999996940976636,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 6.144177531850823e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 4.1399390279513406e-08,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 3.978963484480002e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.00026119040341388624,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.9999832985701905,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "O": {
+      "p_in": 0.9890130572074874,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    }
+  },
+  "black-bean-salad-2__2_2": {
+    "A": {
+      "p_in": 0.9994472212501048,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 0.22270012850745968,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "C": {
+      "p_in": 1.3176518980648069e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.0815945425250913e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.008577486126501697,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 5.905304699423871e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 1.3007123812767362e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.00043055698988872976,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.004070137389342825,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.3208212943308302,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 6.825602910396624e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 5.315788140303327e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.37754066879814546,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "black-bean-salad-4__3_3": {
+    "A": {
+      "p_in": 0.9975273764017447,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 6.560202514205158e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.9999999586006147,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.9706877684536753,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.0005527785491961316,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.9975273773533249,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 0.9975273767813431,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 0.9999546021367564,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 0.9994472213821783,
+      "chosen": "YES\n\nOperation",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.9997965730504196,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 1.783246440462647e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "black-bean-salad-5__2_2": {
+    "A": {
+      "p_in": 5.384939575779545e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 6.825608606029307e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.6224593312018546,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.0009110511303985779,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999999123575046,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 0.9999724643023452,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.9975273770805425,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.817574478416099,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.18242552602881168,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 9.237452880209557e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "broccoli-salad__2_2": {
+    "A": {
+      "p_in": 0.9999724643154613,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    },
+    "B": {
+      "p_in": 7.58256674954392e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 2.260323758987159e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 6.825606165129312e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.00020342704642313173,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.029312230168379565,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.5,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.0024726229395573424,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 2.2603251062270446e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.8553919030875476e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.522998314387037e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.9984988180062319,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.0009110511399882914,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 1.0129987357287368e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "chocolate-cream-cheese-cupcakes__2_2": {
+    "A": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 5.602801079365699e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 1.9555687699034453e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 5.905303291449445e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 3.7751327440087204e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.06008665396103505,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.9241418199787564,
+      "chosen": "YES\n\nThe",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.2689414213699951,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 1.0261884523894349e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.014063626190949804,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "K": {
+      "p_in": 0.9999999928058662,
+      "chosen": "YES\n\nOperation",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 1.250153908032712e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 6.560205642368399e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 2.2603245667050187e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 4.5990592142880845e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 1.3007125361755747e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 9.61024379351396e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "chocolate-fudge-cookies__4_4": {
+    "A": {
+      "p_in": 0.9997965730989815,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.07585818211049715,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.002472623156634774,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.0815940267734299e-11,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9994472213817281,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 0.9999999804443193,
+      "chosen": "YES. The operation",
+      "gold": "IN"
+    },
+    "G": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 0.022977369240981056,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.017986208448721334,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 4.539785239661729e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 5.109093291393371e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.268941415510503,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  },
+  "classic-greek-salad__3_3": {
+    "A": {
+      "p_in": 6.825609419848033e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 3.39826537731486e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.5,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 0.04742587805815601,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999996940976636,
+      "chosen": "YES. The current",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 3.5356259082286005e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.0019267348374977726,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 2.382368247924618e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.7772998560157665,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 0.000911051348842739,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.3176507985295658e-10,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 1.1399921248382935e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.8175744806385542,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.0004305569897133733,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.9241418147556224,
+      "chosen": "YES. Operation [",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 6.144177531599359e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 1.3007126914612648e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.004070136749449438,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.00020342699789966035,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.11920290950590741,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "U": {
+      "p_in": 0.0007096703821349445,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "V": {
+      "p_in": 0.0011695100085789944,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "W": {
+      "p_in": 0.5,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "X": {
+      "p_in": 0.9975273767669861,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    }
+  },
+  "classic-potato-salad__3_3": {
+    "A": {
+      "p_in": 0.8175744828610095,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The instruction",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.9890130597071185,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "D": {
+      "p_in": 1.6918987243494471e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.0015011822987910748,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.3775406617944891,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 2.260323758835034e-06,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "H": {
+      "p_in": 1.2501534609194638e-09,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "I": {
+      "p_in": 0.9933071496917679,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 2.413361621044149e-12,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.0677024881980089e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.6224593312018545,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.0009110512467996924,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.06008664533502847,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.00012339456021179704,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 5.905307514992527e-10,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 0.9706877716865463,
+      "chosen": "YES. The instruction",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.43782349911420193,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.8807970826714614,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 0.731058584489497,
+      "chosen": "YES. The operation",
+      "gold": "OUT"
+    }
+  },
+  "coconut-tuiles__3_3": {
+    "A": {
+      "p_in": 6.475946437966953e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.95556923605271e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.9999938558275953,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 0.14804719803168945,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 2.3823685315902304e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "F": {
+      "p_in": 0.07585818367743737,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 0.9241418147556224,
+      "chosen": "YES\n\nG",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 5.384937650006647e-13,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.320821300824607,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "J": {
+      "p_in": 1.1253521571574156e-07,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 1.9810104511311613e-13,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "L": {
+      "p_in": 0.5,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "M": {
+      "p_in": 0.000261190372224901,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.07585817688736327,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.9525741214369554,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "P": {
+      "p_in": 2.5110002900304575e-08,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "Q": {
+      "p_in": 7.88926446679691e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.9626731142622272,
+      "chosen": "YES. According to",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.0024726231566347743,
+      "chosen": "NO. The operation",
+      "gold": "OUT"
+    }
+  },
+  "cole-slaw__2_2": {
+    "A": {
+      "p_in": 0.9975273762937803,
+      "chosen": "YES. The current",
+      "gold": "OUT"
+    },
+    "B": {
+      "p_in": 1.3176507985295658e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "C": {
+      "p_in": 0.02297737045362433,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "D": {
+      "p_in": 7.889265407177056e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "E": {
+      "p_in": 0.9999996940976636,
+      "chosen": "YES. According to",
+      "gold": "IN"
+    },
+    "F": {
+      "p_in": 2.144494330062167e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "G": {
+      "p_in": 2.1444956077189637e-05,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "H": {
+      "p_in": 6.144176799227922e-06,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "I": {
+      "p_in": 0.5,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "J": {
+      "p_in": 0.014063627960109055,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "K": {
+      "p_in": 0.0019267345086338185,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "L": {
+      "p_in": 0.07585817532042317,
+      "chosen": "NO. The current",
+      "gold": "IN"
+    },
+    "M": {
+      "p_in": 3.5817475019982567e-10,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "N": {
+      "p_in": 0.0031726832916612433,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "O": {
+      "p_in": 0.005220126121565887,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "P": {
+      "p_in": 0.9706877686656669,
+      "chosen": "YES. Operation [",
+      "gold": "IN"
+    },
+    "Q": {
+      "p_in": 4.4202296844269606e-14,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "R": {
+      "p_in": 0.014063629871317835,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "S": {
+      "p_in": 0.0179862135481215,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    },
+    "T": {
+      "p_in": 5.602799077661068e-09,
+      "chosen": "NO. The current",
+      "gold": "OUT"
+    }
+  }
+}

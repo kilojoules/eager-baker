@@ -136,6 +136,42 @@ substitute also failed to bind (host issues) — load failures, not results. So 
 calibration-gradient claim is **supported and consistent with Step 3, but not fully
 established**; confirming the monotonic trend needs the third point.
 
+### STEP 5 ROUND 2d — CONTROL: the decoding-artifact result was mostly a probe artifact
+
+An adversarial review flagged the load-bearing weakness of Rounds 2/2b/2c: the
+"boundary is in the logits" claim came from an **isolated, leading per-item probe**
+("Candidate operation: X. Is this IN or OUT?") — *not* from the model's logits on
+the actual menu-selection task. The probe's framing could be doing the work.
+
+So we ran the control (M2, `src/step5_probe_task.py`): read per-label logits in the
+**actual task framing** — full menu shown, selection question ("should operation
+[X] be selected to carry out your instruction?") — on Phi-3.5, n=50. Result:
+
+| read-out | boundary AUC | greedy over-eager / recall | recalibration helps? |
+|---|---|---|---|
+| isolated comprehension probe (Rounds 2–2c) | **0.877** | 88% / 0.91 | yes (→ 36%/0.57 in-sample) |
+| **task framing (this control)** | **0.700** | 86% / 0.57 | **no** (best 84%/0.52, not off-diagonal) |
+
+- **The AUC drops from 0.88 to 0.70** when the question is the actual selection
+  decision rather than an isolated comprehension judgment. The probe was inflating
+  the signal by ~0.18.
+- **Recalibrating the *task* logits does not work** — thresholding them gives
+  84%/0.52, essentially the greedy point (86%/0.57). The "deployable recalibration
+  fix" only existed on the isolated-probe logits.
+
+**Consequence — the strong claim is withdrawn.** "Over-eagerness is a decoding/
+calibration artifact that a recalibrated read-out fixes" is **not supported**:
+in the model's own decision context the boundary signal is weak (AUC 0.70) and not
+recoverable by thresholding. What survives is weaker and honest: **there is *some*
+scope signal even in the task logits (0.70 > chance), so it is not purely a
+capability/knowledge ceiling — but it is far from cleanly separable, and the
+earlier high-AUC, recalibratable result was largely an artifact of the probe's
+leading framing.** This also caveats Round 2c: the cross-model AUCs (0.94 / 0.88)
+are *isolated-probe* numbers and are therefore inflated; a clean cross-model
+knowledge comparison would need the task-framed read-out on the other models too
+(only Phi-3.5 was run in task framing). The behavioural findings (STEP 3, the
+intervention study) are unaffected — they never depended on the probe.
+
 ---
 
 ## STEP 3 — between-model result (n=50/model, menu, 3 models)
