@@ -54,12 +54,21 @@ def is_arm(model):
 
 
 def base_models_present(models_present):
-    """Cohort/base models only (drop A/B treatment arms), in display order."""
-    return [m for m in ordered(models_present) if m not in AB_ARMS]
+    """Registered cohort/base models only, in display order. A/B treatment arms and
+    any UNREGISTERED models are excluded — the latter with a loud warning, so a new
+    results file is never silently mislabeled into the open-vLLM cohort."""
+    import sys
+    present = list(models_present)
+    unregistered = [m for m in present if m not in BASE_MODELS and m not in AB_ARMS]
+    if unregistered:
+        print(f"[cohorts] WARNING: results present for models not registered in any "
+              f"cohort (excluded from analysis): {unregistered}. Add them to "
+              f"cohorts.COHORTS.", file=sys.stderr)
+    return [m for m in MODEL_ORDER if m in present]
 
 
 def cohort_of(model):
-    return COHORT_OF.get(model, "open-vLLM")
+    return COHORT_OF.get(model, "unknown")
 
 
 def ordered(models_present):

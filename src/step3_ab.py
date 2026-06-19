@@ -74,16 +74,17 @@ def main():
     print(f"  performance (c-c):   base {pf_base:.2f}  ->  arm {pf_arm:.2f}")
 
     # verdict
-    oe_down = (oe_arm < oe_base - 1e-9) and p_mc < 0.05
+    oe_lower = oe_arm < oe_base - 1e-9
+    oe_sig = oe_lower and p_mc < 0.05          # gate BOTH outcome branches on significance
     rc_held = rc_arm >= rc_base - 0.05
-    if not (oe_arm < oe_base - 1e-9):
+    if not oe_lower:
         verdict = "NO EFFECT on over-eagerness"
-    elif oe_down and rc_held:
-        verdict = "CALIBRATION GAIN (over-eager down, recall held)"
-    elif oe_arm < oe_base - 1e-9 and not rc_held:
-        verdict = "SUPPRESSION (over-eager down BUT recall fell) — the Step-5 failure mode"
+    elif not oe_sig:
+        verdict = "over-eager lower but NOT significant (directional only)"
+    elif rc_held:
+        verdict = "CALIBRATION GAIN (over-eager down significantly, recall held)"
     else:
-        verdict = "over-eager lower but not significant (directional)"
+        verdict = "SUPPRESSION (over-eager down significantly BUT recall fell) — the Step-5 failure mode"
     print(f"\nVERDICT: {verdict}")
 
     out = {"base": base, "arm": arm, "n": n,

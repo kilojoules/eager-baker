@@ -23,7 +23,7 @@ Results split into **two cohorts that are not directly comparable** (different h
 | Qwen2.5-7B | 44% | 0.89 |
 | Qwen3-30B-A3B | 20% | 0.95 |
 
-Omnibus χ²(2)=27.3, **p<0.001**; **all three pairwise contrasts significant after Holm** (within this 3-model family). Performance is *not* equal (bigger is better on both axes), but **over-eagerness spans 52 points while performance spans only ~7** — over-eagerness is a far more *sensitive* axis than task accuracy, the case for measuring it separately.
+Omnibus χ²(2)=27.3, **p<0.001**; **all three pairwise contrasts significant after Holm** (within this 3-model family). Performance is *not* equal (bigger is better on both axes), but **over-eagerness spans 52 points while performance spans only ~6** — over-eagerness is a far more *sensitive* axis than task accuracy, the case for measuring it separately.
 
 ![over-eagerness by model, cohorts separated](results/step3_overeager_rate.png)
 
