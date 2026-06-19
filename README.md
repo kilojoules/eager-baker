@@ -13,19 +13,45 @@
 
 ### 1. Distinct models differ sharply in scope over-eagerness — *solid (3 models, pre-registered)*
 
-Three genuinely different open-weights models, one uniform harness (no personas), pre-registered analysis, n=50 tasks each:
+Results split into **two cohorts that are not directly comparable** (different harness) and are never pooled into one statistic — see [`src/cohorts.py`](src/cohorts.py).
 
-| model | over-eager rate | performance |
+**Primary cohort — three open-weights models on one uniform vLLM harness** (no personas, temp=0/seed=0, pre-registered analysis, n=50 tasks each):
+
+| model · open-weights / vLLM | over-eager rate | performance |
 |---|---|---|
-| Qwen3-30B-A3B | 20% | 0.95 |
-| Qwen2.5-7B | 44% | 0.89 |
 | Phi-3.5-mini | 72% | 0.88 |
+| Qwen2.5-7B | 44% | 0.89 |
+| Qwen3-30B-A3B | 20% | 0.95 |
 
-Omnibus χ²(2)=27.3, **p<0.001**; all three pairwise contrasts significant after Holm correction. Performance is *not* equal (the biggest model is best on both axes — partly the ordinary "bigger is better" story), but **over-eagerness spans 52 points while performance spans only ~7** — so over-eagerness is a far more *sensitive* axis than task accuracy, which is the case for measuring it separately.
+Omnibus χ²(2)=27.3, **p<0.001**; **all three pairwise contrasts significant after Holm** (within this 3-model family). Performance is *not* equal (bigger is better on both axes), but **over-eagerness spans 52 points while performance spans only ~7** — over-eagerness is a far more *sensitive* axis than task accuracy, the case for measuring it separately.
 
-![performance vs over-eagerness, 3 models](results/step3_perf_vs_eager.png)
+![over-eagerness by model, cohorts separated](results/step3_overeager_rate.png)
 
-*Caveat: 3 models span 2 vendors; scale and vendor are confounded.*
+#### Frontier models — a *separate* cohort (agentic CLI, exploratory, harness-confounded)
+
+Two current flagships, added later. **They are NOT pooled with the open cohort.** No API key / OpenAI-compatible endpoint was available, so each ran through its vendor's **agentic CLI** — Claude Opus 4.8 via Claude Code (`claude-personal`) and Gemini 3.5 Flash via Google Antigravity (`agy`) — which wrap the model in an agent stack (own system prompt, tools, memory) with **no temperature/seed/logprobs control**. A between-cohort gap conflates model capability with the harness, so statistics stay *within* cohort and these numbers are a *direction*, not a measurement.
+
+| model · frontier / agentic CLI | over-eager rate | performance |
+|---|---|---|
+| Gemini 3.5 Flash | 12% | 0.98 |
+| Claude Opus 4.8 | 8% | 0.98 |
+
+Within-cohort the two are statistically indistinguishable (χ²(1)=0.11, p=0.74). Descriptively they sit at/below the calibrated end of the open cohort (≈ Qwen3-30B's 20%) and are far *less timid* (30–40% vs 76–80%) with the fewest dropped preconditions. The cross-cohort picture (descriptive): weak models are simultaneously timid *and* over-eager (indiscriminate selection); strong models are cleanly calibrated on both ends — the "scope-handling tracks capability" reading in [DIAGNOSIS](docs/DIAGNOSIS.md).
+
+#### Turning one piece of the harness confound into a measurement — a ponytail A/B
+
+Rather than only caveat the agentic-harness confound, we toggled one harness component in isolation: the [**ponytail**](https://github.com/DietrichGebert/ponytail) skill — a "lazy senior dev / do exactly what's asked, no unrequested work" scope-discipline persona — appended to Claude Code's system prompt via `--append-system-prompt`. Same model, same 50 tasks, only that knob changes → a clean **paired** comparison, immune to the cross-cohort confound.
+
+| Claude Opus 4.8 | over-eager | recall | timid | perf |
+|---|---|---|---|---|
+| ponytail **OFF** | 8% | 0.79 | 40% | 0.98 |
+| ponytail **ON** | 8% | 0.75 | 46% | 0.96 |
+
+**No significant effect** (over-eager McNemar p=1; recall Wilcoxon p=0.28). Claude is already at an ~8% over-eagerness floor, so a "do less" persona has almost nothing to remove — and it nudges *toward* timidity, not calibration (the Finding #2 pattern, null here rather than suppressive only because there is no headroom). The contribution is the **mechanism** (any harness add-on can now be A/B'd this way), not the null effect; the natural next test is ponytail on an *over-eager* model (Phi-3.5 at 72%), where there's room to separate calibration from suppression.
+
+![ponytail A/B, paired n=50](results/step3_ab_ponytail.png)
+
+*Caveats: the 3 pre-registered models span 2 vendors (scale/vendor confounded); the frontier cohort adds Anthropic + Google but through different, agentic harnesses. Ponytail is a code-framed skill tested on a cooking-scope task — its "do exactly what's asked" core transfers, but a domain-matched skill might move the needle more.*
 
 ### 2. You can't prompt it away — every intervention suppresses rather than calibrates — *solid (one model, n=50, pre-registered)*
 
@@ -105,7 +131,7 @@ src/                 ← the pipeline (flat; imports are path-relative)
 results/             ← figures (*.png), tables (*.csv/json), raw outputs (see results/README.md)
 ```
 
-**`src/` by phase:** `mcl.py` `slicer.py` `score.py` (core) · `phase1_verify.py` `phase2_dump.py` (gate) · `model_client.py` `runpod_deploy.py` (uniform client + pods) · `menu_harness.py` `step3_run.py` `step3_analyze.py` (3-model run) · `intervention.py` `step5_intervene.py` `step5_twopass.py` (interventions) · `step5_probe.py` (isolated probe) · `step5_probe_task.py` (**the M2 control**) · `step5_calibrate.py` `step5_crossmodel.py` (calibration + cross-model, now deflated) · `*_plot.py` · `test_score.py`.
+**`src/` by phase:** `mcl.py` `slicer.py` `score.py` (core) · `phase1_verify.py` `phase2_dump.py` (gate) · `model_client.py` `runpod_deploy.py` (uniform client + pods) · `menu_harness.py` `step3_run.py` `step3_analyze.py` (3-model run) · `cli_client.py` `step3_run_cli.py` (agentic-CLI backend: Gemini via Antigravity `agy`, Claude via `claude-personal`) · `cohorts.py` (open-vLLM vs frontier-agentic split) · `step3_ab.py` (paired harness-knob A/B, e.g. ponytail) · `intervention.py` `step5_intervene.py` `step5_twopass.py` (interventions) · `step5_probe.py` (isolated probe) · `step5_probe_task.py` (**the M2 control**) · `step5_calibrate.py` `step5_crossmodel.py` (calibration + cross-model, now deflated) · `*_plot.py` · `test_score.py`.
 
 ---
 
@@ -118,7 +144,11 @@ cd src
 python3 test_score.py                                 # scorer unit tests (run first)
 python3 phase1_verify.py                              # the gate
 python3 build_taskset.py && python3 step3_run.py <name> <url> EMPTY <model_id>
-python3 step3_analyze.py && python3 step3_plot.py     # Finding #1
+python3 step3_run_cli.py gemini-3.5-flash "Gemini 3.5 Flash (Medium)"   # via Antigravity `agy` (no API key; agentic-harness confound)
+python3 step3_run_cli.py claude-opus-4.8 - claude     # via Claude Code subscription (`-` = CLI default model; agentic-harness confound)
+python3 step3_run_cli.py "claude-opus-4.8+ponytail" - claude-ponytail   # A/B arm: + ponytail skill via --append-system-prompt
+python3 step3_analyze.py && python3 step3_plot.py     # Finding #1 (cohort-split, auto-detects all results_*.json)
+python3 step3_ab.py                                   # paired ponytail A/B (McNemar + recall)
 python3 step5_intervene.py <url> <model_id> <arm>     # Finding #2 (arms)
 python3 step5_probe.py <url> <model_id> <name>        # the isolated probe (Finding #3 lead)
 python3 step5_probe_task.py <url> <model_id> <name>   # the control that deflated it

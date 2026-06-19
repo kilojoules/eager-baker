@@ -32,7 +32,7 @@ def strip_think(text: str) -> str:
     return t.strip()
 
 
-def _retry(fn, attempts=4):
+def _retry(fn, attempts=6):
     last = None
     for i in range(attempts):
         try:
@@ -55,24 +55,31 @@ class ModelClient:
 class OpenAICompatClient(ModelClient):
     """vLLM (Qwen on RunPod) or any OpenAI-compatible endpoint."""
 
-    def __init__(self, name, base_url, api_key, model_id, extra_body=None):
+    def __init__(self, name, base_url, api_key, model_id, extra_body=None,
+                 omit_seed=None):
         from openai import OpenAI
         self.name = name
         self.model_id = model_id
         self.client = OpenAI(base_url=base_url, api_key=api_key, timeout=120)
         self.extra_body = extra_body or {}
+        # Gemini's OpenAI-compatibility endpoint rejects `seed`; auto-omit it
+        # there. vLLM (RunPod) keeps seed=0 exactly as the cached runs used it.
+        self._omit_seed = (("googleapis" in (base_url or ""))
+                           if omit_seed is None else omit_seed)
 
     def complete(self, system, user, cfg):
         def call():
-            r = self.client.chat.completions.create(
+            kwargs = dict(
                 model=self.model_id,
                 messages=[{"role": "system", "content": system},
                           {"role": "user", "content": user}],
                 temperature=cfg.temperature,
                 max_tokens=cfg.max_tokens,
-                seed=cfg.seed,
                 extra_body=self.extra_body,
             )
+            if not self._omit_seed:
+                kwargs["seed"] = cfg.seed
+            r = self.client.chat.completions.create(**kwargs)
             return r.choices[0].message.content or ""
         return strip_think(_retry(call))
 
@@ -83,14 +90,17 @@ class OpenAICompatClient(ModelClient):
         cfg = cfg or GenConfig(max_tokens=4)
 
         def call():
-            return self.client.chat.completions.create(
+            kwargs = dict(
                 model=self.model_id,
                 messages=[{"role": "system", "content": system},
                           {"role": "user", "content": user}],
                 temperature=cfg.temperature, max_tokens=cfg.max_tokens,
-                seed=cfg.seed, logprobs=True, top_logprobs=20,
+                logprobs=True, top_logprobs=20,
                 extra_body={**self.extra_body, "guided_choice": list(choices)},
             )
+            if not self._omit_seed:
+                kwargs["seed"] = cfg.seed
+            return self.client.chat.completions.create(**kwargs)
         r = _retry(call)
         chosen = (r.choices[0].message.content or "").strip()
         probs = {c: 0.0 for c in choices}

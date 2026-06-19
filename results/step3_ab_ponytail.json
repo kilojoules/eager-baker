@@ -1,0 +1,26 @@
+{
+  "base": "claude-opus-4.8",
+  "arm": "claude-opus-4.8+ponytail",
+  "n": 50,
+  "overeager": {
+    "base": 0.08,
+    "arm": 0.08,
+    "base_only": 1,
+    "arm_only": 1,
+    "mcnemar_p": 1.0
+  },
+  "recall": {
+    "base": 0.7926428571428571,
+    "arm": 0.7508333333333336,
+    "wilcoxon_p": 0.275390625
+  },
+  "timid": {
+    "base": 0.4,
+    "arm": 0.46
+  },
+  "performance": {
+    "base": 0.9784722222222223,
+    "arm": 0.9618055555555557
+  },
+  "verdict": "NO EFFECT on over-eagerness"
+}
