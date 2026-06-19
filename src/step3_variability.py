@@ -89,7 +89,28 @@ def main():
         print(f"  per-task label stability: {s['tasks_flipped']}/{s['tasks_compared']} tasks "
               f"flipped over-eager across reps  (agreement {s['label_agreement']:.0%})")
         print(f"  recall mean {s['recall_mean']:.2f}   timid mean {s['timid_mean']:.0%}")
-    json.dump(out, open(os.path.join(RES, "step3_variability.json"), "w"), indent=2)
+    # ---- between-model comparison at the REP level ----
+    # the correct unit for stochastic agents: treat each run's rate as one observation,
+    # rather than the single-run per-task chi-square that treats one noisy draw as truth.
+    repcmp = None
+    if len(out) == 2 and all(o["reps"] >= 2 for o in out):
+        import scipy.stats as st
+        a, b = out
+        ra = [r*100 for r in a["oe_rates"]]; rb = [r*100 for r in b["oe_rates"]]
+        U, pu = st.mannwhitneyu(ra, rb, alternative="two-sided")
+        t, pt = st.ttest_ind(ra, rb, equal_var=False)
+        verdict = ("borderline (~0.05)" if min(pu, pt) < 0.05 <= max(pu, pt)
+                   else "significant" if max(pu, pt) < 0.05 else "n.s.")
+        repcmp = {"models": [a["model"], b["model"]], "n_reps": a["reps"],
+                  "means": [a["oe_rate_mean"], b["oe_rate_mean"]],
+                  "mannwhitney_p": pu, "welch_p": pt, "verdict": verdict}
+        print(f"\n{'='*64}\nBETWEEN-MODEL @ rep level "
+              f"({a['model']} vs {b['model']}, n={a['reps']} reps each)")
+        print(f"  mean over-eager {a['oe_rate_mean']:.0%} vs {b['oe_rate_mean']:.0%}  |  "
+              f"Mann-Whitney p={pu:.3f}  Welch-t p={pt:.3f}  -> {verdict}")
+
+    json.dump({"per_model": out, "between_model_rep_level": repcmp},
+              open(os.path.join(RES, "step3_variability.json"), "w"), indent=2)
 
     # ---- plot: over-eager rate, each rep a dot, mean bar, per model ----
     fig, ax = plt.subplots(figsize=(7.5, 5))
