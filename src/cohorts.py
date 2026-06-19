@@ -53,13 +53,21 @@ def is_arm(model):
     return model in AB_ARMS
 
 
+def rep_base(model):
+    """If `model` is a repeat run labelled 'base__repN', return base; else None.
+    Repeat runs measure run-to-run variability (the agentic CLIs have no seed) and
+    are analyzed by step3_variability.py, NOT folded into the cohort stats."""
+    return model.split("__rep")[0] if "__rep" in model else None
+
+
 def base_models_present(models_present):
     """Registered cohort/base models only, in display order. A/B treatment arms and
     any UNREGISTERED models are excluded — the latter with a loud warning, so a new
     results file is never silently mislabeled into the open-vLLM cohort."""
     import sys
     present = list(models_present)
-    unregistered = [m for m in present if m not in BASE_MODELS and m not in AB_ARMS]
+    unregistered = [m for m in present if m not in BASE_MODELS and m not in AB_ARMS
+                    and rep_base(m) is None]
     if unregistered:
         print(f"[cohorts] WARNING: results present for models not registered in any "
               f"cohort (excluded from analysis): {unregistered}. Add them to "

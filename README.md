@@ -38,7 +38,11 @@ Two current flagships, added later. **They are NOT pooled with the open cohort.*
 | Gemini 3.5 Flash | 12% | 0.98 |
 | Claude Opus 4.8 | 8% | 0.98 |
 
-Within-cohort the two are statistically indistinguishable (χ²(1)=0.11, p=0.74). Descriptively they sit at/below the calibrated end of the open cohort (≈ Qwen3-30B's 20%) and are far *less timid* (30–40% vs 76–80%) with the fewest dropped preconditions. The cross-cohort picture (descriptive): weak models are simultaneously timid *and* over-eager (indiscriminate selection); strong models are cleanly calibrated on both ends — the "scope-handling tracks capability" reading in [DIAGNOSIS](docs/DIAGNOSIS.md).
+Within-cohort the two are statistically indistinguishable (χ²(1)=0.11, p=0.74; the table is one run — rep 1). Descriptively they sit at/below the calibrated end of the open cohort (≈ Qwen3-30B's 20%) and are far *less timid* (30–40% vs 76–80%) with the fewest dropped preconditions. The cross-cohort picture (descriptive): weak models are simultaneously timid *and* over-eager (indiscriminate selection); strong models are cleanly calibrated on both ends — the "scope-handling tracks capability" reading in [DIAGNOSIS](docs/DIAGNOSIS.md).
+
+**Run-to-run variability (n=3 reps each).** These CLIs expose no seed, so every 50-task run is a fresh draw. Repeating three times: **Gemini 14% mean** (reps 12 / 20 / 10%, range 10–20%, sd 5.3pp; **7/50** tasks flip their over-eager label across reps) and **Claude 11% mean** (reps 8 / 12 / 12%, range 8–12%, sd 2.3pp; only **2/50** flip). Two consequences: (i) the apparent Gemini-vs-Claude gap is **within run noise** — both committed single runs happened to be low draws — so "the two are indistinguishable" is the honest read, not "Gemini > Claude"; (ii) the **frontier-vs-open separation is robust** to this noise — even Gemini's *worst* rep (20%) only ties Qwen3-30B and stays far below Qwen2.5 (44%) and Phi-3.5 (72%). Gemini is also markedly **noisier** than Claude (sd 5.3 vs 2.3pp; 7 vs 2 label flips) — itself a scope-stability signal worth more reps.
+
+![run-to-run variability of the frontier models, n=3](results/step3_variability.png)
 
 #### Turning one piece of the harness confound into a measurement — a ponytail A/B
 
@@ -133,7 +137,7 @@ src/                 ← the pipeline (flat; imports are path-relative)
 results/             ← figures (*.png), tables (*.csv/json), raw outputs (see results/README.md)
 ```
 
-**`src/` by phase:** `mcl.py` `slicer.py` `score.py` (core) · `phase1_verify.py` `phase2_dump.py` (gate) · `model_client.py` `runpod_deploy.py` (uniform client + pods) · `menu_harness.py` `step3_run.py` `step3_analyze.py` (3-model run) · `cli_client.py` `step3_run_cli.py` (agentic-CLI backend: Gemini via Antigravity `agy`, Claude via `claude-personal`) · `cohorts.py` (open-vLLM vs frontier-agentic split) · `step3_ab.py` (paired harness-knob A/B, e.g. ponytail) · `intervention.py` `step5_intervene.py` `step5_twopass.py` (interventions) · `step5_probe.py` (isolated probe) · `step5_probe_task.py` (**the M2 control**) · `step5_calibrate.py` `step5_crossmodel.py` (calibration + cross-model, now deflated) · `*_plot.py` · `test_score.py`.
+**`src/` by phase:** `mcl.py` `slicer.py` `score.py` (core) · `phase1_verify.py` `phase2_dump.py` (gate) · `model_client.py` `runpod_deploy.py` (uniform client + pods) · `menu_harness.py` `step3_run.py` `step3_analyze.py` (3-model run) · `cli_client.py` `step3_run_cli.py` (agentic-CLI backend: Gemini via Antigravity `agy`, Claude via `claude-personal`) · `cohorts.py` (open-vLLM vs frontier-agentic split) · `step3_ab.py` (paired harness-knob A/B, e.g. ponytail) · `step3_variability.py` (n-rep run-to-run spread) · `intervention.py` `step5_intervene.py` `step5_twopass.py` (interventions) · `step5_probe.py` (isolated probe) · `step5_probe_task.py` (**the M2 control**) · `step5_calibrate.py` `step5_crossmodel.py` (calibration + cross-model, now deflated) · `*_plot.py` · `test_score.py`.
 
 ---
 
@@ -149,8 +153,10 @@ python3 build_taskset.py && python3 step3_run.py <name> <url> EMPTY <model_id>
 python3 step3_run_cli.py gemini-3.5-flash "Gemini 3.5 Flash (Medium)"   # via Antigravity `agy` (no API key; agentic-harness confound)
 python3 step3_run_cli.py claude-opus-4.8 - claude     # via Claude Code subscription (`-` = CLI default model; agentic-harness confound)
 python3 step3_run_cli.py "claude-opus-4.8+ponytail" - claude-ponytail   # A/B arm: + ponytail skill via --append-system-prompt
+python3 step3_run_cli.py "claude-opus-4.8__rep2" - claude               # repeat run (no seed) for variability; reps excluded from cohort stats
 python3 step3_analyze.py && python3 step3_plot.py     # Finding #1 (cohort-split, auto-detects all results_*.json)
 python3 step3_ab.py                                   # paired ponytail A/B (McNemar + recall)
+python3 step3_variability.py                          # n-rep run-to-run spread of the frontier models
 python3 step5_intervene.py <url> <model_id> <arm>     # Finding #2 (arms)
 python3 step5_probe.py <url> <model_id> <name>        # the isolated probe (Finding #3 lead)
 python3 step5_probe_task.py <url> <model_id> <name>   # the control that deflated it
