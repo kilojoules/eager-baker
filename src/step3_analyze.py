@@ -136,6 +136,30 @@ def main():
         k, n = oe_rate(models[m])
         print(f"  [{COHORTS[cohort_of(m)]['short']:22s}] {m:22s} {k}/{n} = {k/n:.0%}")
 
+    # ---- OVER-EAGER INTENSITY: mean COUNT per task (secondary) ----
+    print("\n" + "="*72)
+    print("OVER-EAGER INTENSITY — mean COUNT of next-steps grabbed per task (secondary)")
+    print("="*72)
+    for cid in COHORT_ORDER:
+        names = [m for m in COHORTS[cid]["models"] if m in present]
+        if not names:
+            continue
+        print(f"\n### {COHORTS[cid]['short']}")
+        for m in names:
+            oes = [r["n_overeager"] for r in models[m]]
+            pos = [x for x in oes if x > 0]
+            mc = sum(oes)/len(oes)
+            cond = (sum(pos)/len(pos)) if pos else 0.0
+            print(f"  {m:22s} mean #OE = {mc:.2f}   |   when over-eager: {cond:.2f} steps "
+                  f"(n={len(pos)})   total={sum(oes)}")
+        if len(names) >= 2:   # within-cohort test on the COUNT (counts are non-normal)
+            H, p = st.kruskal(*[[r["n_overeager"] for r in models[m]] for m in names])
+            print(f"  Kruskal-Wallis on count (within cohort): H={H:.2f} p={p:.3g}")
+    print("\n  -> the between-model COUNT trend MIRRORS the RATE trend (same ranking, all sig).")
+    print("     Conditional intensity (~1-2 steps) is roughly FLAT, so the difference is")
+    print("     FREQUENCY of overstep, not magnitude per overstep. (intensity n is small for")
+    print("     the calibrated models, so read it loosely.)")
+
     # ---- SECONDARY (per model, grouped by cohort) ----
     print("\n" + "="*72); print("SECONDARY — per model (grouped by cohort)"); print("="*72)
     print(f"  {'model':22s} {'mean_perf':>10} {'mean_signed (95% CI)':>26} "

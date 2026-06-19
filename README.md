@@ -25,6 +25,8 @@ Results split into **two cohorts that are not directly comparable** (different h
 
 Omnibus χ²(2)=27.3, **p<0.001**; **all three pairwise contrasts significant after Holm** (within this 3-model family). Performance is *not* equal (bigger is better on both axes), but **over-eagerness spans 52 points while performance spans only ~6** — over-eagerness is a far more *sensitive* axis than task accuracy, the case for measuring it separately.
 
+The same ranking holds for the average *number* of over-eager steps (mean count **1.06 / 0.62 / 0.32** per task; Kruskal–Wallis H=25.0, p<1e-5, all three pairwise Holm-significant), so the result isn't an artifact of the binary "≥1" threshold. Decomposing `count = rate × intensity` shows the difference is **frequency, not magnitude**: *when* a model oversteps it grabs only ~1–2 extra steps regardless of model (conditional intensity ≈ flat — though small-n for the calibrated models), so models differ in how *often* they overstep, not how much per incident.
+
 ![over-eagerness by model, cohorts separated](results/step3_overeager_rate.png)
 
 #### Frontier models — a *separate* cohort (agentic CLI, exploratory, harness-confounded)
