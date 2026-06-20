@@ -63,20 +63,96 @@
       "tasks_compared": 50,
       "tasks_flipped": 3,
       "label_agreement": 0.94
+    },
+    {
+      "model": "codex-gpt-5.5",
+      "reps": 5,
+      "n_per_rep": 50,
+      "oe_rates": [
+        0.06,
+        0.04,
+        0.06,
+        0.04,
+        0.08
+      ],
+      "oe_rate_mean": 0.056,
+      "oe_rate_sd": 0.01673320053068151,
+      "oe_rate_range": [
+        0.04,
+        0.08
+      ],
+      "oe_counts": [
+        0.06,
+        0.06,
+        0.06,
+        0.04,
+        0.08
+      ],
+      "oe_count_mean": 0.06,
+      "oe_count_sd": 0.01414213562373095,
+      "recall_mean": 0.8249095238095238,
+      "timid_mean": 0.34800000000000003,
+      "tasks_compared": 50,
+      "tasks_flipped": 3,
+      "label_agreement": 0.94
     }
   ],
   "between_model_rep_level": {
-    "models": [
-      "gemini-3.5-flash",
-      "claude-opus-4.8"
-    ],
-    "n_reps": 5,
-    "means": [
-      0.14400000000000002,
-      0.096
-    ],
-    "mannwhitney_p": 0.053936941983493455,
-    "welch_p": 0.04933415861541843,
-    "verdict": "borderline (~0.05)"
+    "n_reps": {
+      "gemini-3.5-flash": 5,
+      "claude-opus-4.8": 5,
+      "codex-gpt-5.5": 5
+    },
+    "omnibus": {
+      "kruskal_H": 10.690441176470594,
+      "p": 0.004770898685135356
+    },
+    "pairwise": [
+      {
+        "models": [
+          "gemini-3.5-flash",
+          "claude-opus-4.8"
+        ],
+        "means": [
+          0.14400000000000002,
+          0.096
+        ],
+        "mannwhitney_p": 0.053936941983493455,
+        "welch_p": 0.04933415861541843,
+        "mwu_holm": 0.053936941983493455,
+        "welch_holm": 0.04933415861541843,
+        "verdict": "borderline"
+      },
+      {
+        "models": [
+          "gemini-3.5-flash",
+          "codex-gpt-5.5"
+        ],
+        "means": [
+          0.14400000000000002,
+          0.056
+        ],
+        "mannwhitney_p": 0.011667312343319386,
+        "welch_p": 0.004292461584528775,
+        "mwu_holm": 0.03500193702995816,
+        "welch_holm": 0.012877384753586326,
+        "verdict": "significant"
+      },
+      {
+        "models": [
+          "claude-opus-4.8",
+          "codex-gpt-5.5"
+        ],
+        "means": [
+          0.096,
+          0.056
+        ],
+        "mannwhitney_p": 0.022298161900297056,
+        "welch_p": 0.012923982909238645,
+        "mwu_holm": 0.04459632380059411,
+        "welch_holm": 0.02584796581847729,
+        "verdict": "significant"
+      }
+    ]
   }
 }

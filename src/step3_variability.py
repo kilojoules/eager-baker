@@ -75,7 +75,7 @@ def summarize(model):
 
 
 def main():
-    models = sys.argv[1:] or ["gemini-3.5-flash", "claude-opus-4.8"]
+    models = sys.argv[1:] or ["gemini-3.5-flash", "claude-opus-4.8", "codex-gpt-5.5"]
     out = [summarize(m) for m in models]
     print(f"RUN-TO-RUN VARIABILITY (agentic CLIs, no seed)\n{'='*64}")
     for s in out:
@@ -92,22 +92,43 @@ def main():
     # ---- between-model comparison at the REP level ----
     # the correct unit for stochastic agents: treat each run's rate as one observation,
     # rather than the single-run per-task chi-square that treats one noisy draw as truth.
+    # With >2 reppable models: omnibus Kruskal-Wallis + all pairwise (Mann-Whitney, Welch-t).
     repcmp = None
-    if len(out) == 2 and all(o["reps"] >= 2 for o in out):
+    repd = [o for o in out if o["reps"] >= 2]
+    if len(repd) >= 2:
         import scipy.stats as st
-        a, b = out
-        ra = [r*100 for r in a["oe_rates"]]; rb = [r*100 for r in b["oe_rates"]]
-        U, pu = st.mannwhitneyu(ra, rb, alternative="two-sided")
-        t, pt = st.ttest_ind(ra, rb, equal_var=False)
-        verdict = ("borderline (~0.05)" if min(pu, pt) < 0.05 <= max(pu, pt)
-                   else "significant" if max(pu, pt) < 0.05 else "n.s.")
-        repcmp = {"models": [a["model"], b["model"]], "n_reps": a["reps"],
-                  "means": [a["oe_rate_mean"], b["oe_rate_mean"]],
-                  "mannwhitney_p": pu, "welch_p": pt, "verdict": verdict}
+        import itertools
         print(f"\n{'='*64}\nBETWEEN-MODEL @ rep level "
-              f"({a['model']} vs {b['model']}, n={a['reps']} reps each)")
-        print(f"  mean over-eager {a['oe_rate_mean']:.0%} vs {b['oe_rate_mean']:.0%}  |  "
-              f"Mann-Whitney p={pu:.3f}  Welch-t p={pt:.3f}  -> {verdict}")
+              f"({', '.join(o['model'] for o in repd)})")
+        omni = None
+        if len(repd) >= 3:
+            H, pH = st.kruskal(*[[r*100 for r in o["oe_rates"]] for o in repd])
+            omni = {"kruskal_H": H, "p": pH}
+            print(f"  omnibus Kruskal-Wallis: H={H:.2f} p={pH:.3f}")
+        pairs = []
+        for a, b in itertools.combinations(repd, 2):
+            ra = [r*100 for r in a["oe_rates"]]; rb = [r*100 for r in b["oe_rates"]]
+            U, pu = st.mannwhitneyu(ra, rb, alternative="two-sided")
+            t, pt = st.ttest_ind(ra, rb, equal_var=False)
+            pairs.append({"models": [a["model"], b["model"]],
+                          "means": [a["oe_rate_mean"], b["oe_rate_mean"]],
+                          "mannwhitney_p": pu, "welch_p": pt})
+        # Holm-correct each family (MWU, Welch) across the pairwise comparisons
+        for fam, key in (("mwu_holm", "mannwhitney_p"), ("welch_holm", "welch_p")):
+            order = sorted(range(len(pairs)), key=lambda i: pairs[i][key])
+            for rank, i in enumerate(order):
+                pairs[i][fam] = min(1.0, pairs[i][key] * (len(pairs) - rank))
+        for p in pairs:
+            sig = max(p["mwu_holm"], p["welch_holm"]) < 0.05
+            bord = min(p["mwu_holm"], p["welch_holm"]) < 0.05 <= max(p["mwu_holm"], p["welch_holm"])
+            p["verdict"] = "significant" if sig else "borderline" if bord else "n.s."
+            print(f"  {p['models'][0]} ({p['means'][0]:.0%}) vs {p['models'][1]} "
+                  f"({p['means'][1]:.0%}): MWU p={p['mannwhitney_p']:.3f}/holm={p['mwu_holm']:.3f}  "
+                  f"Welch p={p['welch_p']:.3f}/holm={p['welch_holm']:.3f}  -> {p['verdict']}")
+        # MWU on 5v5 is coarse (min two-sided p ~0.008 at U=0); Welch is the more sensitive read.
+        print("  (n=5 vs 5: Mann-Whitney is coarse — min possible two-sided p~0.008; Welch more sensitive)")
+        repcmp = {"n_reps": {o["model"]: o["reps"] for o in repd},
+                  "omnibus": omni, "pairwise": pairs}
 
     json.dump({"per_model": out, "between_model_rep_level": repcmp},
               open(os.path.join(RES, "step3_variability.json"), "w"), indent=2)
