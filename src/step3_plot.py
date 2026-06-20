@@ -40,6 +40,25 @@ def load():
     return models
 
 
+def oe_stats(models, m):
+    """Over-eager rate for a base model, aggregated over rep1 + any __repN runs.
+    Returns (rate, se, n_reps, k, n_tasks). For a single (deterministic) run the SE
+    is the binomial SE; for multiple (seed-less) reps it is the across-rep SE of the
+    mean — so the bar matches the n=5 means reported in the tables."""
+    keys = [m] + sorted(k for k in models if k.startswith(m + "__rep"))
+    rates, ntask = [], 0
+    for k in keys:
+        rows = models[k]; ntask = len(rows)
+        rates.append(sum(1 for r in rows if r["n_overeager"] > 0) / len(rows))
+    p = sum(rates) / len(rates)
+    if len(rates) > 1:
+        sd = (sum((x - p) ** 2 for x in rates) / (len(rates) - 1)) ** 0.5
+        se = sd / math.sqrt(len(rates))
+    else:
+        se = math.sqrt(p * (1 - p) / ntask)
+    return p, se, len(rates), round(p * ntask), ntask
+
+
 def layout(names):
     """x positions grouped by cohort with a gap between cohorts."""
     xpos, groups, x = {}, [], 0
@@ -64,23 +83,23 @@ def main():
     fig, ax = plt.subplots(figsize=(9, 5.5))
     top = 1.05
     for m in names:
-        rows = models[m]; n = len(rows); cid = cohort_of(m)
-        k = sum(1 for r in rows if r["n_overeager"] > 0)
-        p = k / n
-        se = math.sqrt(p * (1 - p) / n)            # standard error of the proportion
+        cid = cohort_of(m)
+        p, se, nreps, k, nt = oe_stats(models, m)   # frontier: mean over reps; open: single run
         ax.bar(xpos[m], p, color=CCOLOR[cid], alpha=0.85, width=0.8)
         ax.errorbar(xpos[m], p, yerr=[[min(se, p)], [se]], color="black", capsize=6, lw=1.5)
-        ax.text(xpos[m], p + se + 0.02, f"{k}/{n}={p:.0%}", ha="center", fontsize=10)
+        lab = f"{p:.0%}\n(n={nreps}×{nt})" if nreps > 1 else f"{k}/{nt}={p:.0%}"
+        ax.text(xpos[m], p + se + 0.02, lab, ha="center", fontsize=9)
     for cid, a, b in groups:
         ax.axvspan(a-0.55, b+0.55, color=CCOLOR[cid], alpha=0.06, zorder=0)
         ax.text((a+b)/2, top-0.02, COHORTS[cid]["label"], ha="center", va="top",
                 fontsize=9, style="italic", color=CCOLOR[cid])
     ax.set_xticks([xpos[m] for m in names]); ax.set_xticklabels(names, rotation=12, fontsize=9)
-    ax.set_ylabel("over-eager rate (tasks with ≥1 next-step selected; bars ±1 SE)")
+    ax.set_ylabel("over-eager rate (tasks with ≥1 next-step selected)")
     ax.set_ylim(0, top)
     ax.set_title("PRIMARY: over-eagerness by model — cohorts kept separate\n"
-                 "open-weights/vLLM = pre-registered  ·  frontier/agentic-CLI = exploratory, confounded "
-                 "(not pooled)", fontsize=10)
+                 "open-weights/vLLM = pre-registered  ·  frontier/agentic-CLI = exploratory, confounded (not pooled)\n"
+                 "error bars: open ±1 SE (binomial, 1 deterministic run) · frontier ±1 SE of the mean (n=5 reps)",
+                 fontsize=9)
     ax.grid(axis="y", alpha=0.3)
     fig.tight_layout(); fig.savefig(os.path.join(RES, "step3_overeager_rate.png"), dpi=140)
     print("wrote step3_overeager_rate.png")

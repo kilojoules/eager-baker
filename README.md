@@ -33,13 +33,13 @@ The same ranking holds for the average *number* of over-eager steps (mean count 
 
 Three current flagships, added later. **They are NOT pooled with the open cohort.** No API key / OpenAI-compatible endpoint was available, so each ran through its vendor's **agentic CLI** — Claude Opus 4.8 via Claude Code (`claude-personal`), Gemini 3.5 Flash via Google Antigravity (`agy`), and GPT-5.5 via the OpenAI Codex CLI (`codex exec`) — which wrap the model in an agent stack (own system prompt, tools, memory) with **no temperature/seed/logprobs control**. A between-cohort gap conflates model capability with the harness, so statistics stay *within* cohort and these numbers are a *direction*, not a measurement.
 
-| model · frontier / agentic CLI | over-eager rate | performance |
+| model · frontier / agentic CLI | over-eager rate (mean, n=5) | performance |
 |---|---|---|
-| Gemini 3.5 Flash | 12% | 0.98 |
-| Claude Opus 4.8 | 8% | 0.98 |
-| GPT-5.5 (Codex) | 6% | 0.97 |
+| Gemini 3.5 Flash | 14% | 0.98 |
+| Claude Opus 4.8 | 10% | 0.98 |
+| GPT-5.5 (Codex) | 6% | 0.98 |
 
-Within-cohort, on this single run, all three look statistically indistinguishable (omnibus χ²(2)=1.18, p=0.56; every pairwise p_holm=1; the table is one run each — rep 1) — but that single-run test is underpowered for seed-less agents: with **n=5 reps** the rep-level test *does* separate them (GPT-5.5 significantly lowest — see the run-to-run variability subsection below). Spanning **three vendors** (Anthropic + Google + OpenAI) they cluster tightly at the calibrated end, all at/below the open cohort's best (≈ Qwen3-30B's 20%), and are far *less timid* (30–40% vs 76–80%) with the fewest dropped preconditions. The cross-cohort picture (descriptive): weak models are simultaneously timid *and* over-eager (indiscriminate selection); strong models are cleanly calibrated on both ends — the "scope-handling tracks capability" reading in [DIAGNOSIS](docs/DIAGNOSIS.md).
+These are **means over n=5 reps** (the agentic CLIs have no seed, so every run is a fresh draw; per-run spread in the variability table below). A naive *single-run* cohort χ² would call the three indistinguishable (χ²(2)=1.18, p=0.56) — but that's the wrong unit for seed-less agents; with the 5 reps the **rep-level test does separate them** (GPT-5.5 significantly lowest — see below). Spanning **three vendors** (Anthropic + Google + OpenAI) they cluster tightly at the calibrated end, all at/below the open cohort's best (≈ Qwen3-30B's 20%), and are far *less timid* (30–40% vs 76–80%) with the fewest dropped preconditions. The cross-cohort picture (descriptive): weak models are simultaneously timid *and* over-eager (indiscriminate selection); strong models are cleanly calibrated on both ends — the "scope-handling tracks capability" reading in [DIAGNOSIS](docs/DIAGNOSIS.md).
 
 **Run-to-run variability (n=5 reps each).** These CLIs expose no seed, so every 50-task run is a fresh draw. Five reps each:
 

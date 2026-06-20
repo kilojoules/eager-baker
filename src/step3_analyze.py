@@ -127,6 +127,10 @@ def main():
         print(f"\n### {c['label']}")
         print(f"    harness: {c['harness']}")
         cohort_overeager(models, names, c["short"])
+        if not c["preregistered"]:
+            print("    NOTE: rates above are a single run (rep 1). For seed-less agentic"
+                  " CLIs the\n    authoritative comparison is the n-rep means + rep-level"
+                  " test in step3_variability.py.")
 
     # ---- CROSS-COHORT (descriptive only; CONFOUNDED by harness) ----
     print("\n" + "="*72)
