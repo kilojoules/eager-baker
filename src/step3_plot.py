@@ -66,16 +66,17 @@ def main():
     for m in names:
         rows = models[m]; n = len(rows); cid = cohort_of(m)
         k = sum(1 for r in rows if r["n_overeager"] > 0)
-        lo, hi = wilson(k, n)
-        ax.bar(xpos[m], k/n, color=CCOLOR[cid], alpha=0.85, width=0.8)
-        ax.errorbar(xpos[m], k/n, yerr=[[k/n-lo], [hi-k/n]], color="black", capsize=6, lw=1.5)
-        ax.text(xpos[m], k/n+0.02, f"{k}/{n}={k/n:.0%}", ha="center", fontsize=10)
+        p = k / n
+        se = math.sqrt(p * (1 - p) / n)            # standard error of the proportion
+        ax.bar(xpos[m], p, color=CCOLOR[cid], alpha=0.85, width=0.8)
+        ax.errorbar(xpos[m], p, yerr=[[min(se, p)], [se]], color="black", capsize=6, lw=1.5)
+        ax.text(xpos[m], p + se + 0.02, f"{k}/{n}={p:.0%}", ha="center", fontsize=10)
     for cid, a, b in groups:
         ax.axvspan(a-0.55, b+0.55, color=CCOLOR[cid], alpha=0.06, zorder=0)
         ax.text((a+b)/2, top-0.02, COHORTS[cid]["label"], ha="center", va="top",
                 fontsize=9, style="italic", color=CCOLOR[cid])
     ax.set_xticks([xpos[m] for m in names]); ax.set_xticklabels(names, rotation=12, fontsize=9)
-    ax.set_ylabel("over-eager rate (tasks with ≥1 next-step selected)")
+    ax.set_ylabel("over-eager rate (tasks with ≥1 next-step selected; bars ±1 SE)")
     ax.set_ylim(0, top)
     ax.set_title("PRIMARY: over-eagerness by model — cohorts kept separate\n"
                  "open-weights/vLLM = pre-registered  ·  frontier/agentic-CLI = exploratory, confounded "
