@@ -31,14 +31,15 @@ The same ranking holds for the average *number* of over-eager steps (mean count 
 
 #### Frontier models — a *separate* cohort (agentic CLI, exploratory, harness-confounded)
 
-Two current flagships, added later. **They are NOT pooled with the open cohort.** No API key / OpenAI-compatible endpoint was available, so each ran through its vendor's **agentic CLI** — Claude Opus 4.8 via Claude Code (`claude-personal`) and Gemini 3.5 Flash via Google Antigravity (`agy`) — which wrap the model in an agent stack (own system prompt, tools, memory) with **no temperature/seed/logprobs control**. A between-cohort gap conflates model capability with the harness, so statistics stay *within* cohort and these numbers are a *direction*, not a measurement.
+Three current flagships, added later. **They are NOT pooled with the open cohort.** No API key / OpenAI-compatible endpoint was available, so each ran through its vendor's **agentic CLI** — Claude Opus 4.8 via Claude Code (`claude-personal`), Gemini 3.5 Flash via Google Antigravity (`agy`), and GPT-5.5 via the OpenAI Codex CLI (`codex exec`) — which wrap the model in an agent stack (own system prompt, tools, memory) with **no temperature/seed/logprobs control**. A between-cohort gap conflates model capability with the harness, so statistics stay *within* cohort and these numbers are a *direction*, not a measurement.
 
 | model · frontier / agentic CLI | over-eager rate | performance |
 |---|---|---|
 | Gemini 3.5 Flash | 12% | 0.98 |
 | Claude Opus 4.8 | 8% | 0.98 |
+| GPT-5.5 (Codex) | 6% | 0.97 |
 
-Within-cohort the two are statistically indistinguishable (χ²(1)=0.11, p=0.74; the table is one run — rep 1). Descriptively they sit at/below the calibrated end of the open cohort (≈ Qwen3-30B's 20%) and are far *less timid* (30–40% vs 76–80%) with the fewest dropped preconditions. The cross-cohort picture (descriptive): weak models are simultaneously timid *and* over-eager (indiscriminate selection); strong models are cleanly calibrated on both ends — the "scope-handling tracks capability" reading in [DIAGNOSIS](docs/DIAGNOSIS.md).
+Within-cohort all three are statistically indistinguishable (omnibus χ²(2)=1.18, p=0.56; every pairwise p_holm=1; the table is one run each — rep 1). Spanning **three vendors** (Anthropic + Google + OpenAI) they cluster tightly at the calibrated end, all at/below the open cohort's best (≈ Qwen3-30B's 20%), and are far *less timid* (30–40% vs 76–80%) with the fewest dropped preconditions. The cross-cohort picture (descriptive): weak models are simultaneously timid *and* over-eager (indiscriminate selection); strong models are cleanly calibrated on both ends — the "scope-handling tracks capability" reading in [DIAGNOSIS](docs/DIAGNOSIS.md).
 
 **Run-to-run variability (n=5 reps each).** These CLIs expose no seed, so every 50-task run is a fresh draw. Five reps each: **Gemini 14% mean** (12 / 20 / 10 / 14 / 16%, range 10–20%, sd 3.8pp; **8/50** tasks flip their over-eager label across reps) and **Claude 10% mean** (8 / 12 / 12 / 8 / 8%, range 8–12%, sd 2.2pp; only **3/50** flip). Three reads: (i) comparing **at the rep level** — the right unit for seed-less agents, vs the single-run χ² that trusts one draw — Gemini is **borderline** more over-eager than Claude (Mann-Whitney p=0.054, Welch-t p=0.049, straddling 0.05): a small, *suggestive* gap, not callable at n=5, which refines the earlier "indistinguishable" into "probably a hair higher, can't confirm yet"; (ii) the **frontier-vs-open separation is robust** to the noise — even Gemini's *worst* rep (20%) only ties Qwen3-30B and stays far below Qwen2.5 (44%) and Phi-3.5 (72%); (iii) Gemini is consistently **noisier** than Claude (sd 3.8 vs 2.2pp; 8 vs 3 label flips), itself a scope-*stability* signal.
 
@@ -137,7 +138,7 @@ src/                 ← the pipeline (flat; imports are path-relative)
 results/             ← figures (*.png), tables (*.csv/json), raw outputs (see results/README.md)
 ```
 
-**`src/` by phase:** `mcl.py` `slicer.py` `score.py` (core) · `phase1_verify.py` `phase2_dump.py` (gate) · `model_client.py` `runpod_deploy.py` (uniform client + pods) · `menu_harness.py` `step3_run.py` `step3_analyze.py` (3-model run) · `cli_client.py` `step3_run_cli.py` (agentic-CLI backend: Gemini via Antigravity `agy`, Claude via `claude-personal`) · `cohorts.py` (open-vLLM vs frontier-agentic split) · `step3_ab.py` (paired harness-knob A/B, e.g. ponytail) · `step3_variability.py` (n-rep run-to-run spread) · `intervention.py` `step5_intervene.py` `step5_twopass.py` (interventions) · `step5_probe.py` (isolated probe) · `step5_probe_task.py` (**the M2 control**) · `step5_calibrate.py` `step5_crossmodel.py` (calibration + cross-model, now deflated) · `*_plot.py` · `test_score.py`.
+**`src/` by phase:** `mcl.py` `slicer.py` `score.py` (core) · `phase1_verify.py` `phase2_dump.py` (gate) · `model_client.py` `runpod_deploy.py` (uniform client + pods) · `menu_harness.py` `step3_run.py` `step3_analyze.py` (3-model run) · `cli_client.py` `step3_run_cli.py` (agentic-CLI backend: Gemini via Antigravity `agy`, Claude via `claude-personal`, GPT-5.5 via Codex `codex exec`) · `cohorts.py` (open-vLLM vs frontier-agentic split) · `step3_ab.py` (paired harness-knob A/B, e.g. ponytail) · `step3_variability.py` (n-rep run-to-run spread) · `intervention.py` `step5_intervene.py` `step5_twopass.py` (interventions) · `step5_probe.py` (isolated probe) · `step5_probe_task.py` (**the M2 control**) · `step5_calibrate.py` `step5_crossmodel.py` (calibration + cross-model, now deflated) · `*_plot.py` · `test_score.py`.
 
 ---
 
@@ -152,6 +153,7 @@ python3 phase1_verify.py                              # the gate
 python3 build_taskset.py && python3 step3_run.py <name> <url> EMPTY <model_id>
 python3 step3_run_cli.py gemini-3.5-flash "Gemini 3.5 Flash (Medium)"   # via Antigravity `agy` (no API key; agentic-harness confound)
 python3 step3_run_cli.py claude-opus-4.8 - claude     # via Claude Code subscription (`-` = CLI default model; agentic-harness confound)
+python3 step3_run_cli.py codex-gpt-5.5 gpt-5.5 codex   # via OpenAI Codex CLI (`codex exec`; agentic-harness confound)
 python3 step3_run_cli.py "claude-opus-4.8+ponytail" - claude-ponytail   # A/B arm: + ponytail skill via --append-system-prompt
 python3 step3_run_cli.py "claude-opus-4.8__rep2" - claude               # repeat run (no seed) for variability; reps excluded from cohort stats
 python3 step3_analyze.py && python3 step3_plot.py     # Finding #1 (cohort-split, auto-detects all results_*.json)

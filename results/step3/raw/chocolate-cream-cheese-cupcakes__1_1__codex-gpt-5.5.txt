@@ -1,0 +1,4 @@
+SELECTED=['C', 'D', 'H', 'J', 'N', 'P']
+
+---RAW---
+D, H, J, N, P, C

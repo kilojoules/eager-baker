@@ -43,6 +43,14 @@ FLAVORS = {
              "CLAUDE_CODE_SESSION_ID": None, "CLAUDE_CODE_CHILD_SESSION": None,
              "CLAUDE_EFFORT": None, "ANTHROPIC_API_KEY": None},
     ),
+    # codex = OpenAI Codex CLI (gpt-5.5 by default). Non-interactive `codex exec`, prompt
+    # is positional, read-only sandbox, and the final message is captured via `-o` (stdout
+    # otherwise carries the agent event log). Runs at the user's configured reasoning effort.
+    "codex": dict(
+        argv=["codex", "exec"], model_flag="-m",
+        extra_flags=["-s", "read-only", "--skip-git-repo-check", "--color", "never"],
+        prompt_flag=None, out_message_flag="-o", env=None,
+    ),
     # claude-ponytail = the `claude` flavor with the ponytail skill (a scope-discipline
     # "lazy senior dev / do exactly what's asked" persona) appended to Claude Code's
     # system prompt via --append-system-prompt. This is the ONE controllable harness
@@ -70,7 +78,8 @@ def main():
     argv = [sys.argv[4]] if len(sys.argv) > 4 else spec["argv"]
     m = None if model in ("", "-", "default") else model
     client = CLIModelClient(label, argv, model=m, model_flag=spec["model_flag"],
-                            extra_flags=extra, env=spec.get("env"))
+                            extra_flags=extra, prompt_flag=spec.get("prompt_flag", "-p"),
+                            out_message_flag=spec.get("out_message_flag"), env=spec.get("env"))
 
     os.makedirs(RAW, exist_ok=True)
     out_path = os.path.join(OUT, f"results_{label}.json")

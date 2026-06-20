@@ -25,13 +25,13 @@ COHORTS = {
         "short": "frontier · agentic CLI",
         "harness": "vendor agentic CLI (own system prompt/tools/memory; no temp/seed)",
         "preregistered": False,
-        "models": ["gemini-3.5-flash", "claude-opus-4.8"],
+        "models": ["gemini-3.5-flash", "claude-opus-4.8", "codex-gpt-5.5"],
     },
 }
 
 # fixed display order (over-eager high -> low), used by analysis + plots
 MODEL_ORDER = ["phi-3.5-mini", "qwen2.5-7b", "qwen3-30b-a3b",
-               "gemini-3.5-flash", "claude-opus-4.8"]
+               "gemini-3.5-flash", "claude-opus-4.8", "codex-gpt-5.5"]
 
 COHORT_OF = {m: cid for cid, d in COHORTS.items() for m in d["models"]}
 COHORT_ORDER = ["open-vLLM", "frontier-agentic"]
